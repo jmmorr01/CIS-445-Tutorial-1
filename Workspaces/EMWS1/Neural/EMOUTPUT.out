@@ -1,0 +1,847 @@
+*------------------------------------------------------------*
+User:                jmmorr01
+Date:                October 20, 2018
+Time:                16:34:58
+*------------------------------------------------------------*
+* Training Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Variable Summary
+ 
+          Measurement    Frequency
+ Role        Level         Count
+ 
+INPUT      BINARY            1
+INPUT      INTERVAL          2
+INPUT      NOMINAL           7
+TARGET     BINARY            1
+ 
+ 
+ 
+ 
+Model Events
+ 
+                                    Number
+                     Measurement      of
+ Target     Event       Level       Levels      Order                               Label
+ 
+TARGET_B      1        BINARY          2      Descending    Target Variable Indicates for Response to 97NK Mailing
+ 
+ 
+ 
+ 
+Decision Matrix and Prior Vector
+ 
+              Training                   Decision
+TARGET_B    Proportions        1    0     Priors
+ 
+   1            0.25        14.5    0      0.05
+   0            0.75        -0.5    0      0.95
+ 
+ 
+ 
+ 
+Predicted and decision variables
+ 
+Type               Variable      Label
+ 
+TARGET            TARGET_B       Target Variable Indicates for Response to 97NK Mailing
+PREDICTED         P_TARGET_B1    Predicted: TARGET_B=1
+RESIDUAL          R_TARGET_B1    Residual: TARGET_B=1
+PREDICTED         P_TARGET_B0    Predicted: TARGET_B=0
+RESIDUAL          R_TARGET_B0    Residual: TARGET_B=0
+FROM              F_TARGET_B     From: TARGET_B
+INTO              I_TARGET_B     Into: TARGET_B
+MODELDECISION     D_TARGET_B     Decision: TARGET_B
+EXPECTEDPROFIT    EP_TARGET_B    Expected Profit: TARGET_B
+COMPUTEDPROFIT    CP_TARGET_B    Computed Profit: TARGET_B
+BESTPROFIT        BP_TARGET_B    Best Profit: TARGET_B
+ 
+ 
+ 
+ 
+ 
+The NEURAL Procedure
+ 
+Preliminary       Starting         Objective         Number
+ Training          Random           Function           of        Terminating
+    Run             Seed             Value         Iterations     Criteria
+ 
+        1               12345    0.542285634594           10
+        2          2080999529    0.542103713213           10
+        3          1121166870    0.542125897269           10
+        4            21777864     0.54206821573           10
+        5          1370487091    0.542139298155           10
+ 
+ 
+ 
+ 
+ 
+The NEURAL Procedure
+ 
+                         Optimization Start
+                         Parameter Estimates
+                                                            Gradient
+                                                           Objective
+  N Parameter                               Estimate        Function
+ 
+  1 LG10_LAST_GIFT_AMT_H11                  0.112131    -0.000000855
+  2 MONTHS_SINCE_LAST_GIFT_H11             -0.223473    -0.000051606
+  3 LG10_LAST_GIFT_AMT_H12                 -0.056399     0.000022256
+  4 MONTHS_SINCE_LAST_GIFT_H12              0.177325     0.000016999
+  5 LG10_LAST_GIFT_AMT_H13                 -0.073193     0.000028203
+  6 MONTHS_SINCE_LAST_GIFT_H13              0.238371    -0.000023477
+  7 LG10_LAST_GIFT_AMT_H14                 -0.265745    -0.000024158
+  8 MONTHS_SINCE_LAST_GIFT_H14             -0.025328     0.000004970
+  9 LG10_LAST_GIFT_AMT_H15                 -0.101408    -0.000052671
+ 10 MONTHS_SINCE_LAST_GIFT_H15              0.238592       -0.000101
+ 11 PEP_STAR0_H11                          -0.006529       -0.000247
+ 12 PEP_STAR0_H12                          -0.048929     0.000046607
+ 13 PEP_STAR0_H13                          -0.120568    -0.000001216
+ 14 PEP_STAR0_H14                          -0.052097     0.000018079
+ 15 PEP_STAR0_H15                           0.197418        0.000156
+ 16 FREQUENCY_STATUS_97NK1_H11              0.010825    -0.000089323
+ 17 FREQUENCY_STATUS_97NK2_H11              0.492196    -0.000017808
+ 18 FREQUENCY_STATUS_97NK3_H11             -0.024580    -0.000014623
+ 19 G_CARD_PROM_120_H11                    -0.040442     0.000064118
+ 20 G_CARD_PROM_121_H11                    -0.005017     0.000083575
+ 21 G_CARD_PROM_122_H11                    -0.006446     0.000077998
+ 22 G_CARD_PROM_123_H11                     0.017498     0.000049547
+ 23 G_CARD_PROM_124_H11                     0.268183     0.000055084
+ 24 G_CARD_PROM_125_H11                    -0.042394        0.000125
+ 25 G_CLUSTER_CODE0_H11                     0.236495     0.000074223
+ 26 G_CLUSTER_CODE1_H11                    -0.111109     0.000001891
+ 27 G_CLUSTER_CODE2_H11                     0.083618    -0.000003044
+ 28 G_CLUSTER_CODE3_H11                     0.049674    -0.000017619
+ 29 G_CLUSTER_CODE4_H11                    -0.120972     0.000016051
+ 30 G_CLUSTER_CODE5_H11                     0.152623     0.000065691
+ 31 G_CLUSTER_CODE6_H11                     0.121596     0.000054540
+ 32 G_CLUSTER_CODE7_H11                     0.036252     0.000035106
+ 33 G_RECENCY_STATUS_96NK0_H11             -0.214459     0.000041773
+ 34 G_RECENCY_STATUS_96NK1_H11             -0.350906     0.000078611
+ 35 G_RECENCY_STATUS_96NK2_H11              0.120866     0.000004343
+ 36 G_RECENT_CARD_RESPONSE_COUNT0_H1       -0.177443     0.000074299
+ 37 G_RECENT_CARD_RESPONSE_COUNT1_H1        0.020965     0.000076367
+ 38 G_RECENT_CARD_RESPONSE_COUNT2_H1        0.040186     0.000028905
+ 39 G_RECENT_CARD_RESPONSE_COUNT3_H1        0.234324    -0.000043642
+ 40 G_RECENT_RESPONSE_COUNT0_H11           -0.172175        0.000104
+ 41 G_RECENT_RESPONSE_COUNT1_H11            0.385396        0.000111
+ 42 G_RECENT_RESPONSE_COUNT2_H11           -0.058706     0.000069268
+ 43 OPT_LIFETIME_GI01_low4_5_H11            0.004905    -0.000093757
+ 44 OPT_LIFETIME_GI02_4_513_5_MISSIN       -0.224749     0.000075529
+ 45 FREQUENCY_STATUS_97NK1_H12             -0.163525     0.000013546
+ 46 FREQUENCY_STATUS_97NK2_H12             -0.066187     0.000000637
+ 47 FREQUENCY_STATUS_97NK3_H12             -0.059510     0.000018072
+ 48 G_CARD_PROM_120_H12                    -0.256816    -0.000020913
+ 49 G_CARD_PROM_121_H12                    -0.007005    -0.000025291
+ 50 G_CARD_PROM_122_H12                     0.110317    -0.000022628
+ 51 G_CARD_PROM_123_H12                    -0.115025    -0.000016406
+ 52 G_CARD_PROM_124_H12                    -0.017939    -0.000022464
+ 53 G_CARD_PROM_125_H12                    -0.070085    -0.000013915
+ 54 G_CLUSTER_CODE0_H12                     0.218611    -0.000012795
+ 55 G_CLUSTER_CODE1_H12                    -0.258385     0.000008494
+ 56 G_CLUSTER_CODE2_H12                     0.059245    -0.000001247
+ 57 G_CLUSTER_CODE3_H12                    -0.125904    -0.000000184
+ 58 G_CLUSTER_CODE4_H12                     0.178775     0.000001552
+ 59 G_CLUSTER_CODE5_H12                     0.199539    -0.000000579
+ 60 G_CLUSTER_CODE6_H12                    -0.010711    -0.000005615
+ 61 G_CLUSTER_CODE7_H12                     0.021668    -0.000004791
+ 62 G_RECENCY_STATUS_96NK0_H12              0.158839    -0.000002653
+ 63 G_RECENCY_STATUS_96NK1_H12             -0.159948     0.000001611
+ 64 G_RECENCY_STATUS_96NK2_H12             -0.267864     0.000011010
+ 65 _DUP                                    0.253141    -0.000011681
+ 66 _DUP1                                   0.246899    -0.000008669
+ 67 _DUP2                                  -0.042972    -0.000015488
+ 68 _DUP3                                   0.233193     0.000012879
+ 69 G_RECENT_RESPONSE_COUNT0_H12            0.248433     0.000001451
+ 70 G_RECENT_RESPONSE_COUNT1_H12           -0.020505    -0.000006467
+ 71 G_RECENT_RESPONSE_COUNT2_H12           -0.045315     0.000005797
+ 72 OPT_LIFETIME_GI01_low4_5_H12            0.001256     0.000024310
+ 73 _DUP4                                  -0.133949     0.000001141
+ 74 FREQUENCY_STATUS_97NK1_H13             -0.022783    -0.000011272
+ 75 FREQUENCY_STATUS_97NK2_H13             -0.033105     0.000000153
+ 76 FREQUENCY_STATUS_97NK3_H13              0.034813    -0.000003325
+ 77 G_CARD_PROM_120_H13                    -0.133289     0.000009923
+ 78 G_CARD_PROM_121_H13                    -0.159057     0.000010546
+ 79 G_CARD_PROM_122_H13                     0.061788     0.000010571
+ 80 G_CARD_PROM_123_H13                    -0.191283     0.000009948
+ 81 G_CARD_PROM_124_H13                     0.044989     0.000007887
+ 82 G_CARD_PROM_125_H13                    -0.110879     0.000006349
+ 83 G_CLUSTER_CODE0_H13                     0.153390    -0.000010343
+ 84 G_CLUSTER_CODE1_H13                     0.183146     0.000017223
+ 85 G_CLUSTER_CODE2_H13                    -0.333704     0.000009415
+ 86 G_CLUSTER_CODE3_H13                    -0.344061     0.000007405
+ 87 G_CLUSTER_CODE4_H13                    -0.018572     0.000001469
+ 88 G_CLUSTER_CODE5_H13                    -0.158992    -0.000005546
+ 89 G_CLUSTER_CODE6_H13                     0.189403    -0.000025509
+ 90 G_CLUSTER_CODE7_H13                    -0.030534    -0.000005408
+ 91 G_RECENCY_STATUS_96NK0_H13              0.148353    -0.000007744
+ 92 G_RECENCY_STATUS_96NK1_H13             -0.049853    -0.000016897
+ 93 G_RECENCY_STATUS_96NK2_H13             -0.106083    -0.000002050
+ 94 _DUP5                                  -0.241601     0.000018820
+ 95 _DUP6                                  -0.131936     0.000013264
+ 96 _DUP7                                   0.032561     0.000024195
+ 97 _DUP8                                  -0.039324     0.000019852
+ 98 G_RECENT_RESPONSE_COUNT0_H13            0.251471     0.000005551
+ 99 G_RECENT_RESPONSE_COUNT1_H13           -0.311334    -0.000005126
+100 G_RECENT_RESPONSE_COUNT2_H13            0.234947    -0.000015074
+101 OPT_LIFETIME_GI01_low4_5_H13           -0.113226    -0.000002406
+102 _DUP9                                   0.189215    -0.000007360
+103 FREQUENCY_STATUS_97NK1_H14              0.303804    -0.000002316
+104 FREQUENCY_STATUS_97NK2_H14             -0.054972    -0.000002351
+105 FREQUENCY_STATUS_97NK3_H14             -0.236568     0.000007345
+106 G_CARD_PROM_120_H14                    -0.372924    -0.000007198
+107 G_CARD_PROM_121_H14                     0.154537    -0.000007460
+108 G_CARD_PROM_122_H14                     0.185497    -0.000008077
+109 G_CARD_PROM_123_H14                     0.055182    -0.000004564
+110 G_CARD_PROM_124_H14                    -0.145255    -0.000007107
+111 G_CARD_PROM_125_H14                     0.097884    -0.000013462
+112 G_CLUSTER_CODE0_H14                     0.086444    -0.000001093
+113 G_CLUSTER_CODE1_H14                    -0.168131    -0.000003352
+114 G_CLUSTER_CODE2_H14                    -0.132130    -0.000006651
+115 G_CLUSTER_CODE3_H14                    -0.171524     0.000003755
+116 G_CLUSTER_CODE4_H14                    -0.321656     0.000003894
+117 G_CLUSTER_CODE5_H14                     0.129787    -0.000002565
+118 G_CLUSTER_CODE6_H14                     0.005330     0.000000234
+119 G_CLUSTER_CODE7_H14                     0.043052     0.000000831
+120 G_RECENCY_STATUS_96NK0_H14              0.279277     0.000005666
+121 G_RECENCY_STATUS_96NK1_H14             -0.020905     0.000016479
+122 G_RECENCY_STATUS_96NK2_H14              0.257871     0.000009753
+123 _DUP10                                  0.118605    -0.000003691
+124 _DUP11                                 -0.185067    -0.000007375
+125 _DUP12                                  0.112128    -0.000004565
+126 _DUP13                                 -0.306865    -0.000000579
+127 G_RECENT_RESPONSE_COUNT0_H14            0.310171     0.000004182
+128 G_RECENT_RESPONSE_COUNT1_H14           -0.036391     0.000006696
+129 G_RECENT_RESPONSE_COUNT2_H14           -0.175091     0.000007504
+130 OPT_LIFETIME_GI01_low4_5_H14           -0.009065     0.000009308
+131 _DUP14                                  0.090724     0.000001943
+132 FREQUENCY_STATUS_97NK1_H15             -0.311712     0.000073977
+133 FREQUENCY_STATUS_97NK2_H15             -0.077817     0.000036156
+134 FREQUENCY_STATUS_97NK3_H15             -0.493846     0.000047689
+135 G_CARD_PROM_120_H15                     0.305766    -0.000074339
+136 G_CARD_PROM_121_H15                     0.124420    -0.000082286
+137 G_CARD_PROM_122_H15                     0.040117    -0.000068186
+138 G_CARD_PROM_123_H15                    -0.493375    -0.000085228
+139 G_CARD_PROM_124_H15                     0.130805    -0.000084997
+140 G_CARD_PROM_125_H15                     0.061182       -0.000172
+141 G_CLUSTER_CODE0_H15                    -0.087392    -0.000005672
+142 G_CLUSTER_CODE1_H15                    -0.082981       -0.000154
+143 G_CLUSTER_CODE2_H15                    -0.082875    -0.000075308
+144 G_CLUSTER_CODE3_H15                    -0.009229    -0.000097426
+145 G_CLUSTER_CODE4_H15                     0.255911    -0.000064176
+146 G_CLUSTER_CODE5_H15                    -0.018203    -0.000067147
+147 G_CLUSTER_CODE6_H15                    -0.058863    -0.000014251
+148 G_CLUSTER_CODE7_H15                     0.182789     0.000040643
+149 G_RECENCY_STATUS_96NK0_H15             -0.044438    -0.000095422
+150 G_RECENCY_STATUS_96NK1_H15             -0.243763     0.000037679
+151 G_RECENCY_STATUS_96NK2_H15             -0.020569     0.000035314
+152 _DUP15                                  0.010681     0.000074341
+153 _DUP16                                  0.047010     0.000087282
+154 _DUP17                                 -0.147703     0.000027768
+155 _DUP18                                 -0.128675        0.000216
+156 G_RECENT_RESPONSE_COUNT0_H15           -0.290432    -0.000071780
+157 G_RECENT_RESPONSE_COUNT1_H15            0.181577     0.000047502
+158 G_RECENT_RESPONSE_COUNT2_H15           -0.219639     0.000078661
+159 OPT_LIFETIME_GI01_low4_5_H15           -0.027286     0.000003587
+160 _DUP19                                 -0.029211        0.000134
+161 BIAS_H11                               -0.029554        0.000109
+162 BIAS_H12                                0.226230    -0.000001115
+163 BIAS_H13                               -1.498954    -0.000017017
+164 BIAS_H14                                2.014237    -0.000001318
+165 BIAS_H15                               -0.569623     0.000049805
+166 H11_TARGET_B1                          -0.074134       -0.000123
+167 H12_TARGET_B1                           0.015900       -0.001063
+168 H13_TARGET_B1                           0.023546        0.000382
+169 H14_TARGET_B1                           0.028729       -0.001033
+170 H15_TARGET_B1                          -0.121553        0.000839
+171 LG10_LAST_GIFT_AMT_TARGET_B1           -0.079643        0.000586
+172 MONTHS_SINCE_LAST_GIFT_TARGET_B1       -0.108001        0.000993
+173 PEP_STAR0_TARGET_B1                    -0.067026        0.002497
+174 FREQUENCY_STATUS_97NK1_TARGET_B1       -0.176082        0.000518
+175 FREQUENCY_STATUS_97NK2_TARGET_B1       -0.028982        0.000462
+176 FREQUENCY_STATUS_97NK3_TARGET_B1        0.050905        0.000389
+177 G_CARD_PROM_120_TARGET_B1               0.040884       -0.000462
+178 G_CARD_PROM_121_TARGET_B1               0.116628       -0.000863
+179 G_CARD_PROM_122_TARGET_B1               0.067968       -0.000540
+180 G_CARD_PROM_123_TARGET_B1               0.024146        0.000168
+181 G_CARD_PROM_124_TARGET_B1               0.128783       -0.000436
+182 G_CARD_PROM_125_TARGET_B1              -0.258117       -0.000645
+183 G_CLUSTER_CODE0_TARGET_B1               0.212643       -0.000737
+184 G_CLUSTER_CODE1_TARGET_B1               0.361174        0.001317
+185 G_CLUSTER_CODE2_TARGET_B1               0.190724        0.000634
+186 G_CLUSTER_CODE3_TARGET_B1               0.161042        0.000723
+187 G_CLUSTER_CODE4_TARGET_B1               0.042865     0.000023521
+188 G_CLUSTER_CODE5_TARGET_B1              -0.058075       -0.000358
+189 G_CLUSTER_CODE6_TARGET_B1              -0.112191       -0.000757
+190 G_CLUSTER_CODE7_TARGET_B1              -0.326849       -0.000871
+191 G_RECENCY_STATUS_96NK0_TARGET_B1        0.128973     0.000022333
+192 G_RECENCY_STATUS_96NK1_TARGET_B1        0.105643    -0.000037923
+193 G_RECENCY_STATUS_96NK2_TARGET_B1       -0.007369        0.000492
+194 G_RECENT_CARD_RESPONSE_COUNT0_TA        0.275554       -0.000966
+195 G_RECENT_CARD_RESPONSE_COUNT1_TA        0.015137       -0.000988
+196 G_RECENT_CARD_RESPONSE_COUNT2_TA       -0.036998       -0.000561
+197 G_RECENT_CARD_RESPONSE_COUNT3_TA       -0.032035       -0.000112
+198 G_RECENT_RESPONSE_COUNT0_TARGET_        0.075564       -0.000482
+199 G_RECENT_RESPONSE_COUNT1_TARGET_        0.032591       -0.001086
+200 G_RECENT_RESPONSE_COUNT2_TARGET_       -0.090067       -0.000877
+201 OPT_LIFETIME_GI01_low4_5_TARGET_       -0.057763        0.000872
+202 _DUP20                                  0.040288       -0.000259
+203 BIAS_TARGET_B1                         -1.054279       -0.001104
+ 
+Value of Objective Function = 0.5420682157
+ 
+ 
+ 
+ 
+ 
+ 
+The NEURAL Procedure
+ 
+Dual Quasi-Newton Optimization
+ 
+ 
+Minimum Iterations                                0
+Maximum Iterations                               50
+Maximum Function Calls                   2147483647
+Maximum CPU Time                              14400
+ABSGCONV Gradient Criterion                 0.00001
+GCONV Gradient Criterion                       1E-8
+ABSFCONV Function Criterion                       0
+FCONV Function Criterion                     0.0001
+FCONV2 Function Criterion                         0
+FSIZE Parameter                                   0
+ABSXCONV Parameter Change Criterion               0
+XCONV Parameter Change Criterion                  0
+XSIZE Parameter                                   0
+ABSCONV Function Criterion             0.0016738513
+Line Search Method                                2
+Starting Alpha for Line Search                    1
+Line Search Precision LSPRECISION               0.4
+DAMPSTEP Parameter for Line Search                .
+Singularity Tolerance (SINGULAR)               1E-8
+ 
+Dual Quasi-Newton Optimization
+ 
+Dual Broyden - Fletcher - Goldfarb - Shanno Update (DBFGS)
+ 
+Parameter Estimates             203
+ 
+                                             Optimization Start
+ 
+Active Constraints                                  0  Objective Function                       0.5420682157
+Max Abs Gradient Element                 0.0024966829
+ 
+ 
+                                                                 Objective     Max Abs                Slope of
+                     Function         Active        Objective     Function    Gradient       Step       Search
+Iter     Restarts       Calls    Constraints         Function       Change     Element       Size    Direction
+ 
+   1            0           5              0          0.54203     0.000039     0.00140     0.0309      -0.0025
+   2            0           9              0          0.54193     0.000095     0.00310      3.487      -544E-7
+   3            0          11              0          0.54190     0.000038     0.00265      0.388      -0.0006
+   4            0          15              0          0.54177     0.000129     0.00130      1.244      -0.0002
+   5            0          17              0          0.54171     0.000058     0.00224      1.000      -0.0001
+   6            0          19              0          0.54162     0.000089     0.00280      0.850      -0.0002
+   7            0          23              0          0.54135     0.000273     0.00316      1.874      -0.0003
+   8            0          25              0          0.54126     0.000087     0.00730      2.382      -0.0003
+   9            0          29              0          0.54092     0.000336     0.00235      0.844      -0.0008
+  10            0          32              0          0.54069     0.000236     0.00318      1.646      -0.0003
+  11            0          34              0          0.54039     0.000296     0.00277      1.958      -0.0003
+  12            0          36              0          0.54024     0.000149     0.00383      2.088      -0.0004
+  13            0          40              0          0.53986     0.000385     0.00190      1.803      -0.0004
+  14            0          42              0          0.53951     0.000345     0.00303      2.669      -0.0004
+  15            0          44              0          0.53912     0.000393     0.00388      0.835      -0.0010
+  16            0          46              0          0.53898     0.000141     0.00717      1.504      -0.0007
+  17            0          50              0          0.53851     0.000467     0.00251      1.368      -0.0007
+  18            0          53              0          0.53826     0.000255     0.00295      0.909      -0.0005
+  19            0          55              0          0.53781     0.000444     0.00221      1.142      -0.0006
+  20            0          57              0          0.53766     0.000156     0.00344      1.643      -0.0007
+  21            0          61              0          0.53730     0.000355     0.00238      1.080      -0.0007
+  22            0          64              0          0.53713     0.000171     0.00142      1.037      -0.0003
+  23            0          68              0          0.53675     0.000383     0.00287      2.976      -0.0003
+  24            0          71              0          0.53652     0.000233     0.00230      1.411      -0.0003
+  25            0          73              0          0.53630     0.000216     0.00319      1.634      -0.0004
+  26            0          75              0          0.53603     0.000268     0.00236      1.493      -0.0004
+  27            0          77              0          0.53596     0.000078     0.00370      3.356      -0.0002
+  28            0          81              0          0.53555     0.000407     0.00122      1.339      -0.0006
+  29            0          83              0          0.53539     0.000155     0.00474      3.750      -0.0003
+  30            0          87              0          0.53481     0.000580     0.00201      1.122      -0.0010
+  31            0          90              0          0.53452     0.000294     0.00202      0.914      -0.0006
+  32            0          92              0          0.53415     0.000376     0.00182      1.318      -0.0006
+  33            0          95              0          0.53390     0.000250     0.00275      1.436      -0.0003
+  34            0          97              0          0.53365     0.000250     0.00265      2.352      -0.0003
+  35            0          99              0          0.53341     0.000237     0.00222      1.878      -0.0003
+  36            0         101              0          0.53322     0.000189     0.00295      1.711      -0.0003
+  37            0         103              0          0.53296     0.000258     0.00183      1.564      -0.0003
+  38            0         105              0          0.53266     0.000301     0.00323      2.470      -0.0003
+  39            0         107              0          0.53249     0.000171     0.00393      2.279      -0.0003
+  40            0         109              0          0.53229     0.000196     0.00248      1.290      -0.0003
+  41            0         112              0          0.53219     0.000108     0.00162      0.927      -0.0002
+  42            0         116              0          0.53187     0.000311     0.00287      2.700      -0.0002
+  43            0         118              0          0.53173     0.000140     0.00229      2.421      -0.0003
+  44            0         120              0          0.53149     0.000242     0.00123      0.793      -0.0004
+  45            0         122              0          0.53139     0.000106     0.00240      1.960      -0.0003
+  46            0         126              0          0.53115     0.000235     0.00226      1.215      -0.0004
+  47            0         129              0          0.53099     0.000160     0.00140      1.410      -0.0002
+  48            0         131              0          0.53079     0.000206     0.00117      2.045      -0.0002
+  49            0         133              0          0.53062     0.000165     0.00139      2.768      -0.0002
+  50            0         135              0          0.53036     0.000261     0.00130      1.509      -0.0003
+ 
+                                            Optimization Results
+ 
+Iterations                                         50  Function Calls                                    137
+Gradient Calls                                     64  Active Constraints                                  0
+Objective Function                       0.5303599553  Max Abs Gradient Element                 0.0012975679
+Slope of Search Direction                -0.000272909
+ 
+QUANEW needs more than 50 iterations or 2147483647 function calls.
+ 
+WARNING: QUANEW Optimization cannot be completed.
+ 
+ 
+ 
+ 
+ 
+ 
+The NEURAL Procedure
+ 
+                        Optimization Results
+                         Parameter Estimates
+                                                            Gradient
+                                                           Objective
+  N Parameter                               Estimate        Function
+ 
+  1 LG10_LAST_GIFT_AMT_H11                  0.013086        0.000166
+  2 MONTHS_SINCE_LAST_GIFT_H11             -0.467277        0.000579
+  3 LG10_LAST_GIFT_AMT_H12                 -0.344208    -0.000050260
+  4 MONTHS_SINCE_LAST_GIFT_H12              0.109485       -0.000116
+  5 LG10_LAST_GIFT_AMT_H13                 -0.331863       -0.000251
+  6 MONTHS_SINCE_LAST_GIFT_H13              0.734203     0.000080247
+  7 LG10_LAST_GIFT_AMT_H14                 -0.231265        0.000379
+  8 MONTHS_SINCE_LAST_GIFT_H14              0.217112     0.000010124
+  9 LG10_LAST_GIFT_AMT_H15                  0.077177        0.000181
+ 10 MONTHS_SINCE_LAST_GIFT_H15              0.702254       -0.000185
+ 11 PEP_STAR0_H11                          -0.116432       -0.000285
+ 12 PEP_STAR0_H12                           0.221989     0.000082868
+ 13 PEP_STAR0_H13                           0.153695        0.000131
+ 14 PEP_STAR0_H14                          -0.329189        0.000346
+ 15 PEP_STAR0_H15                          -0.190769    -0.000066875
+ 16 FREQUENCY_STATUS_97NK1_H11             -0.249620        0.000161
+ 17 FREQUENCY_STATUS_97NK2_H11              0.619831        0.000119
+ 18 FREQUENCY_STATUS_97NK3_H11             -0.461050        0.000411
+ 19 G_CARD_PROM_120_H11                    -0.306984        0.000262
+ 20 G_CARD_PROM_121_H11                     0.120283     0.000097549
+ 21 G_CARD_PROM_122_H11                    -0.265310        0.000249
+ 22 G_CARD_PROM_123_H11                     0.199707        0.000184
+ 23 G_CARD_PROM_124_H11                     0.270913        0.000235
+ 24 G_CARD_PROM_125_H11                    -0.149145    -0.000062230
+ 25 G_CLUSTER_CODE0_H11                     0.369169     0.000006432
+ 26 G_CLUSTER_CODE1_H11                    -0.173766       -0.000125
+ 27 G_CLUSTER_CODE2_H11                    -0.008704     0.000003970
+ 28 G_CLUSTER_CODE3_H11                    -0.063064       -0.000158
+ 29 G_CLUSTER_CODE4_H11                     0.161528       -0.000148
+ 30 G_CLUSTER_CODE5_H11                     0.215878       -0.000106
+ 31 G_CLUSTER_CODE6_H11                     0.289477       -0.000281
+ 32 G_CLUSTER_CODE7_H11                     0.510986       -0.000249
+ 33 G_RECENCY_STATUS_96NK0_H11             -0.801809     0.000007844
+ 34 G_RECENCY_STATUS_96NK1_H11             -0.964331       -0.000589
+ 35 G_RECENCY_STATUS_96NK2_H11             -0.367739     0.000008954
+ 36 G_RECENT_CARD_RESPONSE_COUNT0_H1       -0.889698        0.000278
+ 37 G_RECENT_CARD_RESPONSE_COUNT1_H1        0.410873     0.000076870
+ 38 G_RECENT_CARD_RESPONSE_COUNT2_H1        0.523260    -0.000075661
+ 39 G_RECENT_CARD_RESPONSE_COUNT3_H1        0.617208    -0.000035457
+ 40 G_RECENT_RESPONSE_COUNT0_H11           -0.028038       -0.000257
+ 41 G_RECENT_RESPONSE_COUNT1_H11            0.004213       -0.000135
+ 42 G_RECENT_RESPONSE_COUNT2_H11           -0.230234        0.000143
+ 43 OPT_LIFETIME_GI01_low4_5_H11            0.220764       -0.000229
+ 44 OPT_LIFETIME_GI02_4_513_5_MISSIN       -0.292543       -0.000315
+ 45 FREQUENCY_STATUS_97NK1_H12             -0.792675        0.000165
+ 46 FREQUENCY_STATUS_97NK2_H12              0.062292       -0.000218
+ 47 FREQUENCY_STATUS_97NK3_H12             -0.179830        0.000110
+ 48 G_CARD_PROM_120_H12                    -0.014277       -0.000383
+ 49 G_CARD_PROM_121_H12                     0.027520       -0.000313
+ 50 G_CARD_PROM_122_H12                     0.323159       -0.000410
+ 51 G_CARD_PROM_123_H12                    -0.063280       -0.000361
+ 52 G_CARD_PROM_124_H12                     0.000689       -0.000335
+ 53 G_CARD_PROM_125_H12                    -0.716242       -0.000544
+ 54 G_CLUSTER_CODE0_H12                     0.447633    -0.000022174
+ 55 G_CLUSTER_CODE1_H12                    -0.842573        0.000155
+ 56 G_CLUSTER_CODE2_H12                     0.093277       -0.000156
+ 57 G_CLUSTER_CODE3_H12                     0.093721       -0.000191
+ 58 G_CLUSTER_CODE4_H12                     0.135866     0.000098793
+ 59 G_CLUSTER_CODE5_H12                     0.551461        0.000196
+ 60 G_CLUSTER_CODE6_H12                     0.082352        0.000275
+ 61 G_CLUSTER_CODE7_H12                     0.011180     0.000050317
+ 62 G_RECENCY_STATUS_96NK0_H12             -0.151508     0.000005988
+ 63 G_RECENCY_STATUS_96NK1_H12             -0.375451        0.000240
+ 64 G_RECENCY_STATUS_96NK2_H12             -0.172496    -0.000027120
+ 65 _DUP                                    0.001609       -0.000134
+ 66 _DUP1                                   0.109510     0.000049019
+ 67 _DUP2                                  -0.060169    -0.000004216
+ 68 _DUP3                                   0.408779        0.000135
+ 69 G_RECENT_RESPONSE_COUNT0_H12           -0.194457        0.000223
+ 70 G_RECENT_RESPONSE_COUNT1_H12            0.501767        0.000381
+ 71 G_RECENT_RESPONSE_COUNT2_H12            0.218313     0.000074077
+ 72 OPT_LIFETIME_GI01_low4_5_H12           -1.551276        0.000123
+ 73 _DUP4                                  -0.202939        0.000456
+ 74 FREQUENCY_STATUS_97NK1_H13              0.396256        0.000337
+ 75 FREQUENCY_STATUS_97NK2_H13              0.210944        0.000114
+ 76 FREQUENCY_STATUS_97NK3_H13              0.118889    -0.000028410
+ 77 G_CARD_PROM_120_H13                     0.085403       -0.000379
+ 78 G_CARD_PROM_121_H13                    -0.186217       -0.000289
+ 79 G_CARD_PROM_122_H13                     0.305327       -0.000457
+ 80 G_CARD_PROM_123_H13                     0.639355       -0.000187
+ 81 G_CARD_PROM_124_H13                     0.495054       -0.000374
+ 82 G_CARD_PROM_125_H13                    -0.480692       -0.000320
+ 83 G_CLUSTER_CODE0_H13                     0.868942     0.000046050
+ 84 G_CLUSTER_CODE1_H13                     0.236366     0.000006611
+ 85 G_CLUSTER_CODE2_H13                    -0.215027        0.000157
+ 86 G_CLUSTER_CODE3_H13                    -0.599044     0.000022578
+ 87 G_CLUSTER_CODE4_H13                    -0.395992        0.000150
+ 88 G_CLUSTER_CODE5_H13                    -0.192927        0.000115
+ 89 G_CLUSTER_CODE6_H13                     0.145591        0.000227
+ 90 G_CLUSTER_CODE7_H13                    -0.462513    -0.000032635
+ 91 G_RECENCY_STATUS_96NK0_H13              0.240259        0.000234
+ 92 G_RECENCY_STATUS_96NK1_H13              0.161947        0.000581
+ 93 G_RECENCY_STATUS_96NK2_H13             -0.192892        0.000138
+ 94 _DUP5                                  -0.829241       -0.000387
+ 95 _DUP6                                  -0.301356       -0.000258
+ 96 _DUP7                                   0.085374       -0.000225
+ 97 _DUP8                                  -0.424933       -0.000381
+ 98 G_RECENT_RESPONSE_COUNT0_H13            0.413423     0.000036895
+ 99 G_RECENT_RESPONSE_COUNT1_H13           -0.196450       -0.000209
+100 G_RECENT_RESPONSE_COUNT2_H13            0.228635     0.000081553
+101 OPT_LIFETIME_GI01_low4_5_H13            0.080818        0.000167
+102 _DUP9                                   0.157170    -0.000030914
+103 FREQUENCY_STATUS_97NK1_H14              0.456241    7.7027095E-8
+104 FREQUENCY_STATUS_97NK2_H14              0.480058       -0.000173
+105 FREQUENCY_STATUS_97NK3_H14             -0.467898       -0.000634
+106 G_CARD_PROM_120_H14                    -0.343150       -0.000163
+107 G_CARD_PROM_121_H14                     0.172119       -0.000175
+108 G_CARD_PROM_122_H14                     0.338454       -0.000305
+109 G_CARD_PROM_123_H14                     0.083970       -0.000197
+110 G_CARD_PROM_124_H14                    -0.255407    -0.000048608
+111 G_CARD_PROM_125_H14                     0.095419       -0.000192
+112 G_CLUSTER_CODE0_H14                     0.094734    -0.000050030
+113 G_CLUSTER_CODE1_H14                    -0.234363        0.000269
+114 G_CLUSTER_CODE2_H14                     0.396728    -0.000013584
+115 G_CLUSTER_CODE3_H14                     0.312428    -0.000039609
+116 G_CLUSTER_CODE4_H14                    -0.883795     0.000041032
+117 G_CLUSTER_CODE5_H14                     0.022717        0.000155
+118 G_CLUSTER_CODE6_H14                    -0.310684     0.000098630
+119 G_CLUSTER_CODE7_H14                    -0.213355        0.000160
+120 G_RECENCY_STATUS_96NK0_H14              0.244633     0.000016808
+121 G_RECENCY_STATUS_96NK1_H14             -0.294375        0.000220
+122 G_RECENCY_STATUS_96NK2_H14              0.221056       -0.000292
+123 _DUP10                                  0.270573       -0.000156
+124 _DUP11                                  0.166216       -0.000106
+125 _DUP12                                  0.068280     0.000028690
+126 _DUP13                                 -0.180782    -0.000047107
+127 G_RECENT_RESPONSE_COUNT0_H14            0.295411     0.000062347
+128 G_RECENT_RESPONSE_COUNT1_H14           -0.175114    -0.000099274
+129 G_RECENT_RESPONSE_COUNT2_H14           -0.314844        0.000294
+130 OPT_LIFETIME_GI01_low4_5_H14           -0.757936        0.000309
+131 _DUP14                                  0.322514        0.000450
+132 FREQUENCY_STATUS_97NK1_H15             -0.968454    -0.000068795
+133 FREQUENCY_STATUS_97NK2_H15             -0.601225        0.000280
+134 FREQUENCY_STATUS_97NK3_H15             -1.247131        0.000351
+135 G_CARD_PROM_120_H15                     0.385979        0.000216
+136 G_CARD_PROM_121_H15                     0.837508        0.000111
+137 G_CARD_PROM_122_H15                    -0.288843        0.000213
+138 G_CARD_PROM_123_H15                    -0.368817        0.000249
+139 G_CARD_PROM_124_H15                     1.040139    -0.000012253
+140 G_CARD_PROM_125_H15                    -0.398715        0.000124
+141 G_CLUSTER_CODE0_H15                    -0.403077        0.000124
+142 G_CLUSTER_CODE1_H15                     1.020427     0.000036901
+143 G_CLUSTER_CODE2_H15                     0.119987     0.000004701
+144 G_CLUSTER_CODE3_H15                    -0.193012    -0.000086568
+145 G_CLUSTER_CODE4_H15                     0.703416       -0.000234
+146 G_CLUSTER_CODE5_H15                     0.516994       -0.000178
+147 G_CLUSTER_CODE6_H15                     0.335712    -0.000070383
+148 G_CLUSTER_CODE7_H15                    -0.646221       -0.000150
+149 G_RECENCY_STATUS_96NK0_H15              0.509327    -0.000088167
+150 G_RECENCY_STATUS_96NK1_H15              0.252383       -0.000377
+151 G_RECENCY_STATUS_96NK2_H15             -0.676210     0.000057817
+152 _DUP15                                  0.305833        0.000152
+153 _DUP16                                 -0.211071     0.000021545
+154 _DUP17                                 -0.242759     0.000052185
+155 _DUP18                                 -0.948538     0.000034002
+156 G_RECENT_RESPONSE_COUNT0_H15           -0.156651       -0.000225
+157 G_RECENT_RESPONSE_COUNT1_H15            0.293523     0.000064551
+158 G_RECENT_RESPONSE_COUNT2_H15           -0.041279       -0.000145
+159 OPT_LIFETIME_GI01_low4_5_H15            0.569473    -0.000065836
+160 _DUP19                                 -0.188783     0.000033029
+161 BIAS_H11                               -0.418140       -0.000675
+162 BIAS_H12                               -0.334154        0.000357
+163 BIAS_H13                               -1.526317        0.000622
+164 BIAS_H14                                1.910348        0.000243
+165 BIAS_H15                               -1.061511       -0.000574
+166 H11_TARGET_B1                          -1.017681    -0.000081389
+167 H12_TARGET_B1                           0.785226       -0.000523
+168 H13_TARGET_B1                           1.220057       -0.000254
+169 H14_TARGET_B1                           0.904239        0.000592
+170 H15_TARGET_B1                          -1.020922       -0.000701
+171 LG10_LAST_GIFT_AMT_TARGET_B1            0.115796        0.000122
+172 MONTHS_SINCE_LAST_GIFT_TARGET_B1       -0.457294       -0.000472
+173 PEP_STAR0_TARGET_B1                    -0.243488        0.000843
+174 FREQUENCY_STATUS_97NK1_TARGET_B1       -0.579033        0.000612
+175 FREQUENCY_STATUS_97NK2_TARGET_B1       -0.117891    -0.000055465
+176 FREQUENCY_STATUS_97NK3_TARGET_B1       -0.430232       -0.000194
+177 G_CARD_PROM_120_TARGET_B1               1.008575       -0.000989
+178 G_CARD_PROM_121_TARGET_B1               0.459789       -0.000855
+179 G_CARD_PROM_122_TARGET_B1              -0.539300       -0.000904
+180 G_CARD_PROM_123_TARGET_B1              -0.349427       -0.000660
+181 G_CARD_PROM_124_TARGET_B1               0.165392       -0.000901
+182 G_CARD_PROM_125_TARGET_B1              -0.351185       -0.001298
+183 G_CLUSTER_CODE0_TARGET_B1              -0.026220        0.000120
+184 G_CLUSTER_CODE1_TARGET_B1               0.599531        0.000110
+185 G_CLUSTER_CODE2_TARGET_B1               0.135579     0.000018139
+186 G_CLUSTER_CODE3_TARGET_B1               0.095690        0.000456
+187 G_CLUSTER_CODE4_TARGET_B1               0.517909        0.000243
+188 G_CLUSTER_CODE5_TARGET_B1               0.007340    -0.000040514
+189 G_CLUSTER_CODE6_TARGET_B1               0.072057        0.000273
+190 G_CLUSTER_CODE7_TARGET_B1              -0.088764       -0.000111
+191 G_RECENCY_STATUS_96NK0_TARGET_B1       -0.249008    -0.000097589
+192 G_RECENCY_STATUS_96NK1_TARGET_B1       -0.240499        0.000486
+193 G_RECENCY_STATUS_96NK2_TARGET_B1       -0.214105     0.000012689
+194 G_RECENT_CARD_RESPONSE_COUNT0_TA        0.260424       -0.000899
+195 G_RECENT_CARD_RESPONSE_COUNT1_TA        0.166842       -0.000341
+196 G_RECENT_CARD_RESPONSE_COUNT2_TA        0.138376       -0.000342
+197 G_RECENT_CARD_RESPONSE_COUNT3_TA        0.107780       -0.000298
+198 G_RECENT_RESPONSE_COUNT0_TARGET_        0.035475       -0.000189
+199 G_RECENT_RESPONSE_COUNT1_TARGET_       -0.018737       -0.000385
+200 G_RECENT_RESPONSE_COUNT2_TARGET_       -0.220686    -0.000041430
+201 OPT_LIFETIME_GI01_low4_5_TARGET_        0.815675        0.000710
+202 _DUP20                                 -0.059340        0.000166
+203 BIAS_TARGET_B1                         -1.161875        0.001145
+ 
+Value of Objective Function = 0.5303599553
+ 
+
+
+*------------------------------------------------------------*
+* Score Output
+*------------------------------------------------------------*
+
+
+*------------------------------------------------------------*
+* Report Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+ 
+The FREQ Procedure
+ 
+                         Target
+ 
+                                 Cumulative    Cumulative
+FROM    Frequency     Percent     Frequency      Percent
+---------------------------------------------------------
+0       74.99531       75.00      74.99531        75.00
+1       25.00469       25.00           100       100.00
+ 
+ 
+ 
+ 
+Fit Statistics
+ 
+Target=TARGET_B Target Label=Target Variable Indicates for Response to 97NK Mailing
+ 
+   Fit
+Statistics    Statistics Label                      Train    Validation
+ 
+ _DFT_        Total Degrees of Freedom           10654.00          .
+ _DFE_        Degrees of Freedom for Error       10451.00          .
+ _DFM_        Model Degrees of Freedom             203.00          .
+ _NW_         Number of Estimated Weights          203.00          .
+ _AIC_        Akaike's Information Criterion     11956.39          .
+ _SBC_        Schwarz's Bayesian Criterion       13432.95          .
+ _ASE_        Average Squared Error                  0.18         0.18
+ _MAX_        Maximum Absolute Error                 0.92         0.92
+ _DIV_        Divisor for ASE                    21308.00     17436.00
+ _NOBS_       Sum of Frequencies                 10654.00      8718.00
+ _RASE_       Root Average Squared Error             0.42         0.43
+ _SSE_        Sum of Squared Errors               3829.54      3183.18
+ _SUMW_       Sum of Case Weights Times Freq     21308.00     17436.00
+ _FPE_        Final Prediction Error                 0.19          .
+ _MSE_        Mean Squared Error                     0.18         0.18
+ _RFPE_       Root Final Prediction Error            0.43          .
+ _RMSE_       Root Mean Squared Error                0.43         0.43
+ _AVERR_      Average Error Function                 0.54         0.55
+ _ERR_        Error Function                     11550.39      9589.38
+ _MISC_       Misclassification Rate                 0.25         0.25
+ _WRONG_      Number of Wrong Classifications     2664.00      2179.00
+ _PROF_       Total Profit for TARGET_B           2891.33      2274.42
+ _APROF_      Average Profit for TARGET_B            0.27         0.26
+ 
+ 
+ 
+ 
+Classification Table
+ 
+Data Role=TRAIN Target Variable=TARGET_B Target Label=Target Variable Indicates for Response to
+ 
+                                                                            Adjusted Percent
+                                                                                   of
+                       Target        Outcome     Frequency       Total      Predict/Decision
+Target    Outcome    Percentage    Percentage      Count      Percentage        Variable
+ 
+  0          0         74.9953         100          7990        74.9953            95
+  1          0         25.0047         100          2664        25.0047             5
+ 
+ 
+Data Role=VALIDATE Target Variable=TARGET_B
+ 
+                                                                            Adjusted Percent
+                                                                                   of
+                       Target        Outcome     Frequency       Total      Predict/Decision
+Target    Outcome    Percentage    Percentage      Count      Percentage        Variable
+ 
+  0          0         75.0057         100          6539        75.0057          95.0132
+  1          0         24.9943         100          2179        24.9943           4.9979
+ 
+ 
+ 
+ 
+Decision Table
+ 
+Data Role=TRAIN Target Variable=TARGET_B Target Label=Target Variable Indicates for Response to
+ 
+                                                                            Adjusted Percent
+                                                                                   of
+                       Target        Outcome     Frequency       Total      Predict/Decision
+Target    Outcome    Percentage    Percentage      Count      Percentage        Variable
+ 
+  0          0         84.6554       26.4456        2113        19.8329          25.1233
+  0          1         72.0397       73.5544        5877        55.1624          69.8767
+  1          0         15.3446       14.3769         383         3.5949           0.7188
+  1          1         27.9603       85.6231        2281        21.4098           4.2812
+ 
+ 
+Data Role=VALIDATE Target Variable=TARGET_B
+ 
+                                                                            Adjusted Percent
+                                                                                   of
+                       Target        Outcome     Frequency       Total      Predict/Decision
+Target    Outcome    Percentage    Percentage      Count      Percentage        Variable
+ 
+  0          0         83.3571       26.8084        1753        20.1078          25.4715
+  0          1         72.3507       73.1916        4786        54.8979          69.5417
+  1          0         16.6429       16.0624         350         4.0147           0.8028
+  1          1         27.6493       83.9376        1829        20.9796           4.1951
+ 
+ 
+ 
+ 
+Event Classification Table
+ 
+Data Role=TRAIN Target=TARGET_B Target Label=Target Variable Indicates for Response to 97NK Mai
+ 
+  False       True        False       True
+Negative    Negative    Positive    Positive
+ 
+  2664        7990          0           0
+ 
+ 
+Data Role=VALIDATE Target=TARGET_B
+ 
+  False       True        False       True
+Negative    Negative    Positive    Positive
+ 
+  2179        6539          0           0
+ 
+ 
+ 
+ 
+Assessment Score Rankings
+ 
+Data Role=TRAIN Target Variable=TARGET_B Target Label=Target Variable Indicates for Response to
+ 
+                                                                                    Mean
+                            Cumulative       %      Cumulative     Number of     Posterior
+Depth      Gain     Lift       Lift      Response   % Response   Observations   Probability
+ 
+   5    132.507   2.32507     2.32507     11.6253     11.6253       533.218       0.11342
+  10    106.268   1.80027     2.06268      9.0013     10.3134       533.155       0.08737
+  15     84.666   1.41356     1.84666      7.0678      9.2333       531.891       0.07662
+  20     73.963   1.41859     1.73963      7.0929      8.6982       532.824       0.06927
+  25     65.715   1.32752     1.65715      6.6376      8.2858       533.225       0.06342
+  30     58.020   1.19491     1.58020      5.9745      7.9010       532.159       0.05880
+  35     49.488   0.98313     1.49488      4.9156      7.4744       532.893       0.05480
+  40     43.742   1.03540     1.43742      5.1770      7.1871       533.026       0.05142
+  45     39.118   1.02116     1.39118      5.1058      6.9559       532.627       0.04825
+  50     33.923   0.87132     1.33923      4.3566      6.6961       532.428       0.04566
+  55     30.621   0.97599     1.30621      4.8799      6.5310       532.693       0.04304
+  60     26.739   0.84053     1.26739      4.2027      6.3370       532.894       0.04053
+  65     23.179   0.80412     1.23179      4.0206      6.1590       532.161       0.03827
+  70     18.723   0.60804     1.18723      3.0402      5.9362       532.763       0.03631
+  75     14.764   0.59317     1.14764      2.9659      5.7382       532.629       0.03409
+  80     12.469   0.78059     1.12469      3.9030      5.6235       532.828       0.03193
+  85      9.471   0.61531     1.09471      3.0766      5.4736       532.963       0.02962
+  90      6.105   0.48830     1.06105      2.4415      5.3052       532.363       0.02715
+  95      2.729   0.42011     1.02729      2.1005      5.1364       533.097       0.02432
+ 100      0.000   0.48096     1.00000      2.4048      5.0000       532.163       0.01936
+ 
+ 
+Data Role=VALIDATE Target Variable=TARGET_B
+ 
+                                                                                    Mean
+                            Cumulative       %      Cumulative     Number of     Posterior
+Depth      Gain     Lift       Lift      Response   % Response   Observations   Probability
+ 
+   5    115.589   2.15589     2.15589     10.7795     10.7795       436.114       0.11277
+  10     80.784   1.45958     1.80784      7.2979      9.0392       435.843       0.08865
+  15     70.332   1.49446     1.70332      7.4723      8.5166       436.377       0.07708
+  20     62.859   1.40428     1.62859      7.0214      8.1429       435.909       0.06925
+  25     55.466   1.25859     1.55466      6.2929      7.7733       435.508       0.06358
+  30     47.588   1.08222     1.47588      5.4111      7.3794       436.241       0.05898
+  35     41.402   1.04282     1.41402      5.2141      7.0701       435.974       0.05525
+  40     33.305   0.76575     1.33305      3.8288      6.6653       435.572       0.05200
+  45     30.317   1.06420     1.30317      5.3210      6.5158       436.107       0.04920
+  50     25.286   0.79950     1.25286      3.9975      6.2643       435.372       0.04624
+  55     22.142   0.90741     1.22142      4.5371      6.1071       436.506       0.04350
+  60     18.774   0.81713     1.18774      4.0856      5.9387       435.772       0.04102
+  65     17.890   1.07289     1.17890      5.3644      5.8945       436.307       0.03854
+  70     15.328   0.81993     1.15328      4.0996      5.7664       435.505       0.03609
+  75     12.638   0.74988     1.12638      3.7494      5.6319       436.172       0.03388
+  80      9.566   0.63418     1.09566      3.1709      5.4783       435.304       0.03187
+  85      7.223   0.69745     1.07223      3.4873      5.3612       435.971       0.02972
+  90      4.986   0.66972     1.04986      3.3486      5.2493       436.105       0.02716
+  95      2.262   0.53235     1.02262      2.6617      5.1131       435.904       0.02446
+ 100      0.000   0.56967     1.00000      2.8484      5.0000       435.437       0.01961
+ 
+ 
+ 
+ 
+Assessment Score Distribution
+ 
+Data Role=TRAIN Target Variable=TARGET_B Target Label=Target Variable Indicates for Response to
+ 
+ Posterior      Number                     Mean
+Probability         of    Number of     Posterior
+   Range        Events    Nonevents    Probability    Percentage
+ 
+ 0.20-0.25       0.800        0.00       0.21246         0.0075
+ 0.15-0.20       4.599       19.00       0.16159         0.2215
+ 0.10-0.15      47.591      349.62       0.11490         3.7283
+ 0.05-0.10     251.753     3558.29       0.06700        35.7616
+ 0.00-0.05     227.957     6194.39       0.03495        60.2811
+ 
+ 
+Data Role=VALIDATE Target Variable=TARGET_B
+ 
+ Posterior      Number                     Mean
+Probability         of    Number of     Posterior
+   Range        Events    Nonevents    Probability    Percentage
+ 
+ 0.20-0.25       0.400        0.00       0.21650         0.0046
+ 0.15-0.20       4.001       11.40       0.16894         0.1766
+ 0.10-0.15      34.608      286.24       0.11458         3.6803
+ 0.05-0.10     199.446     3044.83       0.06690        37.2136
+ 0.00-0.05     197.445     4939.62       0.03483        58.9248

@@ -1,0 +1,11 @@
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Replacement Counts
+
+Obs    Variable        Role     Label    Train    Validation
+
+ 1     DONOR_GENDER    INPUT                1           0   
+ 2     SES             INPUT              248         206   
+ 3     URBANICITY      INPUT              248         206   

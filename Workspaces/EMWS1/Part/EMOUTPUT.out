@@ -1,0 +1,74 @@
+*------------------------------------------------------------*
+User:                jmmorr01
+Date:                October 20, 2018
+Time:                15:49:08
+*------------------------------------------------------------*
+* Training Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Variable Summary
+ 
+          Measurement    Frequency
+Role         Level         Count
+ 
+ID         NOMINAL            1
+INPUT      BINARY             4
+INPUT      INTERVAL          31
+INPUT      NOMINAL           12
+TARGET     BINARY             1
+ 
+ 
+ 
+ 
+Partition Summary
+ 
+                                     Number of
+Type             Data Set          Observations
+ 
+DATA        EMWS1.Stat_TRAIN           19372
+TRAIN       EMWS1.Part_TRAIN           10654
+VALIDATE    EMWS1.Part_VALIDATE         8718
+
+
+*------------------------------------------------------------*
+* Score Output
+*------------------------------------------------------------*
+
+
+*------------------------------------------------------------*
+* Report Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Summary Statistics for Class Targets
+ 
+Data=DATA
+ 
+            Numeric    Formatted    Frequency
+Variable     Value       Value        Count      Percent                            Label
+ 
+TARGET_B       0           0          14529         75      Target Variable Indicates for Response to 97NK Mailing
+TARGET_B       1           1           4843         25      Target Variable Indicates for Response to 97NK Mailing
+ 
+ 
+Data=TRAIN
+ 
+            Numeric    Formatted    Frequency
+Variable     Value       Value        Count      Percent                            Label
+ 
+TARGET_B       0           0           7990      74.9953    Target Variable Indicates for Response to 97NK Mailing
+TARGET_B       1           1           2664      25.0047    Target Variable Indicates for Response to 97NK Mailing
+ 
+ 
+Data=VALIDATE
+ 
+            Numeric    Formatted    Frequency
+Variable     Value       Value        Count      Percent                            Label
+ 
+TARGET_B       0           0           6539      75.0057    Target Variable Indicates for Response to 97NK Mailing
+TARGET_B       1           1           2179      24.9943    Target Variable Indicates for Response to 97NK Mailing

@@ -1,0 +1,54 @@
+*------------------------------------------------------------*
+User:                jmmorr01
+Date:                October 20, 2018
+Time:                15:53:25
+*------------------------------------------------------------*
+* Training Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Variable Summary
+ 
+          Measurement    Frequency
+ Role        Level         Count
+ 
+INPUT      BINARY             4
+INPUT      INTERVAL          31
+INPUT      NOMINAL           12
+TARGET     BINARY             1
+
+
+*------------------------------------------------------------*
+* Score Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Replacement Values for Class Variables
+ 
+                                      Character
+                Formatted            Unformatted    Numeric    Replacement
+Variable          Value      Type       Value        Value        Value       Label
+ 
+DONOR_GENDER        A         C           A            .        _UNKNOWN_
+SES                 ?         C           ?            .        _blank_
+URBANICITY          ?         C           ?            .        _blank_
+
+
+*------------------------------------------------------------*
+* Report Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Replacement Counts
+ 
+Obs    Variable        Role     Label    Train    Validation
+ 
+ 1     DONOR_GENDER    INPUT                1           0
+ 2     SES             INPUT              248         206
+ 3     URBANICITY      INPUT              248         206

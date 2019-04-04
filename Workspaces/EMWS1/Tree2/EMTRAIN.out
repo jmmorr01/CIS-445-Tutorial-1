@@ -1,0 +1,12 @@
+                                                                                                                                                                                                                            15:43 Saturday, October 20, 2018   1
+
+Obs    NAME                       LABEL    NRULES    IMPORTANCE    VIMPORTANCE     RATIO
+
+  1    FREQUENCY_STATUS_97NK                  2        1.00000       1.00000      1.00000
+  2    FILE_AVG_GIFT                          3        0.51009       0.00000      0.00000
+  3    PEP_STAR                               1        0.46944       0.43814      0.93333
+  4    MONTHS_SINCE_LAST_GIFT                 1        0.46669       0.22851      0.48963
+  5    PER_CAPITA_INCOME                      1        0.40723       0.00000      0.00000
+  6    MONTHS_SINCE_FIRST_GIFT                1        0.29483       0.00000      0.00000
+  7    NUMBER_PROM_12                         1        0.26526       0.00000      0.00000
+  8    PCT_ATTRIBUTE2                         1        0.22587       0.00000      0.00000

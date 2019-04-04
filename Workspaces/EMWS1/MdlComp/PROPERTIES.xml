@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?><_ROOT_  NumberOfReportedLevels="1E-6" NormalizeReportingVariables="Y" DecileBin="20" LiftEpsilon="1E-6"
+ ProfitEpsilon="1E-6" RoiEpsilon="1E-6" ScoreDistBin="20" RocChart="Y" RocEpsilon="0.01"
+ AssessAllTargetLevels="N" SelectionData="DEFAULT" HPCriteria="DEFAULT" SelectionTable="TRAIN"
+ SelectionCriteria="DEFAULT" SelectionDepth="10" NumberofBins="20" RecomputeAssess="N"
+ TargetName="TARGET_B" ModelId="Reg" ModelDescription="Regression" ModelCriteria="Valid: Average Profit for TARGET_B"
+ ForceRun="N" RunAction="Train" Component="ModelCompare" RawCreateTime="1855672914.3"
+ CreateTime="20OCT2018:16:41:54" RunId="73bcf780-0b60-4ee9-9bbf-e71cc32c81ce" StatisticUsed="_VAPROF_"
+ TargetLabel="Target Variable Indicates for Response to 97NK Mailing">
+<VARIABLEPROPERTIES/>
+<FILEPROPERTIES/>
+</_ROOT_>

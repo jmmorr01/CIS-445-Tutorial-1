@@ -1,0 +1,62 @@
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Variable Summary
+
+         Measurement    Frequency
+Role        Level         Count
+
+INPUT     INTERVAL          40   
+INPUT     NOMINAL            8   
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Output Table Attributes
+
+Attribute            Value
+
+Output Table         EMWS1.Ids2_DATA
+Output Type          View           
+Dropped Variables    0              
+Data Mining Role     Score          
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Input Table Attributes
+
+Attribute                                  Value
+
+Data Source                                donorscoredata    
+                                                             
+Library Name                               DONOR             
+Library Member Name                        DONOR_SCORE_DATA  
+Data Set Label                                               
+Special Data Set Type (From TYPE=)                           
+Observations in Data Set                   2148              
+Engine Name                                BASE              
+Create Date                                08Aug2003:16:26:00
+Last Modified Date                         15Feb2006:16:28:24
+Deleted Observations in Data Set           0                 
+Use of Variable in Indexes                 NONE              
+Library Member Type                        DATA              
+Number of Indexes for Data Set             0                 
+Password Protection (Read Write Alter)     ---               
+Update Flags (Protect Contribute Add)      ---               
+Compression Routine                        NO                
+Reuse Space                                NO                
+Sorted and/or Validated                    .                 
+Position of Variable in Sortedby Clause    .                 
+Host Character Set                                           
+Collating Sequence                                           
+Sort Option: No Duplicate Keys             NO                
+Sort Option: No Duplicate Records          NO                
+Encryption Routine                         NO                
+Point to Observations                      YES               
+Maximum Number of Generations              0                 
+Generation Number                          .                 
+Next Generation Number                     .                 
+Character Variables Transcoded             YES               
+Variables                                  48                

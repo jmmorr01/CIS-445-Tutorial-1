@@ -1,0 +1,37 @@
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Score Input Variables
+
+                                                                                                                               Used in
+                                                                                                                   Variable     Score
+Variable Name             Role     Creator    Comment                            Label                              Hidden      Code
+
+FREQUENCY_STATUS_97NK    INPUT                                                                                        N           Y   
+MEDIAN_HOME_VALUE        INPUT                                                                                        Y           Y   
+PEP_STAR                 INPUT                                                                                        N           Y   
+TARGET_B                 TARGET                          Target Variable Indicates for Response to 97NK Mailing       N           N   
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Score Output Variables
+
+Variable Name            Function          Creator    Label
+
+D_TARGET_B               DECISION          Reg        Decision: TARGET_B                 
+EM_CLASSIFICATION        CLASSIFICATION    Score      Prediction for TARGET_B            
+EM_DECISION              DECISION          Score      Recommended Decision for TARGET_B  
+EM_EVENTPROBABILITY      PREDICT           Score      Probability for level 1 of TARGET_B
+EM_PROBABILITY           PREDICT           Score      Probability of Classification      
+EM_PROFIT                ASSESS            Score      Expected Profit for TARGET_B       
+EM_SEGMENT               TRANSFORM         Score      Segment                            
+EP_TARGET_B              ASSESS            Reg        Expected Profit: TARGET_B          
+I_TARGET_B               CLASSIFICATION    Reg        Into: TARGET_B                     
+OPT_MEDIAN_HOME_VALUE    TRANSFORM         Trans      Transformed MEDIAN_HOME_VALUE      
+P_TARGET_B0              PREDICT           Reg        Predicted: TARGET_B=0              
+P_TARGET_B1              PREDICT           Reg        Predicted: TARGET_B=1              
+U_TARGET_B               CLASSIFICATION    Reg        Unnormalized Into: TARGET_B        
+_WARN_                   ASSESS            Reg        Warnings                           
+b_TARGET_B               TRANSFORM         MdlComp                                       

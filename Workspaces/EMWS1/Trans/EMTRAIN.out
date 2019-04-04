@@ -1,0 +1,33 @@
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Variable Summary
+
+            Measurement    Frequency
+Role           Level         Count
+
+INPUT        BINARY             4   
+INPUT        INTERVAL          31   
+INPUT        NOMINAL           12   
+REJECTED     NOMINAL            3   
+TARGET       BINARY             1   
+ 
+                                                                                                                                                                                                                                                                
+ 
+Computed Transformations
+(maximum 500 observations printed)
+
+                                     Input
+Input Name                 Role      Level      Name                            Level      Formula
+
+FILE_AVG_GIFT              INPUT    INTERVAL    LG10_FILE_AVG_GIFT             INTERVAL    log10(FILE_AVG_GIFT  + 1)        
+LAST_GIFT_AMT              INPUT    INTERVAL    LG10_LAST_GIFT_AMT             INTERVAL    log10(LAST_GIFT_AMT  + 1)        
+LIFETIME_AVG_GIFT_AMT      INPUT    INTERVAL    LG10_LIFETIME_AVG_GIFT_AMT     INTERVAL    log10(LIFETIME_AVG_GIFT_AMT  + 1)
+LIFETIME_GIFT_AMOUNT       INPUT    INTERVAL    LG10_LIFETIME_GIFT_AMOUNT      INTERVAL    log10(LIFETIME_GIFT_AMOUNT  + 1) 
+LIFETIME_GIFT_COUNT        INPUT    INTERVAL    OPT_LIFETIME_GIFT_COUNT        NOMINAL     Optimal Binning(4)               
+MEDIAN_HOME_VALUE          INPUT    INTERVAL    OPT_MEDIAN_HOME_VALUE          NOMINAL     Optimal Binning(4)               
+MEDIAN_HOUSEHOLD_INCOME    INPUT    INTERVAL    OPT_MEDIAN_HOUSEHOLD_INCOME    NOMINAL     Optimal Binning(4)               
+PER_CAPITA_INCOME          INPUT    INTERVAL    OPT_PER_CAPITA_INCOME          NOMINAL     Optimal Binning(4)               
+RECENT_RESPONSE_PROP       INPUT    INTERVAL    OPT_RECENT_RESPONSE_PROP       NOMINAL     Optimal Binning(4)               
+RECENT_STAR_STATUS         INPUT    INTERVAL    OPT_RECENT_STAR_STATUS         NOMINAL     Optimal Binning(4)               

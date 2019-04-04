@@ -1,0 +1,247 @@
+*------------------------------------------------------------*
+User:                jmmorr01
+Date:                October 20, 2018
+Time:                16:48:30
+*------------------------------------------------------------*
+* Training Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Variable Summary
+ 
+           Measurement    Frequency
+ Role         Level         Count
+ 
+SEGMENT      NOMINAL          1
+TARGET       BINARY           1
+
+
+*------------------------------------------------------------*
+* Score Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Score Input Variables
+ 
+                                                                                                                               Used in
+                                                                                                                   Variable     Score
+Variable Name             Role     Creator    Comment                            Label                              Hidden      Code
+ 
+FREQUENCY_STATUS_97NK    INPUT                                                                                        N           Y
+MEDIAN_HOME_VALUE        INPUT                                                                                        Y           Y
+PEP_STAR                 INPUT                                                                                        N           Y
+TARGET_B                 TARGET                          Target Variable Indicates for Response to 97NK Mailing       N           N
+ 
+ 
+ 
+ 
+Score Output Variables
+ 
+Variable Name            Function          Creator    Label
+ 
+D_TARGET_B               DECISION          Reg        Decision: TARGET_B
+EM_CLASSIFICATION        CLASSIFICATION    Score      Prediction for TARGET_B
+EM_DECISION              DECISION          Score      Recommended Decision for TARGET_B
+EM_EVENTPROBABILITY      PREDICT           Score      Probability for level 1 of TARGET_B
+EM_PROBABILITY           PREDICT           Score      Probability of Classification
+EM_PROFIT                ASSESS            Score      Expected Profit for TARGET_B
+EM_SEGMENT               TRANSFORM         Score      Segment
+EP_TARGET_B              ASSESS            Reg        Expected Profit: TARGET_B
+I_TARGET_B               CLASSIFICATION    Reg        Into: TARGET_B
+OPT_MEDIAN_HOME_VALUE    TRANSFORM         Trans      Transformed MEDIAN_HOME_VALUE
+P_TARGET_B0              PREDICT           Reg        Predicted: TARGET_B=0
+P_TARGET_B1              PREDICT           Reg        Predicted: TARGET_B=1
+U_TARGET_B               CLASSIFICATION    Reg        Unnormalized Into: TARGET_B
+_WARN_                   ASSESS            Reg        Warnings
+b_TARGET_B               TRANSFORM         MdlComp
+
+
+*------------------------------------------------------------*
+* Report Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Class Variable Summary Statistics
+ 
+Data Role=SCORE Output Type=CLASSIFICATION
+ 
+              Numeric    Formatted    Frequency
+ Variable      Value       Value        Count      Percent
+ 
+I_TARGET_B       .           0           2148        100
+ 
+ 
+Data Role=SCORE Output Type=MODELDECISION
+ 
+              Numeric    Formatted    Frequency
+ Variable      Value       Value        Count      Percent
+ 
+D_TARGET_B       .           0            272      12.6629
+D_TARGET_B       .           1           1876      87.3371
+ 
+ 
+Data Role=SCORE Output Type=SEGMENT
+ 
+              Numeric    Formatted    Frequency
+ Variable      Value       Value        Count      Percent
+ 
+b_TARGET_B        1         1            121       5.63315
+b_TARGET_B        2         2            126       5.86592
+b_TARGET_B        3         3            125       5.81937
+b_TARGET_B        4         4            139       6.47114
+b_TARGET_B        5         5            150       6.98324
+b_TARGET_B        6         6             80       3.72439
+b_TARGET_B        7         7            103       4.79516
+b_TARGET_B        8         8            107       4.98138
+b_TARGET_B        9         9            109       5.07449
+b_TARGET_B       10         10            82       3.81750
+b_TARGET_B       11         11            85       3.95717
+b_TARGET_B       12         12           148       6.89013
+b_TARGET_B       13         13            93       4.32961
+b_TARGET_B       14         14           104       4.84171
+b_TARGET_B       15         15            95       4.42272
+b_TARGET_B       16         16           116       5.40037
+b_TARGET_B       17         17            93       4.32961
+b_TARGET_B       18         18            92       4.28305
+b_TARGET_B       19         19            84       3.91061
+b_TARGET_B       20         20            96       4.46927
+ 
+ 
+Data Role=TRAIN Output Type=CLASSIFICATION
+ 
+              Numeric    Formatted    Frequency
+ Variable      Value       Value        Count      Percent
+ 
+I_TARGET_B       .           0          10654        100
+ 
+ 
+Data Role=TRAIN Output Type=MODELDECISION
+ 
+              Numeric    Formatted    Frequency
+ Variable      Value       Value        Count      Percent
+ 
+D_TARGET_B       .           0           1267      11.8922
+D_TARGET_B       .           1           9387      88.1078
+ 
+ 
+Data Role=TRAIN Output Type=SEGMENT
+ 
+              Numeric    Formatted    Frequency
+ Variable      Value       Value        Count      Percent
+ 
+b_TARGET_B        1         1            661       6.20424
+b_TARGET_B        2         2            654       6.13854
+b_TARGET_B        3         3            579       5.43458
+b_TARGET_B        4         4            627       5.88511
+b_TARGET_B        5         5            705       6.61723
+b_TARGET_B        6         6            386       3.62305
+b_TARGET_B        7         7            575       5.39703
+b_TARGET_B        8         8            520       4.88080
+b_TARGET_B        9         9            542       5.08729
+b_TARGET_B       10         10           479       4.49596
+b_TARGET_B       11         11           456       4.28008
+b_TARGET_B       12         12           775       7.27426
+b_TARGET_B       13         13           506       4.74939
+b_TARGET_B       14         14           486       4.56167
+b_TARGET_B       15         15           484       4.54289
+b_TARGET_B       16         16           511       4.79632
+b_TARGET_B       17         17           441       4.13929
+b_TARGET_B       18         18           422       3.96095
+b_TARGET_B       19         19           409       3.83893
+b_TARGET_B       20         20           436       4.09236
+ 
+ 
+Data Role=VALIDATE Output Type=CLASSIFICATION
+ 
+              Numeric    Formatted    Frequency
+ Variable      Value       Value        Count      Percent
+ 
+I_TARGET_B       .           0           8718        100
+ 
+ 
+Data Role=VALIDATE Output Type=MODELDECISION
+ 
+              Numeric    Formatted    Frequency
+ Variable      Value       Value        Count      Percent
+ 
+D_TARGET_B       .           0           1044      11.9752
+D_TARGET_B       .           1           7674      88.0248
+ 
+ 
+Data Role=VALIDATE Output Type=SEGMENT
+ 
+              Numeric    Formatted    Frequency
+ Variable      Value       Value        Count      Percent
+ 
+b_TARGET_B        1         1            515       5.90732
+b_TARGET_B        2         2            536       6.14820
+b_TARGET_B        3         3            492       5.64350
+b_TARGET_B        4         4            577       6.61849
+b_TARGET_B        5         5            550       6.30879
+b_TARGET_B        6         6            308       3.53292
+b_TARGET_B        7         7            445       5.10438
+b_TARGET_B        8         8            457       5.24203
+b_TARGET_B        9         9            416       4.77174
+b_TARGET_B       10         10           390       4.47350
+b_TARGET_B       11         11           359       4.11792
+b_TARGET_B       12         12           644       7.38702
+b_TARGET_B       13         13           391       4.48497
+b_TARGET_B       14         14           411       4.71438
+b_TARGET_B       15         15           401       4.59968
+b_TARGET_B       16         16           419       4.80615
+b_TARGET_B       17         17           363       4.16380
+b_TARGET_B       18         18           338       3.87704
+b_TARGET_B       19         19           367       4.20968
+b_TARGET_B       20         20           339       3.88851
+ 
+ 
+ 
+ 
+Interval Variable Summary Statistics
+ 
+Variable Name=EP_TARGET_B
+ 
+Statistics    Label                    TRAIN    VALIDATE    SCORE
+ 
+  MEAN        Mean                      0.28        .         .
+  STD         Standard Deviation        0.28        .         .
+  N           Non Missing           10654.00        .         .
+  MIN         Minimum                   0.00        .         .
+  P25         25th Percentile           0.05        .         .
+  MEDIAN      Median                    0.19        .         .
+  P75         75th Percentile           0.45        .         .
+  MAX         Maximum                   0.95        .         .
+ 
+ 
+Variable Name=P_TARGET_B0
+ 
+Statistics    Label                    TRAIN    VALIDATE      SCORE
+ 
+  MEAN        Mean                      0.95        0.95       0.95
+  STD         Standard Deviation        0.02        0.02       0.02
+  N           Non Missing           10654.00     8718.00    2148.00
+  MIN         Minimum                   0.90        0.90       0.90
+  P25         25th Percentile           0.94        0.94       0.94
+  MEDIAN      Median                    0.95        0.95       0.95
+  P75         75th Percentile           0.96        0.96       0.96
+  MAX         Maximum                   0.97        0.97       0.97
+ 
+ 
+Variable Name=P_TARGET_B1
+ 
+Statistics    Label                    TRAIN    VALIDATE      SCORE
+ 
+  MEAN        Mean                      0.05        0.05       0.05
+  STD         Standard Deviation        0.02        0.02       0.02
+  N           Non Missing           10654.00     8718.00    2148.00
+  MIN         Minimum                   0.03        0.03       0.03
+  P25         25th Percentile           0.04        0.04       0.04
+  MEDIAN      Median                    0.05        0.05       0.05
+  P75         75th Percentile           0.06        0.06       0.06
+  MAX         Maximum                   0.10        0.10       0.10

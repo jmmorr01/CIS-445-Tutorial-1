@@ -1,0 +1,13 @@
+   
+* ;
+* Defining: REP_DONOR_GENDER;
+* ;
+Length REP_DONOR_GENDER$9;
+Label REP_DONOR_GENDER='Replacement: DONOR_GENDER';
+REP_DONOR_GENDER=DONOR_GENDER;
+* ;
+* Variable: DONOR_GENDER;
+* ;
+_UFORMAT200 = strip(DONOR_GENDER);
+if _UFORMAT200 =  "A" then
+REP_DONOR_GENDER="_UNKNOWN_";

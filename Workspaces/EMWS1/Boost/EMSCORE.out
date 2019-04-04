@@ -1,0 +1,46 @@
+ 
+                                                                                                                                                                                                                                                                
+ 
+Variable Importance
+
+Obs    NAME                                    LABEL             NRULES    NSURROGATES    IMPORTANCE    VIMPORTANCE     RATIO
+
+  1    CLUSTER_CODE                                                34            7          1.00000       0.20177      0.20177
+  2    RECENT_RESPONSE_COUNT                                        6            9          0.83679       1.00000      1.19504
+  3    RECENT_RESPONSE_PROP                                         2           13          0.79967       0.96455      1.20620
+  4    FREQUENCY_STATUS_97NK                                        6            3          0.66273       0.84788      1.27937
+  5    PER_CAPITA_INCOME                                            0           18          0.58557       0.14465      0.24702
+  6    REP_URBANICITY                 Replacement: URBANICITY       0           15          0.50953       0.10430      0.20469
+  7    REP_SES                        Replacement: SES              0           15          0.50689       0.00000      0.00000
+  8    FILE_CARD_GIFT                                               4            4          0.50471       0.62015      1.22873
+  9    RECENT_AVG_GIFT_AMT                                          2            6          0.50025       0.53845      1.07637
+ 10    RECENT_CARD_RESPONSE_COUNT                                   1            4          0.49405       0.55102      1.11532
+ 11    LIFETIME_GIFT_COUNT                                          0            8          0.47154       0.55333      1.17343
+ 12    FILE_AVG_GIFT                                                3            2          0.46535       0.48834      1.04941
+ 13    MEDIAN_HOME_VALUE                                            2            7          0.44430       0.15856      0.35687
+ 14    MEDIAN_HOUSEHOLD_INCOME                                      0           14          0.44124       0.21355      0.48397
+ 15    LIFETIME_AVG_GIFT_AMT                                        0            3          0.41452       0.34456      0.83123
+ 16    PEP_STAR                                                     3            1          0.37022       0.44769      1.20926
+ 17    LIFETIME_MAX_GIFT_AMT                                        1            4          0.32268       0.42666      1.32224
+ 18    LIFETIME_CARD_PROM                                           0            3          0.28036       0.32931      1.17460
+ 19    LAST_GIFT_AMT                                                2            1          0.24567       0.24924      1.01454
+ 20    PCT_ATTRIBUTE2                                               0            3          0.23603       0.00000      0.00000
+ 21    MONTHS_SINCE_LAST_GIFT                                       2            0          0.21891       0.25012      1.14256
+ 22    PCT_ATTRIBUTE4                                               0            3          0.21475       0.00000      0.00000
+ 23    MONTHS_SINCE_LAST_PROM_RESP                                  0            2          0.21284       0.24327      1.14297
+ 24    PCT_ATTRIBUTE3                                               0            2          0.18847       0.00000      0.00000
+ 25    RECENCY_STATUS_96NK                                          1            0          0.18677       0.27194      1.45607
+ 26    INCOME_GROUP                                                 5            0          0.17656       0.17502      0.99130
+ 27    RECENT_STAR_STATUS                                           0            1          0.17578       0.25594      1.45607
+ 28    RECENT_CARD_RESPONSE_PROP                                    0            1          0.15460       0.19990      1.29301
+ 29    CARD_PROM_12                                                 0            1          0.15437       0.15067      0.97604
+ 30    PCT_OWNER_OCCUPIED                                           1            1          0.12698       0.00000      0.00000
+ 31    LIFETIME_PROM                                                0            2          0.09545       0.00000      0.00000
+ 32    WEALTH_RATING                                                2            0          0.09341       0.05673      0.60731
+ 33    HOME_OWNER                                                   0            1          0.08053       0.09190      1.14120
+ 34    PUBLISHED_PHONE                                              1            0          0.07240       0.00000      0.00000
+ 35    MONTHS_SINCE_FIRST_GIFT                                      1            0          0.06896       0.00000      0.00000
+ 36    MONTHS_SINCE_ORIGIN                                          0            1          0.06772       0.00000      0.00000
+ 37    OVERLAY_SOURCE                                               0            1          0.06457       0.00000      0.00000
+ 38    MOR_HIT_RATE                                                 0            1          0.06249       0.00000      0.00000
+ 39    NUMBER_PROM_12                                               0            1          0.04496       0.00000      0.00000

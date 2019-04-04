@@ -1,0 +1,102 @@
+MPRINT(EM_DIAGRAM):    data _null_;
+MPRINT(EM_DIAGRAM):   call symput('NLDATE', strip(put(date(), NLDATE.)));
+MPRINT(EM_DIAGRAM):   call symput('NLTIME', strip(put(datetime(), NLTIME.)));
+MPRINT(EM_DIAGRAM):   run;
+MPRINT(EM_DIAGRAM):   data _null_;
+MPRINT(EM_DIAGRAM):   nldate= sasmsg("sashelp.dmine", "log_date_note", 'N', "October 20, 2018" );
+MPRINT(EM_DIAGRAM):   nltime= sasmsg("sashelp.dmine", "log_time_note", 'N', "15:45:47" );
+MPRINT(EM_DIAGRAM):   put "*------------------------------------------------------------*";
+MPRINT(EM_DIAGRAM):   put "* Score Log";
+MPRINT(EM_DIAGRAM):   put nldate;
+MPRINT(EM_DIAGRAM):   put nltime;
+MPRINT(EM_DIAGRAM):   put "*------------------------------------------------------------*";
+MPRINT(EM_DIAGRAM):   run;
+*------------------------------------------------------------*
+* Score Log
+Date:                October 20, 2018
+Time:                15:45:47
+*------------------------------------------------------------*
+MPRINT(EM_DIAGRAM):    filename O0KKF72_ "J:\JMMORR01\CIS 445\Tutorial 1\Charity\Workspaces\EMWS1\Ids\EMSCORE.out" encoding="UTF-8" NOBOM;
+MPRINT(EM_DIAGRAM):   proc printto print=O0KKF72_ new;
+MPRINT(EM_DIAGRAM):   run;
+17832      *------------------------------------------------------------*;
+MPRINT(EM_DIAGRAM):    *------------------------------------------------------------*;
+17833      * Ids: Computing metadata for DATA data;
+MPRINT(EM_DIAGRAM):   * Ids: Computing metadata for DATA data;
+17834      *------------------------------------------------------------*;
+MPRINT(EM_DIAGRAM):   *------------------------------------------------------------*;
+
+NOTE: View EMWS1.IDS_DATA.VIEW used (Total process time):
+      real time           0.04 seconds
+      cpu time            0.03 seconds
+      
+17835      data EMWS1.Ids_EMINFO;
+MPRINT(EM_DIAGRAM):    data EMWS1.Ids_EMINFO;
+17836      length TARGET KEY $32 DATA $43;
+MPRINT(EM_DIAGRAM):   length TARGET KEY $32 DATA $43;
+17837      TARGET="";
+MPRINT(EM_DIAGRAM):   TARGET="";
+17838      KEY="IDSTABLE";
+MPRINT(EM_DIAGRAM):   KEY="IDSTABLE";
+17839      DATA="DONOR.DONOR_RAW_DATA";
+MPRINT(EM_DIAGRAM):   DATA="DONOR.DONOR_RAW_DATA";
+17840      output;
+MPRINT(EM_DIAGRAM):   output;
+17841      TARGET="TARGET_B";
+MPRINT(EM_DIAGRAM):   TARGET="TARGET_B";
+17842      KEY="DECDATA";
+MPRINT(EM_DIAGRAM):   KEY="DECDATA";
+17843      DATA="EMWS1.Ids_TARGET_B_DD";
+MPRINT(EM_DIAGRAM):   DATA="EMWS1.Ids_TARGET_B_DD";
+17844      output;
+MPRINT(EM_DIAGRAM):   output;
+17845      TARGET="TARGET_B";
+MPRINT(EM_DIAGRAM):   TARGET="TARGET_B";
+17846      KEY="DECMETA";
+MPRINT(EM_DIAGRAM):   KEY="DECMETA";
+17847      DATA="EMWS1.Ids_TARGET_B_DM";
+MPRINT(EM_DIAGRAM):   DATA="EMWS1.Ids_TARGET_B_DM";
+17848      output;
+MPRINT(EM_DIAGRAM):   output;
+17849      TARGET="";
+MPRINT(EM_DIAGRAM):   TARGET="";
+17850      KEY="STATS";
+MPRINT(EM_DIAGRAM):   KEY="STATS";
+17851      DATA="EMWS1.Ids_EMSTATDEFAULT";
+MPRINT(EM_DIAGRAM):   DATA="EMWS1.Ids_EMSTATDEFAULT";
+17852      output;
+MPRINT(EM_DIAGRAM):   output;
+17853      run;
+MPRINT(EM_DIAGRAM):   run;
+
+NOTE: The data set EMWS1.IDS_EMINFO has 4 observations and 3 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.09 seconds
+      cpu time            0.03 seconds
+      
+
+NOTE: View EMWS1.IDS_DATA.VIEW used (Total process time):
+      real time           0.03 seconds
+      cpu time            0.03 seconds
+      
+17854      data EMWS1.Ids_CMeta_DATA;
+MPRINT(EM_DIAGRAM):    data EMWS1.Ids_CMeta_DATA;
+17855      set EMWS1.Ids_VariableSet;
+MPRINT(EM_DIAGRAM):   set EMWS1.Ids_VariableSet;
+17856      drop DROP;
+MPRINT(EM_DIAGRAM):   drop DROP;
+17857      where DROP='N';
+MPRINT(EM_DIAGRAM):   where DROP='N';
+17858      run;
+MPRINT(EM_DIAGRAM):   run;
+
+NOTE: There were 50 observations read from the data set EMWS1.IDS_VARIABLESET.
+      WHERE DROP='N';
+NOTE: The data set EMWS1.IDS_CMETA_DATA has 50 observations and 20 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.20 seconds
+      cpu time            0.09 seconds
+      
+
+MPRINT(EM_DIAGRAM):    proc printto;
+MPRINT(EM_DIAGRAM):   run;

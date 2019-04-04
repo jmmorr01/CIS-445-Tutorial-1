@@ -1,0 +1,158 @@
+*------------------------------------------------------------*
+ Node = 5
+*------------------------------------------------------------*
+if MONTHS_SINCE_LAST_GIFT < 8
+AND FREQUENCY_STATUS_97NK IS ONE OF: 3, 4
+then 
+ Tree Node Identifier   = 5
+ Number of Observations = 82.801577648
+ Predicted: TARGET_B=1 = 0.17
+ Predicted: TARGET_B=0 = 0.83
+ 
+*------------------------------------------------------------*
+ Node = 6
+*------------------------------------------------------------*
+if MONTHS_SINCE_LAST_GIFT >= 8 or MISSING
+AND FREQUENCY_STATUS_97NK IS ONE OF: 3, 4
+then 
+ Tree Node Identifier   = 6
+ Number of Observations = 2941.2657293
+ Predicted: TARGET_B=1 = 0.07
+ Predicted: TARGET_B=0 = 0.93
+ 
+*------------------------------------------------------------*
+ Node = 7
+*------------------------------------------------------------*
+if PEP_STAR IS ONE OF: 1
+AND FREQUENCY_STATUS_97NK IS ONE OF: 1, 2 or MISSING
+then 
+ Tree Node Identifier   = 7
+ Number of Observations = 2989.1494063
+ Predicted: TARGET_B=1 = 0.05
+ Predicted: TARGET_B=0 = 0.95
+ 
+*------------------------------------------------------------*
+ Node = 11
+*------------------------------------------------------------*
+if PER_CAPITA_INCOME < 17477 or MISSING
+AND PEP_STAR IS ONE OF: 0 or MISSING
+AND FREQUENCY_STATUS_97NK IS ONE OF: 1, 2 or MISSING
+AND FILE_AVG_GIFT < 13.615
+then 
+ Tree Node Identifier   = 11
+ Number of Observations = 1294.5359596
+ Predicted: TARGET_B=1 = 0.04
+ Predicted: TARGET_B=0 = 0.96
+ 
+*------------------------------------------------------------*
+ Node = 16
+*------------------------------------------------------------*
+if PER_CAPITA_INCOME < 17477 or MISSING
+AND PEP_STAR IS ONE OF: 0 or MISSING
+AND NUMBER_PROM_12 >= 13.5
+AND FREQUENCY_STATUS_97NK IS ONE OF: 1, 2 or MISSING
+AND FILE_AVG_GIFT >= 13.615 or MISSING
+then 
+ Tree Node Identifier   = 16
+ Number of Observations = 191.80965
+ Predicted: TARGET_B=1 = 0.05
+ Predicted: TARGET_B=0 = 0.95
+ 
+*------------------------------------------------------------*
+ Node = 18
+*------------------------------------------------------------*
+if PER_CAPITA_INCOME >= 17477
+AND PEP_STAR IS ONE OF: 0 or MISSING
+AND MONTHS_SINCE_FIRST_GIFT >= 102
+AND FREQUENCY_STATUS_97NK IS ONE OF: 1, 2 or MISSING
+AND FILE_AVG_GIFT < 10.165
+then 
+ Tree Node Identifier   = 18
+ Number of Observations = 16.666708573
+ Predicted: TARGET_B=1 = 0.24
+ Predicted: TARGET_B=0 = 0.76
+ 
+*------------------------------------------------------------*
+ Node = 19
+*------------------------------------------------------------*
+if PER_CAPITA_INCOME >= 17477
+AND PEP_STAR IS ONE OF: 0 or MISSING
+AND FREQUENCY_STATUS_97NK IS ONE OF: 2
+AND FILE_AVG_GIFT >= 10.165 or MISSING
+then 
+ Tree Node Identifier   = 19
+ Number of Observations = 259.27918718
+ Predicted: TARGET_B=1 = 0.06
+ Predicted: TARGET_B=0 = 0.94
+ 
+*------------------------------------------------------------*
+ Node = 20
+*------------------------------------------------------------*
+if PER_CAPITA_INCOME >= 17477
+AND PEP_STAR IS ONE OF: 0 or MISSING
+AND FREQUENCY_STATUS_97NK IS ONE OF: 1 or MISSING
+AND FILE_AVG_GIFT >= 10.165 or MISSING
+then 
+ Tree Node Identifier   = 20
+ Number of Observations = 973.11829961
+ Predicted: TARGET_B=1 = 0.04
+ Predicted: TARGET_B=0 = 0.96
+ 
+*------------------------------------------------------------*
+ Node = 21
+*------------------------------------------------------------*
+if PER_CAPITA_INCOME < 17477 or MISSING
+AND PEP_STAR IS ONE OF: 0 or MISSING
+AND PCT_ATTRIBUTE2 < 58.5 or MISSING
+AND NUMBER_PROM_12 < 13.5 or MISSING
+AND FREQUENCY_STATUS_97NK IS ONE OF: 1, 2 or MISSING
+AND FILE_AVG_GIFT >= 13.615 or MISSING
+then 
+ Tree Node Identifier   = 21
+ Number of Observations = 1750.833331
+ Predicted: TARGET_B=1 = 0.02
+ Predicted: TARGET_B=0 = 0.98
+ 
+*------------------------------------------------------------*
+ Node = 22
+*------------------------------------------------------------*
+if PER_CAPITA_INCOME < 17477 or MISSING
+AND PEP_STAR IS ONE OF: 0 or MISSING
+AND PCT_ATTRIBUTE2 >= 58.5
+AND NUMBER_PROM_12 < 13.5 or MISSING
+AND FREQUENCY_STATUS_97NK IS ONE OF: 1, 2 or MISSING
+AND FILE_AVG_GIFT >= 13.615 or MISSING
+then 
+ Tree Node Identifier   = 22
+ Number of Observations = 11.533704697
+ Predicted: TARGET_B=1 = 0.12
+ Predicted: TARGET_B=0 = 0.88
+ 
+*------------------------------------------------------------*
+ Node = 23
+*------------------------------------------------------------*
+if PER_CAPITA_INCOME >= 17477
+AND PEP_STAR IS ONE OF: 0 or MISSING
+AND MONTHS_SINCE_FIRST_GIFT < 102 or MISSING
+AND FREQUENCY_STATUS_97NK IS ONE OF: 1, 2 or MISSING
+AND FILE_AVG_GIFT < 9.45 or MISSING
+then 
+ Tree Node Identifier   = 23
+ Number of Observations = 89.538085266
+ Predicted: TARGET_B=1 = 0.04
+ Predicted: TARGET_B=0 = 0.96
+ 
+*------------------------------------------------------------*
+ Node = 24
+*------------------------------------------------------------*
+if PER_CAPITA_INCOME >= 17477
+AND PEP_STAR IS ONE OF: 0 or MISSING
+AND MONTHS_SINCE_FIRST_GIFT < 102 or MISSING
+AND FREQUENCY_STATUS_97NK IS ONE OF: 1, 2 or MISSING
+AND FILE_AVG_GIFT < 10.165 AND FILE_AVG_GIFT >= 9.45
+then 
+ Tree Node Identifier   = 24
+ Number of Observations = 53.468360761
+ Predicted: TARGET_B=1 = 0.12
+ Predicted: TARGET_B=0 = 0.88
+ 

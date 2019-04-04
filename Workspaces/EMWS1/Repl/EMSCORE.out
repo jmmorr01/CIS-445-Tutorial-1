@@ -1,0 +1,13 @@
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Replacement Values for Class Variables
+
+                                      Character
+                Formatted            Unformatted    Numeric    Replacement
+Variable          Value      Type       Value        Value        Value       Label
+
+DONOR_GENDER        A         C           A            .        _UNKNOWN_          
+SES                 ?         C           ?            .        _blank_            
+URBANICITY          ?         C           ?            .        _blank_            

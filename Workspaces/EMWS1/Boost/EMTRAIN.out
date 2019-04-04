@@ -1,0 +1,57 @@
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Variable Summary
+
+            Measurement    Frequency
+Role           Level         Count
+
+ID           INTERVAL           1   
+ID           NOMINAL            1   
+INPUT        BINARY             4   
+INPUT        INTERVAL          31   
+INPUT        NOMINAL           12   
+REJECTED     NOMINAL            3   
+TARGET       BINARY             1   
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Model Events
+
+                                    Number
+                     Measurement      of
+ Target     Event       Level       Levels      Order                               Label
+
+TARGET_B      1        BINARY          2      Descending    Target Variable Indicates for Response to 97NK Mailing
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Decision Matrix and Prior Vector
+
+              Training                   Decision
+TARGET_B    Proportions        1    0     Priors
+
+   1            0.25        14.5    0      0.05  
+   0            0.75        -0.5    0      0.95  
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Predicted and decision variables
+
+Type               Variable      Label
+
+TARGET            TARGET_B       Target Variable Indicates for Response to 97NK Mailing
+PREDICTED         P_TARGET_B1    Predicted: TARGET_B=1                                 
+RESIDUAL          R_TARGET_B1    Residual: TARGET_B=1                                  
+PREDICTED         P_TARGET_B0    Predicted: TARGET_B=0                                 
+RESIDUAL          R_TARGET_B0    Residual: TARGET_B=0                                  
+FROM              F_TARGET_B     From: TARGET_B                                        
+INTO              I_TARGET_B     Into: TARGET_B                                        
+MODELDECISION     D_TARGET_B     Decision: TARGET_B                                    
+EXPECTEDPROFIT    EP_TARGET_B    Expected Profit: TARGET_B                             
+COMPUTEDPROFIT    CP_TARGET_B    Computed Profit: TARGET_B                             
+BESTPROFIT        BP_TARGET_B    Best Profit: TARGET_B                                 

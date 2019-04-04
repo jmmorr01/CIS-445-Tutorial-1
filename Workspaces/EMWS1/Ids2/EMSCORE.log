@@ -1,0 +1,78 @@
+MPRINT(EM_DIAGRAM):    data _null_;
+MPRINT(EM_DIAGRAM):   call symput('NLDATE', strip(put(date(), NLDATE.)));
+MPRINT(EM_DIAGRAM):   call symput('NLTIME', strip(put(datetime(), NLTIME.)));
+MPRINT(EM_DIAGRAM):   run;
+MPRINT(EM_DIAGRAM):   data _null_;
+MPRINT(EM_DIAGRAM):   nldate= sasmsg("sashelp.dmine", "log_date_note", 'N', "October 20, 2018" );
+MPRINT(EM_DIAGRAM):   nltime= sasmsg("sashelp.dmine", "log_time_note", 'N', "16:47:39" );
+MPRINT(EM_DIAGRAM):   put "*------------------------------------------------------------*";
+MPRINT(EM_DIAGRAM):   put "* Score Log";
+MPRINT(EM_DIAGRAM):   put nldate;
+MPRINT(EM_DIAGRAM):   put nltime;
+MPRINT(EM_DIAGRAM):   put "*------------------------------------------------------------*";
+MPRINT(EM_DIAGRAM):   run;
+*------------------------------------------------------------*
+* Score Log
+Date:                October 20, 2018
+Time:                16:47:39
+*------------------------------------------------------------*
+MPRINT(EM_DIAGRAM):    filename O1D_6WIQ "J:\JMMORR01\CIS 445\Tutorial 1\Charity\Workspaces\EMWS1\Ids2\EMSCORE.out" encoding="UTF-8" NOBOM;
+MPRINT(EM_DIAGRAM):   proc printto print=O1D_6WIQ new;
+MPRINT(EM_DIAGRAM):   run;
+21582      *------------------------------------------------------------*;
+MPRINT(EM_DIAGRAM):    *------------------------------------------------------------*;
+21583      * Ids2: Computing metadata for DATA data;
+MPRINT(EM_DIAGRAM):   * Ids2: Computing metadata for DATA data;
+21584      *------------------------------------------------------------*;
+MPRINT(EM_DIAGRAM):   *------------------------------------------------------------*;
+
+NOTE: View EMWS1.IDS2_DATA.VIEW used (Total process time):
+      real time           0.03 seconds
+      cpu time            0.03 seconds
+      
+21585      data EMWS1.Ids2_EMINFO;
+MPRINT(EM_DIAGRAM):    data EMWS1.Ids2_EMINFO;
+21586      length TARGET KEY $32 DATA $43;
+MPRINT(EM_DIAGRAM):   length TARGET KEY $32 DATA $43;
+21587      TARGET="";
+MPRINT(EM_DIAGRAM):   TARGET="";
+21588      KEY="IDSTABLE";
+MPRINT(EM_DIAGRAM):   KEY="IDSTABLE";
+21589      DATA="DONOR.DONOR_SCORE_DATA";
+MPRINT(EM_DIAGRAM):   DATA="DONOR.DONOR_SCORE_DATA";
+21590      output;
+MPRINT(EM_DIAGRAM):   output;
+21591      run;
+MPRINT(EM_DIAGRAM):   run;
+
+NOTE: The data set EMWS1.IDS2_EMINFO has 1 observations and 3 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.10 seconds
+      cpu time            0.03 seconds
+      
+
+NOTE: View EMWS1.IDS2_DATA.VIEW used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+      
+21592      data EMWS1.Ids2_CMeta_DATA;
+MPRINT(EM_DIAGRAM):    data EMWS1.Ids2_CMeta_DATA;
+21593      set EMWS1.Ids2_VariableSet;
+MPRINT(EM_DIAGRAM):   set EMWS1.Ids2_VariableSet;
+21594      drop DROP;
+MPRINT(EM_DIAGRAM):   drop DROP;
+21595      where DROP='N';
+MPRINT(EM_DIAGRAM):   where DROP='N';
+21596      run;
+MPRINT(EM_DIAGRAM):   run;
+
+NOTE: There were 48 observations read from the data set EMWS1.IDS2_VARIABLESET.
+      WHERE DROP='N';
+NOTE: The data set EMWS1.IDS2_CMETA_DATA has 48 observations and 20 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.12 seconds
+      cpu time            0.01 seconds
+      
+
+MPRINT(EM_DIAGRAM):    proc printto;
+MPRINT(EM_DIAGRAM):   run;

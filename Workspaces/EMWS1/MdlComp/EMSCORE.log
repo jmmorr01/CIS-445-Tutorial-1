@@ -1,0 +1,1497 @@
+MPRINT(EM_DIAGRAM):    data _null_;
+MPRINT(EM_DIAGRAM):   call symput('NLDATE', strip(put(date(), NLDATE.)));
+MPRINT(EM_DIAGRAM):   call symput('NLTIME', strip(put(datetime(), NLTIME.)));
+MPRINT(EM_DIAGRAM):   run;
+MPRINT(EM_DIAGRAM):   data _null_;
+MPRINT(EM_DIAGRAM):   nldate= sasmsg("sashelp.dmine", "log_date_note", 'N', "October 20, 2018" 
+);
+MPRINT(EM_DIAGRAM):   nltime= sasmsg("sashelp.dmine", "log_time_note", 'N', "16:43:29" );
+MPRINT(EM_DIAGRAM):   put "*------------------------------------------------------------*";
+MPRINT(EM_DIAGRAM):   put "* Score Log";
+MPRINT(EM_DIAGRAM):   put nldate;
+MPRINT(EM_DIAGRAM):   put nltime;
+MPRINT(EM_DIAGRAM):   put "*------------------------------------------------------------*";
+MPRINT(EM_DIAGRAM):   run;
+*------------------------------------------------------------*
+* Score Log
+Date:                October 20, 2018
+Time:                16:43:29
+*------------------------------------------------------------*
+MPRINT(EM_DIAGRAM):    filename O1LR8JNC "J:\JMMORR01\CIS 445\Tutorial 
+1\Charity\Workspaces\EMWS1\MdlComp\EMSCORE.out" encoding="UTF-8" NOBOM;
+MPRINT(EM_DIAGRAM):   proc printto print=O1LR8JNC new;
+MPRINT(EM_DIAGRAM):   run;
+NOTE: View EMWS1.REG_TRAIN.VIEW used (Total process time):
+      real time           0.14 seconds
+      cpu time            0.14 seconds
+      
+NOTE: View EMWS1.REG_TRAIN.VIEW used (Total process time):
+      real time           0.32 seconds
+      cpu time            0.29 seconds
+      
+24823      /* Generate assessment metadata, which will be used to generate assessment data step
+24823    !  */
+24824      /* code, such as retrieving names of temporary variables and summary variables,
+24824    !  */
+24825      /* labels, etc.  It is used in almost all the assessment computations such as lift,
+24825    !  */
+24826      /* roc, index, scoreDist and could be thought as a global variable in assessment
+24826    !  */
+24827      /* computation.
+24827    !  */
+24828      data work.ASSESS_03WOY1K_assessMeta_FoxOCD;
+MPRINT(EM_DIAGRAM):    data work.ASSESS_03WOY1K_assessMeta_FoxOCD;
+24829      length VARIABLE $32 FORMAT $44 TYPE $32 PARENT $32 LEVEL $32 PROPERTY $32
+24829    ! MEASUREMENT $10 LAST_LEVEL $32 GEN_VAR_IN_TEMP_DATA $32 RESULT_MEAN $32
+24829    ! RESULT_MEAN_LABEL $100 RESULT_MIN $32 RESULT_MIN_LABEL $100 MIN_ADJUSTED $32
+24829    ! RESULT_MAX $32 RESULT_MAX_LABEL
+24830         $100 MAX_ADJUSTED $32 RESULT_COUNT $32 RESULT_COUNT_LABEL $100 TEMPORARY_VARIABLE
+24830    !  $32;
+MPRINT(EM_DIAGRAM):   length VARIABLE $32 FORMAT $44 TYPE $32 PARENT $32 LEVEL $32 PROPERTY 
+$32 MEASUREMENT $10 LAST_LEVEL $32 GEN_VAR_IN_TEMP_DATA $32 RESULT_MEAN $32 RESULT_MEAN_LABEL 
+$100 RESULT_MIN $32 RESULT_MIN_LABEL $100 MIN_ADJUSTED $32 RESULT_MAX $32 RESULT_MAX_LABEL 
+$100 MAX_ADJUSTED $32 RESULT_COUNT $32 RESULT_COUNT_LABEL $100 TEMPORARY_VARIABLE $32;
+24831      VARIABLE = "TARGET_B";
+MPRINT(EM_DIAGRAM):   VARIABLE = "TARGET_B";
+24832      PARENT = "";
+MPRINT(EM_DIAGRAM):   PARENT = "";
+24833      FORMAT = "";
+MPRINT(EM_DIAGRAM):   FORMAT = "";
+24834      TYPE = "";
+MPRINT(EM_DIAGRAM):   TYPE = "";
+24835      LEVEL = '';
+MPRINT(EM_DIAGRAM):   LEVEL = '';
+24836      PROPERTY = "TARGET";
+MPRINT(EM_DIAGRAM):   PROPERTY = "TARGET";
+24837      MEASUREMENT = "BINARY";
+MPRINT(EM_DIAGRAM):   MEASUREMENT = "BINARY";
+24838      LAST_LEVEL = '';
+MPRINT(EM_DIAGRAM):   LAST_LEVEL = '';
+24839      GEN_VAR_IN_TEMP_DATA = "TARGET_B";
+MPRINT(EM_DIAGRAM):   GEN_VAR_IN_TEMP_DATA = "TARGET_B";
+24840      RESULT_MEAN = "";
+MPRINT(EM_DIAGRAM):   RESULT_MEAN = "";
+24841      RESULT_MEAN_LABEL = "";
+MPRINT(EM_DIAGRAM):   RESULT_MEAN_LABEL = "";
+24842      RESULT_MIN = "";
+MPRINT(EM_DIAGRAM):   RESULT_MIN = "";
+24843      RESULT_MIN_LABEL = "";
+MPRINT(EM_DIAGRAM):   RESULT_MIN_LABEL = "";
+24844      MIN_ADJUSTED = "";
+MPRINT(EM_DIAGRAM):   MIN_ADJUSTED = "";
+24845      RESULT_MAX = "";
+MPRINT(EM_DIAGRAM):   RESULT_MAX = "";
+24846      RESULT_MAX_LABEL = "";
+MPRINT(EM_DIAGRAM):   RESULT_MAX_LABEL = "";
+24847      MAX_ADJUSTED = "";
+MPRINT(EM_DIAGRAM):   MAX_ADJUSTED = "";
+24848      RESULT_COUNT = "";
+MPRINT(EM_DIAGRAM):   RESULT_COUNT = "";
+24849      RESULT_COUNT_LABEL = "";
+MPRINT(EM_DIAGRAM):   RESULT_COUNT_LABEL = "";
+24850      TEMPORARY_VARIABLE = "TARGET_B_IDU51hUxCjoTDOA";
+MPRINT(EM_DIAGRAM):   TEMPORARY_VARIABLE = "TARGET_B_IDU51hUxCjoTDOA";
+24851      output;
+MPRINT(EM_DIAGRAM):   output;
+24852      VARIABLE = "F_TARGET_B_1";
+MPRINT(EM_DIAGRAM):   VARIABLE = "F_TARGET_B_1";
+24853      FORMAT = "";
+MPRINT(EM_DIAGRAM):   FORMAT = "";
+24854      TYPE = "";
+MPRINT(EM_DIAGRAM):   TYPE = "";
+24855      PARENT = "F_TARGET_B";
+MPRINT(EM_DIAGRAM):   PARENT = "F_TARGET_B";
+24856      LEVEL = "1";
+MPRINT(EM_DIAGRAM):   LEVEL = "1";
+24857      PROPERTY = "TARGET_LEVEL";
+MPRINT(EM_DIAGRAM):   PROPERTY = "TARGET_LEVEL";
+24858      MEASUREMENT = "INTERVAL";
+MPRINT(EM_DIAGRAM):   MEASUREMENT = "INTERVAL";
+24859      LAST_LEVEL = "0";
+MPRINT(EM_DIAGRAM):   LAST_LEVEL = "0";
+24860      GEN_VAR_IN_TEMP_DATA = "F_TARGET_B_1_K7_gadxv052KMBO";
+MPRINT(EM_DIAGRAM):   GEN_VAR_IN_TEMP_DATA = "F_TARGET_B_1_K7_gadxv052KMBO";
+24861      RESULT_MEAN = "F_TARGET_B_mean_Md8wIxhPdhBFMpJ";
+MPRINT(EM_DIAGRAM):   RESULT_MEAN = "F_TARGET_B_mean_Md8wIxhPdhBFMpJ";
+24862      /* adjust for tied cases */
+24863      RESULT_MEAN_LABEL = "";
+MPRINT(EM_DIAGRAM):   RESULT_MEAN_LABEL = "";
+24864      RESULT_MIN = "";
+MPRINT(EM_DIAGRAM):   RESULT_MIN = "";
+24865      RESULT_MIN_LABEL = "";
+MPRINT(EM_DIAGRAM):   RESULT_MIN_LABEL = "";
+24866      RESULT_MAX = "";
+MPRINT(EM_DIAGRAM):   RESULT_MAX = "";
+24867      RESULT_MAX_LABEL = "";
+MPRINT(EM_DIAGRAM):   RESULT_MAX_LABEL = "";
+24868      RESULT_COUNT = "NumberOfEvents";
+MPRINT(EM_DIAGRAM):   RESULT_COUNT = "NumberOfEvents";
+24869      RESULT_COUNT_LABEL = "%sysfunc(sasmsg(sashelp.dmine, assmt_NumEvent_vlabel,
+24869    ! NOQUOTE))";
+MPRINT(EM_DIAGRAM):   RESULT_COUNT_LABEL = "Number of Events";
+24870      TEMPORARY_VARIABLE = "F_TARGET_B_1_7mwC7bK464ij4tf";
+MPRINT(EM_DIAGRAM):   TEMPORARY_VARIABLE = "F_TARGET_B_1_7mwC7bK464ij4tf";
+24871      output;
+MPRINT(EM_DIAGRAM):   output;
+24872      VARIABLE = "F_TARGET_B_0";
+MPRINT(EM_DIAGRAM):   VARIABLE = "F_TARGET_B_0";
+24873      FORMAT = "";
+MPRINT(EM_DIAGRAM):   FORMAT = "";
+24874      TYPE = "";
+MPRINT(EM_DIAGRAM):   TYPE = "";
+24875      PARENT = "F_TARGET_B";
+MPRINT(EM_DIAGRAM):   PARENT = "F_TARGET_B";
+24876      LEVEL = "0";
+MPRINT(EM_DIAGRAM):   LEVEL = "0";
+24877      PROPERTY = "TARGET_LEVEL";
+MPRINT(EM_DIAGRAM):   PROPERTY = "TARGET_LEVEL";
+24878      MEASUREMENT = "INTERVAL";
+MPRINT(EM_DIAGRAM):   MEASUREMENT = "INTERVAL";
+24879      LAST_LEVEL = "0";
+MPRINT(EM_DIAGRAM):   LAST_LEVEL = "0";
+24880      GEN_VAR_IN_TEMP_DATA = "F_TARGET_B_0_9rWLlLq8pcISVpG";
+MPRINT(EM_DIAGRAM):   GEN_VAR_IN_TEMP_DATA = "F_TARGET_B_0_9rWLlLq8pcISVpG";
+24881      RESULT_MEAN = "F_TARGET_B_mean_FBunYZs29wlsUUP";
+MPRINT(EM_DIAGRAM):   RESULT_MEAN = "F_TARGET_B_mean_FBunYZs29wlsUUP";
+24882      /* adjust for tied cases */
+24883      RESULT_MEAN_LABEL = "";
+MPRINT(EM_DIAGRAM):   RESULT_MEAN_LABEL = "";
+24884      RESULT_MIN = "";
+MPRINT(EM_DIAGRAM):   RESULT_MIN = "";
+24885      RESULT_MIN_LABEL = "";
+MPRINT(EM_DIAGRAM):   RESULT_MIN_LABEL = "";
+24886      RESULT_MAX = "";
+MPRINT(EM_DIAGRAM):   RESULT_MAX = "";
+24887      RESULT_MAX_LABEL = "";
+MPRINT(EM_DIAGRAM):   RESULT_MAX_LABEL = "";
+24888      RESULT_COUNT = "NumberOfEvents";
+MPRINT(EM_DIAGRAM):   RESULT_COUNT = "NumberOfEvents";
+24889      RESULT_COUNT_LABEL = "%sysfunc(sasmsg(sashelp.dmine, assmt_NumEvent_vlabel,
+24889    ! NOQUOTE))";
+MPRINT(EM_DIAGRAM):   RESULT_COUNT_LABEL = "Number of Events";
+24890      TEMPORARY_VARIABLE = "F_TARGET_B_0_DUSh4NgYAc0Wra9";
+MPRINT(EM_DIAGRAM):   TEMPORARY_VARIABLE = "F_TARGET_B_0_DUSh4NgYAc0Wra9";
+24891      output;
+MPRINT(EM_DIAGRAM):   output;
+24892      VARIABLE = "D_TARGET_B";
+MPRINT(EM_DIAGRAM):   VARIABLE = "D_TARGET_B";
+24893      FORMAT = "";
+MPRINT(EM_DIAGRAM):   FORMAT = "";
+24894      TYPE = "";
+MPRINT(EM_DIAGRAM):   TYPE = "";
+24895      PARENT = "";
+MPRINT(EM_DIAGRAM):   PARENT = "";
+24896      LEVEL = '';
+MPRINT(EM_DIAGRAM):   LEVEL = '';
+24897      PROPERTY = "MODEL_DECISION";
+MPRINT(EM_DIAGRAM):   PROPERTY = "MODEL_DECISION";
+24898      MEASUREMENT = '';
+MPRINT(EM_DIAGRAM):   MEASUREMENT = '';
+24899      LAST_LEVEL = "";
+MPRINT(EM_DIAGRAM):   LAST_LEVEL = "";
+24900      GEN_VAR_IN_TEMP_DATA = "D_TARGET_B_4UApxz969qqcWgp";
+MPRINT(EM_DIAGRAM):   GEN_VAR_IN_TEMP_DATA = "D_TARGET_B_4UApxz969qqcWgp";
+24901      RESULT_MEAN = "";
+MPRINT(EM_DIAGRAM):   RESULT_MEAN = "";
+24902      RESULT_MEAN_LABEL = "";
+MPRINT(EM_DIAGRAM):   RESULT_MEAN_LABEL = "";
+24903      RESULT_MIN = "";
+MPRINT(EM_DIAGRAM):   RESULT_MIN = "";
+24904      RESULT_MIN_LABEL = "";
+MPRINT(EM_DIAGRAM):   RESULT_MIN_LABEL = "";
+24905      RESULT_MAX = "";
+MPRINT(EM_DIAGRAM):   RESULT_MAX = "";
+24906      RESULT_MAX_LABEL = "";
+MPRINT(EM_DIAGRAM):   RESULT_MAX_LABEL = "";
+24907      RESULT_COUNT = "";
+MPRINT(EM_DIAGRAM):   RESULT_COUNT = "";
+24908      RESULT_COUNT_LABEL = "";
+MPRINT(EM_DIAGRAM):   RESULT_COUNT_LABEL = "";
+24909      TEMPORARY_VARIABLE = "D_TARGET_B_4pYqPwXtucEiN7A";
+MPRINT(EM_DIAGRAM):   TEMPORARY_VARIABLE = "D_TARGET_B_4pYqPwXtucEiN7A";
+24910      output;
+MPRINT(EM_DIAGRAM):   output;
+24911      VARIABLE = "D_TARGET_B_1";
+MPRINT(EM_DIAGRAM):   VARIABLE = "D_TARGET_B_1";
+24912      FORMAT = "";
+MPRINT(EM_DIAGRAM):   FORMAT = "";
+24913      TYPE = "";
+MPRINT(EM_DIAGRAM):   TYPE = "";
+24914      PARENT = "D_TARGET_B";
+MPRINT(EM_DIAGRAM):   PARENT = "D_TARGET_B";
+24915      LEVEL = "1";
+MPRINT(EM_DIAGRAM):   LEVEL = "1";
+24916      PROPERTY = "MODEL_DECISION_LEVEL";
+MPRINT(EM_DIAGRAM):   PROPERTY = "MODEL_DECISION_LEVEL";
+24917      MEASUREMENT = 'INTERVAL';
+MPRINT(EM_DIAGRAM):   MEASUREMENT = 'INTERVAL';
+24918      LAST_LEVEL = "";
+MPRINT(EM_DIAGRAM):   LAST_LEVEL = "";
+24919      GEN_VAR_IN_TEMP_DATA = "D_TARGET_B_1_84_P109E9iefjM5";
+MPRINT(EM_DIAGRAM):   GEN_VAR_IN_TEMP_DATA = "D_TARGET_B_1_84_P109E9iefjM5";
+24920      RESULT_MEAN = "D_TARGET_B_mean_KESWazYURbhU2uD";
+MPRINT(EM_DIAGRAM):   RESULT_MEAN = "D_TARGET_B_mean_KESWazYURbhU2uD";
+24921      /* adjust for tied cases */
+24922      RESULT_MEAN_LABEL = "";
+MPRINT(EM_DIAGRAM):   RESULT_MEAN_LABEL = "";
+24923      RESULT_MIN = "";
+MPRINT(EM_DIAGRAM):   RESULT_MIN = "";
+24924      RESULT_MIN_LABEL = "";
+MPRINT(EM_DIAGRAM):   RESULT_MIN_LABEL = "";
+24925      RESULT_MAX = "";
+MPRINT(EM_DIAGRAM):   RESULT_MAX = "";
+24926      RESULT_MAX_LABEL = "";
+MPRINT(EM_DIAGRAM):   RESULT_MAX_LABEL = "";
+24927      RESULT_COUNT = "D_TARGET_B_1";
+MPRINT(EM_DIAGRAM):   RESULT_COUNT = "D_TARGET_B_1";
+24928      RESULT_COUNT_LABEL = "Baseline Number of Events";
+MPRINT(EM_DIAGRAM):   RESULT_COUNT_LABEL = "Baseline Number of Events";
+24929      TEMPORARY_VARIABLE = "D_TARGET_B_1_LSyCI0DINEM7lo6";
+MPRINT(EM_DIAGRAM):   TEMPORARY_VARIABLE = "D_TARGET_B_1_LSyCI0DINEM7lo6";
+24930      output;
+MPRINT(EM_DIAGRAM):   output;
+24931      VARIABLE = "D_TARGET_B_0";
+MPRINT(EM_DIAGRAM):   VARIABLE = "D_TARGET_B_0";
+24932      FORMAT = "";
+MPRINT(EM_DIAGRAM):   FORMAT = "";
+24933      TYPE = "";
+MPRINT(EM_DIAGRAM):   TYPE = "";
+24934      PARENT = "D_TARGET_B";
+MPRINT(EM_DIAGRAM):   PARENT = "D_TARGET_B";
+24935      LEVEL = "0";
+MPRINT(EM_DIAGRAM):   LEVEL = "0";
+24936      PROPERTY = "MODEL_DECISION_LEVEL";
+MPRINT(EM_DIAGRAM):   PROPERTY = "MODEL_DECISION_LEVEL";
+24937      MEASUREMENT = 'INTERVAL';
+MPRINT(EM_DIAGRAM):   MEASUREMENT = 'INTERVAL';
+24938      LAST_LEVEL = "";
+MPRINT(EM_DIAGRAM):   LAST_LEVEL = "";
+24939      GEN_VAR_IN_TEMP_DATA = "D_TARGET_B_0_XOWtriMWAxPx071";
+MPRINT(EM_DIAGRAM):   GEN_VAR_IN_TEMP_DATA = "D_TARGET_B_0_XOWtriMWAxPx071";
+24940      RESULT_MEAN = "D_TARGET_B_mean_RAjydmZQSXB1H59";
+MPRINT(EM_DIAGRAM):   RESULT_MEAN = "D_TARGET_B_mean_RAjydmZQSXB1H59";
+24941      /* adjust for tied cases */
+24942      RESULT_MEAN_LABEL = "";
+MPRINT(EM_DIAGRAM):   RESULT_MEAN_LABEL = "";
+24943      RESULT_MIN = "";
+MPRINT(EM_DIAGRAM):   RESULT_MIN = "";
+24944      RESULT_MIN_LABEL = "";
+MPRINT(EM_DIAGRAM):   RESULT_MIN_LABEL = "";
+24945      RESULT_MAX = "";
+MPRINT(EM_DIAGRAM):   RESULT_MAX = "";
+24946      RESULT_MAX_LABEL = "";
+MPRINT(EM_DIAGRAM):   RESULT_MAX_LABEL = "";
+24947      RESULT_COUNT = "D_TARGET_B_0";
+MPRINT(EM_DIAGRAM):   RESULT_COUNT = "D_TARGET_B_0";
+24948      RESULT_COUNT_LABEL = "Baseline Number of Events";
+MPRINT(EM_DIAGRAM):   RESULT_COUNT_LABEL = "Baseline Number of Events";
+24949      TEMPORARY_VARIABLE = "D_TARGET_B_0_YjGwmh5eJLXuBpX";
+MPRINT(EM_DIAGRAM):   TEMPORARY_VARIABLE = "D_TARGET_B_0_YjGwmh5eJLXuBpX";
+24950      output;
+MPRINT(EM_DIAGRAM):   output;
+24951      VARIABLE = "P_TARGET_B1";
+MPRINT(EM_DIAGRAM):   VARIABLE = "P_TARGET_B1";
+24952      FORMAT = "";
+MPRINT(EM_DIAGRAM):   FORMAT = "";
+24953      TYPE = "";
+MPRINT(EM_DIAGRAM):   TYPE = "";
+24954      PARENT = "";
+MPRINT(EM_DIAGRAM):   PARENT = "";
+24955      LEVEL = "1";
+MPRINT(EM_DIAGRAM):   LEVEL = "1";
+24956      PROPERTY = "POSTERIOR_LEVEL";
+MPRINT(EM_DIAGRAM):   PROPERTY = "POSTERIOR_LEVEL";
+24957      MEASUREMENT = "INTERVAL";
+MPRINT(EM_DIAGRAM):   MEASUREMENT = "INTERVAL";
+24958      LAST_LEVEL = "";
+MPRINT(EM_DIAGRAM):   LAST_LEVEL = "";
+24959      GEN_VAR_IN_TEMP_DATA = "P_TARGET_B1";
+MPRINT(EM_DIAGRAM):   GEN_VAR_IN_TEMP_DATA = "P_TARGET_B1";
+24960      RESULT_MEAN = "_meanP_";
+MPRINT(EM_DIAGRAM):   RESULT_MEAN = "_meanP_";
+24961      RESULT_MEAN_LABEL = "%sysfunc(sasmsg(sashelp.dmine, assmt_probMean_vlabel,
+24961    ! NOQUOTE))";
+MPRINT(EM_DIAGRAM):   RESULT_MEAN_LABEL = "Mean Posterior Probability";
+24962      RESULT_MIN = "_minP_";
+MPRINT(EM_DIAGRAM):   RESULT_MIN = "_minP_";
+24963      RESULT_MIN_LABEL = "%sysfunc(sasmsg(sashelp.dmine, assmt_probMin_vlabel, NOQUOTE))";
+MPRINT(EM_DIAGRAM):   RESULT_MIN_LABEL = "Min Posterior Probability";
+24964      MIN_ADJUSTED = "P_TARGET_minAdjusted_hjAFOc_52";
+MPRINT(EM_DIAGRAM):   MIN_ADJUSTED = "P_TARGET_minAdjusted_hjAFOc_52";
+24965      RESULT_MAX = "_maxP_";
+MPRINT(EM_DIAGRAM):   RESULT_MAX = "_maxP_";
+24966      RESULT_MAX_LABEL = "%sysfunc(sasmsg(sashelp.dmine, assmt_probMax_vlabel, NOQUOTE))";
+MPRINT(EM_DIAGRAM):   RESULT_MAX_LABEL = "Max Posterior Probability";
+24967      MAX_ADJUSTED = "P_TARGET_maxAdjusted_x0ppphZMu";
+MPRINT(EM_DIAGRAM):   MAX_ADJUSTED = "P_TARGET_maxAdjusted_x0ppphZMu";
+24968      RESULT_COUNT = "";
+MPRINT(EM_DIAGRAM):   RESULT_COUNT = "";
+24969      RESULT_COUNT_LABEL = "";
+MPRINT(EM_DIAGRAM):   RESULT_COUNT_LABEL = "";
+24970      TEMPORARY_VARIABLE = "P_TARGET_B1_cMZ7xt3F0ToKnv1";
+MPRINT(EM_DIAGRAM):   TEMPORARY_VARIABLE = "P_TARGET_B1_cMZ7xt3F0ToKnv1";
+24971      output;
+MPRINT(EM_DIAGRAM):   output;
+24972      VARIABLE = "P_TARGET_B0";
+MPRINT(EM_DIAGRAM):   VARIABLE = "P_TARGET_B0";
+24973      FORMAT = "";
+MPRINT(EM_DIAGRAM):   FORMAT = "";
+24974      TYPE = "";
+MPRINT(EM_DIAGRAM):   TYPE = "";
+24975      PARENT = "";
+MPRINT(EM_DIAGRAM):   PARENT = "";
+24976      LEVEL = "0";
+MPRINT(EM_DIAGRAM):   LEVEL = "0";
+24977      PROPERTY = "POSTERIOR_LEVEL";
+MPRINT(EM_DIAGRAM):   PROPERTY = "POSTERIOR_LEVEL";
+24978      MEASUREMENT = "INTERVAL";
+MPRINT(EM_DIAGRAM):   MEASUREMENT = "INTERVAL";
+24979      LAST_LEVEL = "";
+MPRINT(EM_DIAGRAM):   LAST_LEVEL = "";
+24980      GEN_VAR_IN_TEMP_DATA = "P_TARGET_B0";
+MPRINT(EM_DIAGRAM):   GEN_VAR_IN_TEMP_DATA = "P_TARGET_B0";
+24981      RESULT_MEAN = "_meanP_";
+MPRINT(EM_DIAGRAM):   RESULT_MEAN = "_meanP_";
+24982      RESULT_MEAN_LABEL = "%sysfunc(sasmsg(sashelp.dmine, assmt_probMean_vlabel,
+24982    ! NOQUOTE))";
+MPRINT(EM_DIAGRAM):   RESULT_MEAN_LABEL = "Mean Posterior Probability";
+24983      RESULT_MIN = "_minP_";
+MPRINT(EM_DIAGRAM):   RESULT_MIN = "_minP_";
+24984      RESULT_MIN_LABEL = "%sysfunc(sasmsg(sashelp.dmine, assmt_probMin_vlabel, NOQUOTE))";
+MPRINT(EM_DIAGRAM):   RESULT_MIN_LABEL = "Min Posterior Probability";
+24985      MIN_ADJUSTED = "P_TARGET_minAdjusted_tbVa9Nz5N";
+MPRINT(EM_DIAGRAM):   MIN_ADJUSTED = "P_TARGET_minAdjusted_tbVa9Nz5N";
+24986      RESULT_MAX = "_maxP_";
+MPRINT(EM_DIAGRAM):   RESULT_MAX = "_maxP_";
+24987      RESULT_MAX_LABEL = "%sysfunc(sasmsg(sashelp.dmine, assmt_probMax_vlabel, NOQUOTE))";
+MPRINT(EM_DIAGRAM):   RESULT_MAX_LABEL = "Max Posterior Probability";
+24988      MAX_ADJUSTED = "P_TARGET_maxAdjusted_clE7NyMJv";
+MPRINT(EM_DIAGRAM):   MAX_ADJUSTED = "P_TARGET_maxAdjusted_clE7NyMJv";
+24989      RESULT_COUNT = "";
+MPRINT(EM_DIAGRAM):   RESULT_COUNT = "";
+24990      RESULT_COUNT_LABEL = "";
+MPRINT(EM_DIAGRAM):   RESULT_COUNT_LABEL = "";
+24991      TEMPORARY_VARIABLE = "P_TARGET_B0_Vf8xBtHX1aqaZgY";
+MPRINT(EM_DIAGRAM):   TEMPORARY_VARIABLE = "P_TARGET_B0_Vf8xBtHX1aqaZgY";
+24992      output;
+MPRINT(EM_DIAGRAM):   output;
+24993      VARIABLE = "CP_TARGET_B";
+MPRINT(EM_DIAGRAM):   VARIABLE = "CP_TARGET_B";
+24994      FORMAT = "";
+MPRINT(EM_DIAGRAM):   FORMAT = "";
+24995      TYPE = "";
+MPRINT(EM_DIAGRAM):   TYPE = "";
+24996      PARENT = "";
+MPRINT(EM_DIAGRAM):   PARENT = "";
+24997      LEVEL = "";
+MPRINT(EM_DIAGRAM):   LEVEL = "";
+24998      PROPERTY = "COMPUTED_PROFIT";
+MPRINT(EM_DIAGRAM):   PROPERTY = "COMPUTED_PROFIT";
+24999      MEASUREMENT = "INTERVAL";
+MPRINT(EM_DIAGRAM):   MEASUREMENT = "INTERVAL";
+25000      LAST_LEVEL = "";
+MPRINT(EM_DIAGRAM):   LAST_LEVEL = "";
+25001      GEN_VAR_IN_TEMP_DATA = "CP_TARGET_B";
+MPRINT(EM_DIAGRAM):   GEN_VAR_IN_TEMP_DATA = "CP_TARGET_B";
+25002      RESULT_MEAN = "_meanCP_";
+MPRINT(EM_DIAGRAM):   RESULT_MEAN = "_meanCP_";
+25003      RESULT_MEAN_LABEL = "%sysfunc(sasmsg(sashelp.dmine, assmt_profMean_vlabel,
+25003    ! NOQUOTE))";
+MPRINT(EM_DIAGRAM):   RESULT_MEAN_LABEL = "Mean Computed Profit";
+25004      RESULT_MIN = "_minCP_";
+MPRINT(EM_DIAGRAM):   RESULT_MIN = "_minCP_";
+25005      RESULT_MIN_LABEL = "%sysfunc(sasmsg(sashelp.dmine, assmt_profMin_vlabel, NOQUOTE))";
+MPRINT(EM_DIAGRAM):   RESULT_MIN_LABEL = "Min Computed Profit";
+25006      MIN_ADJUSTED = "CP_TARGE_minAdjusted_pCS30pXCE";
+MPRINT(EM_DIAGRAM):   MIN_ADJUSTED = "CP_TARGE_minAdjusted_pCS30pXCE";
+25007      RESULT_MAX = "_maxCP_";
+MPRINT(EM_DIAGRAM):   RESULT_MAX = "_maxCP_";
+25008      RESULT_MAX_LABEL = "%sysfunc(sasmsg(sashelp.dmine, assmt_profMax_vlabel, NOQUOTE))";
+MPRINT(EM_DIAGRAM):   RESULT_MAX_LABEL = "Max Computed Profit";
+25009      MAX_ADJUSTED = "CP_TARGE_maxAdjusted_3lNinBXXW";
+MPRINT(EM_DIAGRAM):   MAX_ADJUSTED = "CP_TARGE_maxAdjusted_3lNinBXXW";
+25010      RESULT_COUNT = "";
+MPRINT(EM_DIAGRAM):   RESULT_COUNT = "";
+25011      RESULT_COUNT_LABEL = "";
+MPRINT(EM_DIAGRAM):   RESULT_COUNT_LABEL = "";
+25012      TEMPORARY_VARIABLE = "CP_TARGET_B_A6ZY8MPAiF3wugX";
+MPRINT(EM_DIAGRAM):   TEMPORARY_VARIABLE = "CP_TARGET_B_A6ZY8MPAiF3wugX";
+25013      output;
+MPRINT(EM_DIAGRAM):   output;
+25014      VARIABLE = "EP_TARGET_B";
+MPRINT(EM_DIAGRAM):   VARIABLE = "EP_TARGET_B";
+25015      FORMAT = "";
+MPRINT(EM_DIAGRAM):   FORMAT = "";
+25016      TYPE = "";
+MPRINT(EM_DIAGRAM):   TYPE = "";
+25017      PARENT = "";
+MPRINT(EM_DIAGRAM):   PARENT = "";
+25018      LEVEL = "";
+MPRINT(EM_DIAGRAM):   LEVEL = "";
+25019      PROPERTY = "EXPECTED_PROFIT";
+MPRINT(EM_DIAGRAM):   PROPERTY = "EXPECTED_PROFIT";
+25020      MEASUREMENT = "INTERVAL";
+MPRINT(EM_DIAGRAM):   MEASUREMENT = "INTERVAL";
+25021      LAST_LEVEL = "";
+MPRINT(EM_DIAGRAM):   LAST_LEVEL = "";
+25022      GEN_VAR_IN_TEMP_DATA = "EP_TARGET_B";
+MPRINT(EM_DIAGRAM):   GEN_VAR_IN_TEMP_DATA = "EP_TARGET_B";
+25023      RESULT_MEAN = "_meanEP_";
+MPRINT(EM_DIAGRAM):   RESULT_MEAN = "_meanEP_";
+25024      RESULT_MEAN_LABEL = "%sysfunc(sasmsg(sashelp.dmine, assmt_expProfMean_vlabel,
+25024    ! NOQUOTE))";
+MPRINT(EM_DIAGRAM):   RESULT_MEAN_LABEL = "Mean Expected Profit";
+25025      RESULT_MIN = "_minEP_";
+MPRINT(EM_DIAGRAM):   RESULT_MIN = "_minEP_";
+25026      RESULT_MIN_LABEL = "%sysfunc(sasmsg(sashelp.dmine, assmt_expProfMin_vlabel,
+25026    ! NOQUOTE))";
+MPRINT(EM_DIAGRAM):   RESULT_MIN_LABEL = "Min Expected Profit";
+25027      MIN_ADJUSTED = "EP_TARGE_minAdjusted_dX4bgxvwG";
+MPRINT(EM_DIAGRAM):   MIN_ADJUSTED = "EP_TARGE_minAdjusted_dX4bgxvwG";
+25028      RESULT_MAX = "_maxEP_";
+MPRINT(EM_DIAGRAM):   RESULT_MAX = "_maxEP_";
+25029      RESULT_MAX_LABEL = "%sysfunc(sasmsg(sashelp.dmine, assmt_expProfMax_vlabel,
+25029    ! NOQUOTE))";
+MPRINT(EM_DIAGRAM):   RESULT_MAX_LABEL = "Max Expected Profit";
+25030      MAX_ADJUSTED = "EP_TARGE_maxAdjusted_Hq_iDyOBZ";
+MPRINT(EM_DIAGRAM):   MAX_ADJUSTED = "EP_TARGE_maxAdjusted_Hq_iDyOBZ";
+25031      RESULT_COUNT = "";
+MPRINT(EM_DIAGRAM):   RESULT_COUNT = "";
+25032      RESULT_COUNT_LABEL = "";
+MPRINT(EM_DIAGRAM):   RESULT_COUNT_LABEL = "";
+25033      TEMPORARY_VARIABLE = "EP_TARGET_B_hSbOq_tlR3PyBX_";
+MPRINT(EM_DIAGRAM):   TEMPORARY_VARIABLE = "EP_TARGET_B_hSbOq_tlR3PyBX_";
+25034      output;
+MPRINT(EM_DIAGRAM):   output;
+25035      run;
+MPRINT(EM_DIAGRAM):   run;
+
+NOTE: The data set WORK.ASSESS_03WOY1K_ASSESSMETA_FOXOCD has 10 observations and 20 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.06 seconds
+      cpu time            0.06 seconds
+      
+
+25036      /* Generate temporary dataset and obtain summary statistics such as total number of
+25036    !   */
+25037      /* obserations, frequency of target.  However, summary statistics for class
+25037    ! reporting */
+25038      /* variabels are not computed here since if there exist class reporting variables,
+25038    !   */
+25039      /* then PROC DMDB will be called. And there is no need to compute interval reporting
+25039    !   */
+25040      /* summary statisitcs, if any.
+25040    !   */
+25041      data work.ASSESS_03WOY1K_normSD_fMaNxH(drop=
+25042      _numberOfObservation_
+25043      _levelFrequency_1
+25044      _levelFrequency_2
+25045      _computedProfitMean_
+25046      )
+25047      work.ASSESS_03WOY1K_meansAndTi_3VeqNn (keep=
+25048      _numberOfObservation_
+25049      _levelFrequency_1
+25050      _levelFrequency_2
+25051      _computedProfitMean_
+25052      );
+MPRINT(EM_DIAGRAM):    data work.ASSESS_03WOY1K_normSD_fMaNxH(drop= _numberOfObservation_ 
+_levelFrequency_1 _levelFrequency_2 _computedProfitMean_ ) 
+work.ASSESS_03WOY1K_meansAndTi_3VeqNn (keep= _numberOfObservation_ _levelFrequency_1 
+_levelFrequency_2 _computedProfitMean_ );
+25053      set EMWS1.Reg_TRAIN(
+25054      where=(
+25055      (TARGET_B ^= .)
+25056      )
+25057      ) end=_lastObservation_;
+MPRINT(EM_DIAGRAM):   set EMWS1.Reg_TRAIN( where=( (TARGET_B ^= .) ) ) end=_lastObservation_;
+25058      keep frequency_Alb_Yc;
+MPRINT(EM_DIAGRAM):   keep frequency_Alb_Yc;
+25059      frequency_Alb_Yc = 1;
+MPRINT(EM_DIAGRAM):   frequency_Alb_Yc = 1;
+25060      keep I_TARGET_B F_TARGET_B;
+MPRINT(EM_DIAGRAM):   keep I_TARGET_B F_TARGET_B;
+25061      keep F_TARGET_B_1_K7_gadxv052KMBO;
+MPRINT(EM_DIAGRAM):   keep F_TARGET_B_1_K7_gadxv052KMBO;
+25062      if (F_TARGET_B = '1') then do;
+MPRINT(EM_DIAGRAM):   if (F_TARGET_B = '1') then do;
+25063      F_TARGET_B_1_K7_gadxv052KMBO = 1;
+MPRINT(EM_DIAGRAM):   F_TARGET_B_1_K7_gadxv052KMBO = 1;
+25064      end;
+MPRINT(EM_DIAGRAM):   end;
+25065      else do;
+MPRINT(EM_DIAGRAM):   else do;
+25066      F_TARGET_B_1_K7_gadxv052KMBO = 0;
+MPRINT(EM_DIAGRAM):   F_TARGET_B_1_K7_gadxv052KMBO = 0;
+25067      end;
+MPRINT(EM_DIAGRAM):   end;
+25068      keep F_TARGET_B_0_9rWLlLq8pcISVpG;
+MPRINT(EM_DIAGRAM):   keep F_TARGET_B_0_9rWLlLq8pcISVpG;
+25069      if (F_TARGET_B = '0') then do;
+MPRINT(EM_DIAGRAM):   if (F_TARGET_B = '0') then do;
+25070      F_TARGET_B_0_9rWLlLq8pcISVpG = 1;
+MPRINT(EM_DIAGRAM):   F_TARGET_B_0_9rWLlLq8pcISVpG = 1;
+25071      end;
+MPRINT(EM_DIAGRAM):   end;
+25072      else do;
+MPRINT(EM_DIAGRAM):   else do;
+25073      F_TARGET_B_0_9rWLlLq8pcISVpG = 0;
+MPRINT(EM_DIAGRAM):   F_TARGET_B_0_9rWLlLq8pcISVpG = 0;
+25074      end;
+MPRINT(EM_DIAGRAM):   end;
+25075      keep D_TARGET_B_1_84_P109E9iefjM5;
+MPRINT(EM_DIAGRAM):   keep D_TARGET_B_1_84_P109E9iefjM5;
+25076      if (D_TARGET_B = '1') then do;
+MPRINT(EM_DIAGRAM):   if (D_TARGET_B = '1') then do;
+25077      D_TARGET_B_1_84_P109E9iefjM5 = 1;
+MPRINT(EM_DIAGRAM):   D_TARGET_B_1_84_P109E9iefjM5 = 1;
+25078      end;
+MPRINT(EM_DIAGRAM):   end;
+25079      else do;
+MPRINT(EM_DIAGRAM):   else do;
+25080      D_TARGET_B_1_84_P109E9iefjM5 = 0;
+MPRINT(EM_DIAGRAM):   D_TARGET_B_1_84_P109E9iefjM5 = 0;
+25081      end;
+MPRINT(EM_DIAGRAM):   end;
+25082      keep D_TARGET_B_0_XOWtriMWAxPx071;
+MPRINT(EM_DIAGRAM):   keep D_TARGET_B_0_XOWtriMWAxPx071;
+25083      if (D_TARGET_B = '0') then do;
+MPRINT(EM_DIAGRAM):   if (D_TARGET_B = '0') then do;
+25084      D_TARGET_B_0_XOWtriMWAxPx071 = 1;
+MPRINT(EM_DIAGRAM):   D_TARGET_B_0_XOWtriMWAxPx071 = 1;
+25085      end;
+MPRINT(EM_DIAGRAM):   end;
+25086      else do;
+MPRINT(EM_DIAGRAM):   else do;
+25087      D_TARGET_B_0_XOWtriMWAxPx071 = 0;
+MPRINT(EM_DIAGRAM):   D_TARGET_B_0_XOWtriMWAxPx071 = 0;
+25088      end;
+MPRINT(EM_DIAGRAM):   end;
+25089      keep P_TARGET_B1;
+MPRINT(EM_DIAGRAM):   keep P_TARGET_B1;
+25090      keep P_TARGET_B0;
+MPRINT(EM_DIAGRAM):   keep P_TARGET_B0;
+25091      keep CP_TARGET_B;
+MPRINT(EM_DIAGRAM):   keep CP_TARGET_B;
+25092      rename CP_TARGET_B = CP_TARGET_B;
+MPRINT(EM_DIAGRAM):   rename CP_TARGET_B = CP_TARGET_B;
+25093      keep EP_TARGET_B;
+MPRINT(EM_DIAGRAM):   keep EP_TARGET_B;
+25094      rename EP_TARGET_B = EP_TARGET_B;
+MPRINT(EM_DIAGRAM):   rename EP_TARGET_B = EP_TARGET_B;
+25095      output work.ASSESS_03WOY1K_normSD_fMaNxH;
+MPRINT(EM_DIAGRAM):   output work.ASSESS_03WOY1K_normSD_fMaNxH;
+25096      keep _numberOfObservation_;
+MPRINT(EM_DIAGRAM):   keep _numberOfObservation_;
+25097      retain _numberOfObservation_ 0;
+MPRINT(EM_DIAGRAM):   retain _numberOfObservation_ 0;
+25098      _numberOfObservation_ + frequency_Alb_Yc;
+MPRINT(EM_DIAGRAM):   _numberOfObservation_ + frequency_Alb_Yc;
+25099      keep _levelFrequency_1;
+MPRINT(EM_DIAGRAM):   keep _levelFrequency_1;
+25100      retain _levelFrequency_1 0;
+MPRINT(EM_DIAGRAM):   retain _levelFrequency_1 0;
+25101      if (F_TARGET_B = '1') then do;
+MPRINT(EM_DIAGRAM):   if (F_TARGET_B = '1') then do;
+25102      _levelFrequency_1 + frequency_Alb_Yc;
+MPRINT(EM_DIAGRAM):   _levelFrequency_1 + frequency_Alb_Yc;
+25103      end;
+MPRINT(EM_DIAGRAM):   end;
+25104      keep _levelFrequency_2;
+MPRINT(EM_DIAGRAM):   keep _levelFrequency_2;
+25105      retain _levelFrequency_2 0;
+MPRINT(EM_DIAGRAM):   retain _levelFrequency_2 0;
+25106      if (F_TARGET_B = '0') then do;
+MPRINT(EM_DIAGRAM):   if (F_TARGET_B = '0') then do;
+25107      _levelFrequency_2 + frequency_Alb_Yc;
+MPRINT(EM_DIAGRAM):   _levelFrequency_2 + frequency_Alb_Yc;
+25108      end;
+MPRINT(EM_DIAGRAM):   end;
+25109      retain _computedProfitMean_ 0;
+MPRINT(EM_DIAGRAM):   retain _computedProfitMean_ 0;
+25110      keep _computedProfitMean_;
+MPRINT(EM_DIAGRAM):   keep _computedProfitMean_;
+25111      _computedProfitMean_ = frequency_Alb_Yc/_numberOfObservation_ *CP_TARGET_B +
+25111    ! (_numberOfObservation_ -
+25111    ! frequency_Alb_Yc)/_numberOfObservation_*_computedProfitMean_;
+MPRINT(EM_DIAGRAM):   _computedProfitMean_ = frequency_Alb_Yc/_numberOfObservation_ 
+*CP_TARGET_B + (_numberOfObservation_ - 
+frequency_Alb_Yc)/_numberOfObservation_*_computedProfitMean_;
+25112      if _lastObservation_ then do;
+MPRINT(EM_DIAGRAM):   if _lastObservation_ then do;
+25113      output work.ASSESS_03WOY1K_meansAndTi_3VeqNn;
+MPRINT(EM_DIAGRAM):   output work.ASSESS_03WOY1K_meansAndTi_3VeqNn;
+25114      end;
+MPRINT(EM_DIAGRAM):   end;
+25115      run;
+MPRINT(EM_DIAGRAM):   run;
+
+NOTE: Variable _WARN_ is uninitialized.
+NOTE: There were 10654 observations read from the data set EMWS1.PART_TRAIN.
+NOTE: There were 10654 observations read from the data set EMWS1.REPL_TRAIN.
+NOTE: There were 10654 observations read from the data set EMWS1.IMPT_TRAIN.
+NOTE: View EMWS1.REG_TRAIN.VIEW used (Total process time):
+      real time           0.20 seconds
+      cpu time            0.18 seconds
+      
+NOTE: There were 10654 observations read from the data set EMWS1.TRANS_TRAIN.
+NOTE: There were 10654 observations read from the data set EMWS1.REG_TRAIN.
+      WHERE TARGET_B not = .;
+NOTE: The data set WORK.ASSESS_03WOY1K_NORMSD_FMANXH has 10654 observations and 11 variables.
+NOTE: The data set WORK.ASSESS_03WOY1K_MEANSANDTI_3VEQNN has 1 observations and 4 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.25 seconds
+      cpu time            0.20 seconds
+      
+
+25116      /* Adjust frequency in scored dataset since decision prior exists */
+25117      data work.ASSESS_03WOY1K_normSD_fMaNxH
+25118      (drop=
+25119      _computedProfitMean_
+25120      )
+25121      work.ASSESS_03WOY1K_meansAndTi_ILYYAT (keep=
+25122      _computedProfitMean_
+25123      )
+25124      ;
+MPRINT(EM_DIAGRAM):    data work.ASSESS_03WOY1K_normSD_fMaNxH (drop= _computedProfitMean_ ) 
+work.ASSESS_03WOY1K_meansAndTi_ILYYAT (keep= _computedProfitMean_ ) ;
+25125      set work.ASSESS_03WOY1K_normSD_fMaNxH
+25126      end=_lastObservation_;
+MPRINT(EM_DIAGRAM):   set work.ASSESS_03WOY1K_normSD_fMaNxH end=_lastObservation_;
+25127      ;
+MPRINT(EM_DIAGRAM):   ;
+25128      if F_TARGET_B = '1' then do;
+MPRINT(EM_DIAGRAM):   if F_TARGET_B = '1' then do;
+25129      frequency_Alb_Yc = frequency_Alb_Yc * 0.05 * 10654 / 2664;
+MPRINT(EM_DIAGRAM):   frequency_Alb_Yc = frequency_Alb_Yc * 0.05 * 10654 / 2664;
+25130      end;
+MPRINT(EM_DIAGRAM):   end;
+25131      if F_TARGET_B = '0' then do;
+MPRINT(EM_DIAGRAM):   if F_TARGET_B = '0' then do;
+25132      frequency_Alb_Yc = frequency_Alb_Yc * 0.95 * 10654 / 7990;
+MPRINT(EM_DIAGRAM):   frequency_Alb_Yc = frequency_Alb_Yc * 0.95 * 10654 / 7990;
+25133      end;
+MPRINT(EM_DIAGRAM):   end;
+25134      retain _cumulativeFrequency_ 0;
+MPRINT(EM_DIAGRAM):   retain _cumulativeFrequency_ 0;
+25135      _cumulativeFrequency_ + frequency_Alb_Yc;
+MPRINT(EM_DIAGRAM):   _cumulativeFrequency_ + frequency_Alb_Yc;
+25136      drop _cumulativeFrequency_;
+MPRINT(EM_DIAGRAM):   drop _cumulativeFrequency_;
+25137      retain _computedProfitMean_ 0;
+MPRINT(EM_DIAGRAM):   retain _computedProfitMean_ 0;
+25138      _computedProfitMean_ = frequency_Alb_Yc/_cumulativeFrequency_ *CP_TARGET_B +
+25138    ! (_cumulativeFrequency_ -
+25138    ! frequency_Alb_Yc)/_cumulativeFrequency_*_computedProfitMean_;
+MPRINT(EM_DIAGRAM):   _computedProfitMean_ = frequency_Alb_Yc/_cumulativeFrequency_ 
+*CP_TARGET_B + (_cumulativeFrequency_ - 
+frequency_Alb_Yc)/_cumulativeFrequency_*_computedProfitMean_;
+25139      output work.ASSESS_03WOY1K_normSD_fMaNxH;
+MPRINT(EM_DIAGRAM):   output work.ASSESS_03WOY1K_normSD_fMaNxH;
+25140      if _lastObservation_ then do;
+MPRINT(EM_DIAGRAM):   if _lastObservation_ then do;
+25141      output work.ASSESS_03WOY1K_meansAndTi_ILYYAT;
+MPRINT(EM_DIAGRAM):   output work.ASSESS_03WOY1K_meansAndTi_ILYYAT;
+25142      end;
+MPRINT(EM_DIAGRAM):   end;
+25143      run;
+MPRINT(EM_DIAGRAM):   run;
+
+NOTE: There were 10654 observations read from the data set WORK.ASSESS_03WOY1K_NORMSD_FMANXH.
+NOTE: The data set WORK.ASSESS_03WOY1K_NORMSD_FMANXH has 10654 observations and 11 variables.
+NOTE: The data set WORK.ASSESS_03WOY1K_MEANSANDTI_ILYYAT has 1 observations and 1 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.03 seconds
+      cpu time            0.01 seconds
+      
+
+25144      data WORK._EMRANK;
+MPRINT(EM_DIAGRAM):    data WORK._EMRANK;
+25145      set EMWS1.MdlComp_EMRANK;
+MPRINT(EM_DIAGRAM):   set EMWS1.MdlComp_EMRANK;
+25146      where MODEL = "Reg" and TARGET = "TARGET_B" and dataRole="TRAIN";
+MPRINT(EM_DIAGRAM):   where MODEL = "Reg" and TARGET = "TARGET_B" and dataRole="TRAIN";
+25147      run;
+MPRINT(EM_DIAGRAM):   run;
+
+NOTE: There were 20 observations read from the data set EMWS1.MDLCOMP_EMRANK.
+      WHERE (MODEL='Reg') and (TARGET='TARGET_B') and (dataRole='TRAIN');
+NOTE: The data set WORK._EMRANK has 20 observations and 59 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.03 seconds
+      cpu time            0.00 seconds
+      
+
+25148      data work._augment;
+MPRINT(EM_DIAGRAM):    data work._augment;
+25149      do BIN= 1 to 20;
+MPRINT(EM_DIAGRAM):   do BIN= 1 to 20;
+25150      DECILE = BIN*5;
+MPRINT(EM_DIAGRAM):   DECILE = BIN*5;
+25151      output;
+MPRINT(EM_DIAGRAM):   output;
+25152      end;
+MPRINT(EM_DIAGRAM):   end;
+25153      run;
+MPRINT(EM_DIAGRAM):   run;
+
+NOTE: The data set WORK._AUGMENT has 20 observations and 2 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+      
+
+25154      data WORK._EMRANK;
+MPRINT(EM_DIAGRAM):   data WORK._EMRANK;
+25155      merge WORK._AUGMENT WORK._EMRANK;
+MPRINT(EM_DIAGRAM):   merge WORK._AUGMENT WORK._EMRANK;
+25156      by BIN;
+MPRINT(EM_DIAGRAM):   by BIN;
+25157      run;
+MPRINT(EM_DIAGRAM):   run;
+
+NOTE: There were 20 observations read from the data set WORK._AUGMENT.
+NOTE: There were 20 observations read from the data set WORK._EMRANK.
+NOTE: The data set WORK._EMRANK has 20 observations and 59 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+      
+
+25158      data WORK._EMRANK;
+MPRINT(EM_DIAGRAM):    data WORK._EMRANK;
+25159      set WORK._EMRANK end=_lastObservation_;
+MPRINT(EM_DIAGRAM):   set WORK._EMRANK end=_lastObservation_;
+25160      retain _previousMinP_ _previousMaxP_;
+MPRINT(EM_DIAGRAM):   retain _previousMinP_ _previousMaxP_;
+25161      retain _group_ 1;
+MPRINT(EM_DIAGRAM):   retain _group_ 1;
+25162      keep event;
+MPRINT(EM_DIAGRAM):   keep event;
+25163      keep bin _cutoff_ _group_;
+MPRINT(EM_DIAGRAM):   keep bin _cutoff_ _group_;
+25164      if (bin > 1) then do;
+MPRINT(EM_DIAGRAM):   if (bin > 1) then do;
+25165      bin = bin - 1;
+MPRINT(EM_DIAGRAM):   bin = bin - 1;
+25166      _cutoff_ = (_maxP_ + _previousMinP_) / 2;
+MPRINT(EM_DIAGRAM):   _cutoff_ = (_maxP_ + _previousMinP_) / 2;
+25167      if (abs(_previousMaxP_ - _previousMinP_) < 1E-6) then do;
+MPRINT(EM_DIAGRAM):   if (abs(_previousMaxP_ - _previousMinP_) < 1E-6) then do;
+25168      /* tied */
+25169      _cutoff_ = max((_minP_ + _maxP_)/2, min(_cutoff_, _previousMinP_/*-1E-6*/
+25170      ));
+MPRINT(EM_DIAGRAM):   _cutoff_ = max((_minP_ + _maxP_)/2, min(_cutoff_, _previousMinP_ ));
+25171      end;
+MPRINT(EM_DIAGRAM):   end;
+25172      else if (abs(_maxP_ - _minP_) < 1E-6) then do;
+MPRINT(EM_DIAGRAM):   else if (abs(_maxP_ - _minP_) < 1E-6) then do;
+25173      /* next tied */
+25174      _cutoff_ = min((_previousMinP_ + _previousMaxP_)/2, max(_cutoff_, _maxP_/*+ 1E-6*/
+25175      ));
+MPRINT(EM_DIAGRAM):   _cutoff_ = min((_previousMinP_ + _previousMaxP_)/2, max(_cutoff_, _maxP_ 
+));
+25176      end;
+MPRINT(EM_DIAGRAM):   end;
+25177      output;
+MPRINT(EM_DIAGRAM):   output;
+25178      *if ( abs((_maxP_ +_minP_)/2 - (_previousMaxP_ + _previousMinP_)/2) > 1E-6) then do;
+MPRINT(EM_DIAGRAM):   *if ( abs((_maxP_ +_minP_)/2 - (_previousMaxP_ + _previousMinP_)/2) > 
+1E-6) then do;
+25179      * _group_ + 1;
+MPRINT(EM_DIAGRAM):   * _group_ + 1;
+25180      *end;
+MPRINT(EM_DIAGRAM):   *end;
+25181      if (_maxP_ le _previousMinP_ - 1E-6) then do;
+MPRINT(EM_DIAGRAM):   if (_maxP_ le _previousMinP_ - 1E-6) then do;
+25182      _group_ + 1;
+MPRINT(EM_DIAGRAM):   _group_ + 1;
+25183      end;
+MPRINT(EM_DIAGRAM):   end;
+25184      else if (abs(_maxP_ - _previousMinP_) < 1E-6) then do;
+MPRINT(EM_DIAGRAM):   else if (abs(_maxP_ - _previousMinP_) < 1E-6) then do;
+25185      if (abs(_maxP_ - _minP_) > 1E-6) then do;
+MPRINT(EM_DIAGRAM):   if (abs(_maxP_ - _minP_) > 1E-6) then do;
+25186      _group_ + 1;
+MPRINT(EM_DIAGRAM):   _group_ + 1;
+25187      end;
+MPRINT(EM_DIAGRAM):   end;
+25188      end;
+MPRINT(EM_DIAGRAM):   end;
+25189      bin + 1;
+MPRINT(EM_DIAGRAM):   bin + 1;
+25190      /* correct the previous change */
+25191      end;
+MPRINT(EM_DIAGRAM):   end;
+25192      if (_lastObservation_) then do;
+MPRINT(EM_DIAGRAM):   if (_lastObservation_) then do;
+25193      _cutoff_ = .;
+MPRINT(EM_DIAGRAM):   _cutoff_ = .;
+25194      output;
+MPRINT(EM_DIAGRAM):   output;
+25195      end;
+MPRINT(EM_DIAGRAM):   end;
+25196      _previousMinP_ = _minP_;
+MPRINT(EM_DIAGRAM):   _previousMinP_ = _minP_;
+25197      _previousMaxP_ = _maxP_;
+MPRINT(EM_DIAGRAM):   _previousMaxP_ = _maxP_;
+25198      run;
+MPRINT(EM_DIAGRAM):   run;
+
+NOTE: There were 20 observations read from the data set WORK._EMRANK.
+NOTE: The data set WORK._EMRANK has 20 observations and 4 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+      
+
+25199      data WORK._EMRANK;
+MPRINT(EM_DIAGRAM):    data WORK._EMRANK;
+25200      set WORK._EMRANK;
+MPRINT(EM_DIAGRAM):   set WORK._EMRANK;
+25201      by _group_;
+MPRINT(EM_DIAGRAM):   by _group_;
+25202      retain _start_;
+MPRINT(EM_DIAGRAM):   retain _start_;
+25203      if (first._group_) then do;
+MPRINT(EM_DIAGRAM):   if (first._group_) then do;
+25204      _start_ = _n_;
+MPRINT(EM_DIAGRAM):   _start_ = _n_;
+25205      end;
+MPRINT(EM_DIAGRAM):   end;
+25206      if (last._group_) then do;
+MPRINT(EM_DIAGRAM):   if (last._group_) then do;
+25207      _end_ = _n_;
+MPRINT(EM_DIAGRAM):   _end_ = _n_;
+25208      output;
+MPRINT(EM_DIAGRAM):   output;
+25209      end;
+MPRINT(EM_DIAGRAM):   end;
+25210      run;
+MPRINT(EM_DIAGRAM):   run;
+
+NOTE: There were 20 observations read from the data set WORK._EMRANK.
+NOTE: The data set WORK._EMRANK has 13 observations and 6 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.00 seconds
+      
+
+NOTE: This SAS session is using a registry in WORK.  All changes will be lost at the end of 
+      this session.
+25211      filename emflow "J:\JMMORR01\CIS 445\Tutorial
+25211    ! 1\Charity\Workspaces\EMWS1\MdlComp\EMFLOWSCORE.sas";
+MPRINT(EM_DIAGRAM):    filename emflow "J:\JMMORR01\CIS 445\Tutorial 
+1\Charity\Workspaces\EMWS1\MdlComp\EMFLOWSCORE.sas";
+MPRINT(EM_DIAGRAM):   *------------------------------------------------------------*;
+MPRINT(EM_DIAGRAM):   * MdlComp: Scoring REG_TRAIN data;
+MPRINT(EM_DIAGRAM):   *------------------------------------------------------------*;
+25212      *------------------------------------------------------------*;
+25213      * MdlComp: Scoring REG_TRAIN data;
+25214      *------------------------------------------------------------*;
+25215      data EMWS1.MdlComp_TRAIN
+25216      / view=EMWS1.MdlComp_TRAIN
+25217      ;
+MPRINT(EM_DIAGRAM):   data EMWS1.MdlComp_TRAIN / view=EMWS1.MdlComp_TRAIN ;
+25218      set EMWS1.Reg_TRAIN
+25219      ;
+MPRINT(EM_DIAGRAM):   set EMWS1.Reg_TRAIN ;
+25220      %inc emflow;
+NOTE: %INCLUDE (level 1) file EMFLOW is file J:\JMMORR01\CIS 445\Tutorial 
+      1\Charity\Workspaces\EMWS1\MdlComp\EMFLOWSCORE.sas.
+25221     +drop _temp_;
+MPRINT(EM_DIAGRAM):   drop _temp_;
+25222     +if (P_TARGET_B1 ge 0.09650392136737) then do;
+MPRINT(EM_DIAGRAM):   if (P_TARGET_B1 ge 0.09650392136737) then do;
+25223     +b_TARGET_B = 1;
+MPRINT(EM_DIAGRAM):   b_TARGET_B = 1;
+25224     +end;
+MPRINT(EM_DIAGRAM):   end;
+25225     +else
+25226     +if (P_TARGET_B1 ge 0.08334701982093) then do;
+MPRINT(EM_DIAGRAM):   else if (P_TARGET_B1 ge 0.08334701982093) then do;
+25227     +b_TARGET_B = 2;
+MPRINT(EM_DIAGRAM):   b_TARGET_B = 2;
+25228     +end;
+MPRINT(EM_DIAGRAM):   end;
+25229     +else
+25230     +if (P_TARGET_B1 ge 0.07450995410575) then do;
+MPRINT(EM_DIAGRAM):   else if (P_TARGET_B1 ge 0.07450995410575) then do;
+25231     +b_TARGET_B = 3;
+MPRINT(EM_DIAGRAM):   b_TARGET_B = 3;
+25232     +end;
+MPRINT(EM_DIAGRAM):   end;
+25233     +else
+25234     +if (P_TARGET_B1 ge 0.06413874301704) then do;
+MPRINT(EM_DIAGRAM):   else if (P_TARGET_B1 ge 0.06413874301704) then do;
+25235     +b_TARGET_B = 4;
+MPRINT(EM_DIAGRAM):   b_TARGET_B = 4;
+25236     +end;
+MPRINT(EM_DIAGRAM):   end;
+25237     +else
+25238     +if (P_TARGET_B1 ge 0.06341049257326) then do;
+MPRINT(EM_DIAGRAM):   else if (P_TARGET_B1 ge 0.06341049257326) then do;
+25239     +b_TARGET_B = 5;
+MPRINT(EM_DIAGRAM):   b_TARGET_B = 5;
+25240     +end;
+MPRINT(EM_DIAGRAM):   end;
+25241     +else
+25242     +if (P_TARGET_B1 ge 0.05975847538898) then do;
+MPRINT(EM_DIAGRAM):   else if (P_TARGET_B1 ge 0.05975847538898) then do;
+25243     +b_TARGET_B = 6;
+MPRINT(EM_DIAGRAM):   b_TARGET_B = 6;
+25244     +end;
+MPRINT(EM_DIAGRAM):   end;
+25245     +else
+25246     +if (P_TARGET_B1 ge 0.05133961631106) then do;
+MPRINT(EM_DIAGRAM):   else if (P_TARGET_B1 ge 0.05133961631106) then do;
+25247     +_temp_ = dmran(1234);
+MPRINT(EM_DIAGRAM):   _temp_ = dmran(1234);
+25248     +b_TARGET_B = floor(7 + 2*_temp_);
+MPRINT(EM_DIAGRAM):   b_TARGET_B = floor(7 + 2*_temp_);
+25249     +end;
+MPRINT(EM_DIAGRAM):   end;
+25250     +else
+25251     +if (P_TARGET_B1 ge 0.04855344944745) then do;
+MPRINT(EM_DIAGRAM):   else if (P_TARGET_B1 ge 0.04855344944745) then do;
+25252     +b_TARGET_B = 9;
+MPRINT(EM_DIAGRAM):   b_TARGET_B = 9;
+25253     +end;
+MPRINT(EM_DIAGRAM):   end;
+25254     +else
+25255     +if (P_TARGET_B1 ge 0.04518616684771) then do;
+MPRINT(EM_DIAGRAM):   else if (P_TARGET_B1 ge 0.04518616684771) then do;
+25256     +_temp_ = dmran(1234);
+MPRINT(EM_DIAGRAM):   _temp_ = dmran(1234);
+25257     +b_TARGET_B = floor(10 + 2*_temp_);
+MPRINT(EM_DIAGRAM):   b_TARGET_B = floor(10 + 2*_temp_);
+25258     +end;
+MPRINT(EM_DIAGRAM):   end;
+25259     +else
+25260     +if (P_TARGET_B1 ge 0.03919242423951) then do;
+MPRINT(EM_DIAGRAM):   else if (P_TARGET_B1 ge 0.03919242423951) then do;
+25261     +b_TARGET_B = 12;
+MPRINT(EM_DIAGRAM):   b_TARGET_B = 12;
+25262     +end;
+MPRINT(EM_DIAGRAM):   end;
+25263     +else
+25264     +if (P_TARGET_B1 ge 0.0364494773849) then do;
+MPRINT(EM_DIAGRAM):   else if (P_TARGET_B1 ge 0.0364494773849) then do;
+25265     +_temp_ = dmran(1234);
+MPRINT(EM_DIAGRAM):   _temp_ = dmran(1234);
+25266     +b_TARGET_B = floor(13 + 4*_temp_);
+MPRINT(EM_DIAGRAM):   b_TARGET_B = floor(13 + 4*_temp_);
+25267     +end;
+MPRINT(EM_DIAGRAM):   end;
+25268     +else
+25269     +if (P_TARGET_B1 ge 0.03444205040038) then do;
+MPRINT(EM_DIAGRAM):   else if (P_TARGET_B1 ge 0.03444205040038) then do;
+25270     +b_TARGET_B = 17;
+MPRINT(EM_DIAGRAM):   b_TARGET_B = 17;
+25271     +end;
+MPRINT(EM_DIAGRAM):   end;
+25272     +else
+25273     +do;
+MPRINT(EM_DIAGRAM):   else do;
+25274     +_temp_ = dmran(1234);
+MPRINT(EM_DIAGRAM):   _temp_ = dmran(1234);
+25275     +b_TARGET_B = floor(18 + 3*_temp_);
+MPRINT(EM_DIAGRAM):   b_TARGET_B = floor(18 + 3*_temp_);
+25276     +end;
+MPRINT(EM_DIAGRAM):   end;
+NOTE: %INCLUDE (level 1) ending.
+MPRINT(EM_DIAGRAM):   run;
+25277      run;
+
+NOTE: DATA STEP view saved on file EMWS1.MDLCOMP_TRAIN.
+NOTE: A stored DATA STEP view cannot run under a different operating system.
+NOTE: View EMWS1.REG_TRAIN.VIEW used (Total process time):
+      real time           0.21 seconds
+      cpu time            0.18 seconds
+      
+NOTE: DATA statement used (Total process time):
+      real time           0.23 seconds
+      cpu time            0.20 seconds
+      
+
+MPRINT(EM_DIAGRAM):   quit;
+25278      quit;
+25279      filename emflow;
+MPRINT(EM_DIAGRAM):   filename emflow;
+NOTE: Fileref EMFLOW has been deassigned.
+25280      filename emflow "J:\JMMORR01\CIS 445\Tutorial
+25280    ! 1\Charity\Workspaces\EMWS1\MdlComp\EMFLOWSCORE.sas";
+MPRINT(EM_DIAGRAM):    filename emflow "J:\JMMORR01\CIS 445\Tutorial 
+1\Charity\Workspaces\EMWS1\MdlComp\EMFLOWSCORE.sas";
+MPRINT(EM_DIAGRAM):   *------------------------------------------------------------*;
+MPRINT(EM_DIAGRAM):   * MdlComp: Scoring REG_VALIDATE data;
+MPRINT(EM_DIAGRAM):   *------------------------------------------------------------*;
+25281      *------------------------------------------------------------*;
+25282      * MdlComp: Scoring REG_VALIDATE data;
+25283      *------------------------------------------------------------*;
+25284      data EMWS1.MdlComp_VALIDATE
+25285      / view=EMWS1.MdlComp_VALIDATE
+25286      ;
+MPRINT(EM_DIAGRAM):   data EMWS1.MdlComp_VALIDATE / view=EMWS1.MdlComp_VALIDATE ;
+25287      set EMWS1.Reg_VALIDATE
+25288      ;
+MPRINT(EM_DIAGRAM):   set EMWS1.Reg_VALIDATE ;
+25289      %inc emflow;
+NOTE: %INCLUDE (level 1) file EMFLOW is file J:\JMMORR01\CIS 445\Tutorial 
+      1\Charity\Workspaces\EMWS1\MdlComp\EMFLOWSCORE.sas.
+25290     +drop _temp_;
+MPRINT(EM_DIAGRAM):   drop _temp_;
+25291     +if (P_TARGET_B1 ge 0.09650392136737) then do;
+MPRINT(EM_DIAGRAM):   if (P_TARGET_B1 ge 0.09650392136737) then do;
+25292     +b_TARGET_B = 1;
+MPRINT(EM_DIAGRAM):   b_TARGET_B = 1;
+25293     +end;
+MPRINT(EM_DIAGRAM):   end;
+25294     +else
+25295     +if (P_TARGET_B1 ge 0.08334701982093) then do;
+MPRINT(EM_DIAGRAM):   else if (P_TARGET_B1 ge 0.08334701982093) then do;
+25296     +b_TARGET_B = 2;
+MPRINT(EM_DIAGRAM):   b_TARGET_B = 2;
+25297     +end;
+MPRINT(EM_DIAGRAM):   end;
+25298     +else
+25299     +if (P_TARGET_B1 ge 0.07450995410575) then do;
+MPRINT(EM_DIAGRAM):   else if (P_TARGET_B1 ge 0.07450995410575) then do;
+25300     +b_TARGET_B = 3;
+MPRINT(EM_DIAGRAM):   b_TARGET_B = 3;
+25301     +end;
+MPRINT(EM_DIAGRAM):   end;
+25302     +else
+25303     +if (P_TARGET_B1 ge 0.06413874301704) then do;
+MPRINT(EM_DIAGRAM):   else if (P_TARGET_B1 ge 0.06413874301704) then do;
+25304     +b_TARGET_B = 4;
+MPRINT(EM_DIAGRAM):   b_TARGET_B = 4;
+25305     +end;
+MPRINT(EM_DIAGRAM):   end;
+25306     +else
+25307     +if (P_TARGET_B1 ge 0.06341049257326) then do;
+MPRINT(EM_DIAGRAM):   else if (P_TARGET_B1 ge 0.06341049257326) then do;
+25308     +b_TARGET_B = 5;
+MPRINT(EM_DIAGRAM):   b_TARGET_B = 5;
+25309     +end;
+MPRINT(EM_DIAGRAM):   end;
+25310     +else
+25311     +if (P_TARGET_B1 ge 0.05975847538898) then do;
+MPRINT(EM_DIAGRAM):   else if (P_TARGET_B1 ge 0.05975847538898) then do;
+25312     +b_TARGET_B = 6;
+MPRINT(EM_DIAGRAM):   b_TARGET_B = 6;
+25313     +end;
+MPRINT(EM_DIAGRAM):   end;
+25314     +else
+25315     +if (P_TARGET_B1 ge 0.05133961631106) then do;
+MPRINT(EM_DIAGRAM):   else if (P_TARGET_B1 ge 0.05133961631106) then do;
+25316     +_temp_ = dmran(1234);
+MPRINT(EM_DIAGRAM):   _temp_ = dmran(1234);
+25317     +b_TARGET_B = floor(7 + 2*_temp_);
+MPRINT(EM_DIAGRAM):   b_TARGET_B = floor(7 + 2*_temp_);
+25318     +end;
+MPRINT(EM_DIAGRAM):   end;
+25319     +else
+25320     +if (P_TARGET_B1 ge 0.04855344944745) then do;
+MPRINT(EM_DIAGRAM):   else if (P_TARGET_B1 ge 0.04855344944745) then do;
+25321     +b_TARGET_B = 9;
+MPRINT(EM_DIAGRAM):   b_TARGET_B = 9;
+25322     +end;
+MPRINT(EM_DIAGRAM):   end;
+25323     +else
+25324     +if (P_TARGET_B1 ge 0.04518616684771) then do;
+MPRINT(EM_DIAGRAM):   else if (P_TARGET_B1 ge 0.04518616684771) then do;
+25325     +_temp_ = dmran(1234);
+MPRINT(EM_DIAGRAM):   _temp_ = dmran(1234);
+25326     +b_TARGET_B = floor(10 + 2*_temp_);
+MPRINT(EM_DIAGRAM):   b_TARGET_B = floor(10 + 2*_temp_);
+25327     +end;
+MPRINT(EM_DIAGRAM):   end;
+25328     +else
+25329     +if (P_TARGET_B1 ge 0.03919242423951) then do;
+MPRINT(EM_DIAGRAM):   else if (P_TARGET_B1 ge 0.03919242423951) then do;
+25330     +b_TARGET_B = 12;
+MPRINT(EM_DIAGRAM):   b_TARGET_B = 12;
+25331     +end;
+MPRINT(EM_DIAGRAM):   end;
+25332     +else
+25333     +if (P_TARGET_B1 ge 0.0364494773849) then do;
+MPRINT(EM_DIAGRAM):   else if (P_TARGET_B1 ge 0.0364494773849) then do;
+25334     +_temp_ = dmran(1234);
+MPRINT(EM_DIAGRAM):   _temp_ = dmran(1234);
+25335     +b_TARGET_B = floor(13 + 4*_temp_);
+MPRINT(EM_DIAGRAM):   b_TARGET_B = floor(13 + 4*_temp_);
+25336     +end;
+MPRINT(EM_DIAGRAM):   end;
+25337     +else
+25338     +if (P_TARGET_B1 ge 0.03444205040038) then do;
+MPRINT(EM_DIAGRAM):   else if (P_TARGET_B1 ge 0.03444205040038) then do;
+25339     +b_TARGET_B = 17;
+MPRINT(EM_DIAGRAM):   b_TARGET_B = 17;
+25340     +end;
+MPRINT(EM_DIAGRAM):   end;
+25341     +else
+25342     +do;
+MPRINT(EM_DIAGRAM):   else do;
+25343     +_temp_ = dmran(1234);
+MPRINT(EM_DIAGRAM):   _temp_ = dmran(1234);
+25344     +b_TARGET_B = floor(18 + 3*_temp_);
+MPRINT(EM_DIAGRAM):   b_TARGET_B = floor(18 + 3*_temp_);
+25345     +end;
+MPRINT(EM_DIAGRAM):   end;
+NOTE: %INCLUDE (level 1) ending.
+MPRINT(EM_DIAGRAM):   run;
+25346      run;
+
+NOTE: DATA STEP view saved on file EMWS1.MDLCOMP_VALIDATE.
+NOTE: A stored DATA STEP view cannot run under a different operating system.
+NOTE: View EMWS1.REG_VALIDATE.VIEW used (Total process time):
+      real time           0.23 seconds
+      cpu time            0.14 seconds
+      
+NOTE: DATA statement used (Total process time):
+      real time           0.25 seconds
+      cpu time            0.14 seconds
+      
+
+MPRINT(EM_DIAGRAM):   quit;
+25347      quit;
+25348      filename emflow;
+MPRINT(EM_DIAGRAM):   filename emflow;
+NOTE: Fileref EMFLOW has been deassigned.
+25349      *------------------------------------------------------------*;
+MPRINT(EM_DIAGRAM):    *------------------------------------------------------------*;
+25350      * MdlComp: Computing metadata for TRAIN data;
+MPRINT(EM_DIAGRAM):   * MdlComp: Computing metadata for TRAIN data;
+25351      *------------------------------------------------------------*;
+MPRINT(EM_DIAGRAM):   *------------------------------------------------------------*;
+
+NOTE: View EMWS1.MDLCOMP_TRAIN.VIEW used (Total process time):
+      real time           0.17 seconds
+      cpu time            0.18 seconds
+      
+MPRINT(EM_DIAGRAM):    *------------------------------------------------------------*;
+MPRINT(EM_DIAGRAM):   * &nodeid: Computing Metadata for TRAIN data;
+MPRINT(EM_DIAGRAM):   *------------------------------------------------------------*;
+MPRINT(EMADVISECOLUMNS):   proc display c=sashelp.emmeta.advisecolumns.scl;
+MPRINT(EMADVISECOLUMNS):   run;
+MPRINT(EMADVISECOLUMNS):    options validvarname=any;
+MPRINT(EMADVISECOLUMNS):   proc contents data=EMWS1.MdlComp_TRAIN out=_tempAdvisor noprint;
+MPRINT(EMADVISECOLUMNS):   run;
+MPRINT(EMADVISECOLUMNS):   options validvarname=V7;
+MPRINT(EMADVISECOLUMNS):    data _null_;
+MPRINT(EMADVISECOLUMNS):   dsid = open('EMWS1.MdlComp_TRAIN');
+MPRINT(EMADVISECOLUMNS):   call symput('_dsidTable', strip(put(dsid, best.)));
+MPRINT(EMADVISECOLUMNS):   if dsid then do;
+MPRINT(EMADVISECOLUMNS):   call symput('_engineTable', attrc(dsid, 'ENGINE'));
+MPRINT(EMADVISECOLUMNS):   dsid = close(dsid);
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   run;
+MPRINT(EMADVISECOLUMNS):    proc contents data=EMWS1.MdlComp_TRAIN out=WORK.M0KSBORD noprint;
+MPRINT(EMADVISECOLUMNS):   run;
+MPRINT(EMADVISECOLUMNS):    data WORK.M0KSBORD;
+MPRINT(EMADVISECOLUMNS):   length NAME $ 64 TYPE $ 1 LABEL $ 200 FORMAT $ 36 INFORMAT $36 
+INDEX $ 1 INDEXTYPE $ 9;
+MPRINT(EMADVISECOLUMNS):   label NAME =;
+MPRINT(EMADVISECOLUMNS):   set WORK.M0KSBORD(keep=name type length label format formatl 
+formatd informat informl informd idxusage rename=(type=itype));
+MPRINT(EMADVISECOLUMNS):   if itype = 1 then type = 'N';
+MPRINT(EMADVISECOLUMNS):   else type = 'C';
+MPRINT(EMADVISECOLUMNS):   if formatl > 0 then do;
+MPRINT(EMADVISECOLUMNS):   if format ne '' then do;
+MPRINT(EMADVISECOLUMNS):   if type='N' then format = strip(format)!!strip(put(formatl, 
+best12.))!!'.'!!strip(put(formatd, best12.));
+MPRINT(EMADVISECOLUMNS):   else format = strip(format)!!strip(put(formatl, best12.))!!'.';
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   else format = strip(put(formatl, best12.))!!'.'!!strip(put(formatd, 
+best12.));
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   else if format ne '' then format = strip(format)!!'.';
+MPRINT(EMADVISECOLUMNS):   if informl > 0 then do;
+MPRINT(EMADVISECOLUMNS):   if informat ne ' ' then do;
+MPRINT(EMADVISECOLUMNS):   if type='N' then informat = strip(informat)!!strip(put(informl, 
+best12.))!!'.'!!strip(put(informd, best12.));
+MPRINT(EMADVISECOLUMNS):   else informat = strip(informat)!!strip(put(informl, best12.))!!'.';
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   else informat = strip(put(informl, 
+best12.))!!'.'!!strip(put(informd, best12.));
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   else if informat ne '' then informat = strip(informat)!!'.';
+MPRINT(EMADVISECOLUMNS):   if idxusage = 'NONE' then index ="N";
+MPRINT(EMADVISECOLUMNS):   else index = "Y";
+MPRINT(EMADVISECOLUMNS):   indextype = idxusage;
+MPRINT(EMADVISECOLUMNS):   drop idxusage itype formatl formatd informl informd;
+MPRINT(EMADVISECOLUMNS):   run;
+MPRINT(EMADVISECOLUMNS):    data WORK.M0KSBORD;
+MPRINT(EMADVISECOLUMNS):   length UNAME $64;
+MPRINT(EMADVISECOLUMNS):   set WORK.M0KSBORD;
+MPRINT(EMADVISECOLUMNS):   UNAME = upcase(NAME);
+MPRINT(EMADVISECOLUMNS):   run;
+MPRINT(EMADVISECOLUMNS):    proc sort data=WORK.M2XCJD3G NOTHREADS;
+MPRINT(EMADVISECOLUMNS):   by UNAME;
+MPRINT(EMADVISECOLUMNS):   run;
+MPRINT(EMADVISECOLUMNS):    data WORK.M2XCJD3G;
+MPRINT(EMADVISECOLUMNS):   drop UNAME;
+MPRINT(EMADVISECOLUMNS):   set WORK.M2XCJD3G;
+MPRINT(EMADVISECOLUMNS):   run;
+MPRINT(EMADVISECOLUMNS):    data WORK.M1O1WWLT(keep=NAME ATTR);
+MPRINT(EMADVISECOLUMNS):   length ATTR $ 20;
+MPRINT(EMADVISECOLUMNS):   set WORK.M2XCJD3G;
+MPRINT(EMADVISECOLUMNS):   if level ne "INTERVAL" then do;
+MPRINT(EMADVISECOLUMNS):   if order = ' ' then do;
+MPRINT(EMADVISECOLUMNS):   attr = 'ORDER';
+MPRINT(EMADVISECOLUMNS):   output;
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   if format ne ' ' and formattype = ' ' then do;
+MPRINT(EMADVISECOLUMNS):   attr = 'FORMATTYPE';
+MPRINT(EMADVISECOLUMNS):   output;
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   if role = ' ' then do;
+MPRINT(EMADVISECOLUMNS):   attr = 'ROLE';
+MPRINT(EMADVISECOLUMNS):   output;
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   if level = ' ' then do;
+MPRINT(EMADVISECOLUMNS):   attr = 'LEVEL';
+MPRINT(EMADVISECOLUMNS):   output;
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   if type = ' ' then do;
+MPRINT(EMADVISECOLUMNS):   attr = 'TYPE';
+MPRINT(EMADVISECOLUMNS):   output;
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   if index = ' ' then do;
+MPRINT(EMADVISECOLUMNS):   attr = 'INDEX';
+MPRINT(EMADVISECOLUMNS):   output;
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   if report = ' ' then do;
+MPRINT(EMADVISECOLUMNS):   attr = 'REPORT';
+MPRINT(EMADVISECOLUMNS):   output;
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   run;
+MPRINT(EMADVISECOLUMNS):   proc sort NOTHREADS;
+MPRINT(EMADVISECOLUMNS):   by attr;
+MPRINT(EMADVISECOLUMNS):   run;
+MPRINT(EMADVISECOLUMNS):    data WORK.M2XCJD3G;
+MPRINT(EMADVISECOLUMNS):   length NAME $64 ROLE $ 32 LEVEL $ 10 ORDER $ 8 CREATOR $32 
+FORMATTYPE $ 10 FAMILY $ 10 LOWERLIMIT 8 UPPERLIMIT 8 REPORT $1 DISTRIBUTION $ 20 COMMENT $64;
+MPRINT(EMADVISECOLUMNS):   length levelAssigned 8 roleAssigned 8 PRICE 8;
+MPRINT(EMADVISECOLUMNS):   set WORK.M2XCJD3G;
+MPRINT(EMADVISECOLUMNS):   if formattype = ' ' then do;
+MPRINT(EMADVISECOLUMNS):   if format ne ' ' then do;
+MPRINT(EMADVISECOLUMNS):   if type = 'N' then do;
+MPRINT(EMADVISECOLUMNS):   pos = indexc(format,'.1234567890');
+MPRINT(EMADVISECOLUMNS):   if pos > 1 then tempfmt = substr(format,1, pos-1);
+MPRINT(EMADVISECOLUMNS):   else tempfmt = ' ';
+MPRINT(EMADVISECOLUMNS):   flen = length(tempfmt);
+MPRINT(EMADVISECOLUMNS):   select;
+MPRINT(EMADVISECOLUMNS):   when(tempfmt in ("DATE" "DAY" "DDMMYY" "DOWNAME" "JULDAY" "JULIAN" 
+"MMDDYY" "MMDDYYD" "MMDDYYC" "MMDDYYN" "MMDDYYP" "MMDDYYS" "MONNAME" "MONTH" "MONYY" "NENGO" 
+"QTR" "QTRR" "WEEKDATE" "WEEKDATX" "WEEKDAY" "WORDDATE" "WORDDATX" "YEAR" "YYMMDD" "YYMON" 
+"YYMMDDC" "YYMMDDD" "YYMMDDN" "YYMMDDP" "YYMMDDS" "EURDFDE" "NJDATE" "NLDATE" "EURDFDD" 
+"EURDFDWN" "EURDFMN" "EURDFMY" "EURDFWK" "EURDFWKX" "EURDFWDX" "EURDFDN" "EURDFDE" )) 
+formattype = 'DATE';
+MPRINT(EMADVISECOLUMNS):   when(tempfmt in ("DATETIME" "EURDFDT" "TOD" )) formattype = 
+"DATETIME";
+MPRINT(EMADVISECOLUMNS):   when(tempfmt in ("HHMM" "HOUR" "MMSS" "TIME" "TIMEAMPM" )) 
+formattype = "TIME";
+MPRINT(EMADVISECOLUMNS):   when(tempfmt in ("COMMA" "COMMAX" "DOLLAR" "DOLLARX" "E" "FRACT" 
+"NEGPAREN" "PERCENT")) formattype="QUANTITY";
+MPRINT(EMADVISECOLUMNS):   when(tempfmt in ("BINARY" "HEX" "IB" "OCTAL" "PD" "PIB" "PK" "RB" 
+"SSN" "Z" "ZD")) formattype = "CODING";
+MPRINT(EMADVISECOLUMNS):   otherwise do;
+MPRINT(EMADVISECOLUMNS):   formattype = "USER";
+MPRINT(EMADVISECOLUMNS):   if compress(tempfmt, '0123456789.', '') = '' then formattype='NUM';
+MPRINT(EMADVISECOLUMNS):   else if substr(tempfmt, 1, 6)='NLDATE' then formattype = "DATE";
+MPRINT(EMADVISECOLUMNS):   else if substr(tempfmt, 1, 6)='NLDATM' then formattype = "DATETIME";
+MPRINT(EMADVISECOLUMNS):   else if substr(tempfmt, 1, 4)='NLTIM' then formattype = "TIME";
+MPRINT(EMADVISECOLUMNS):   else if flen >= 4 then do;
+MPRINT(EMADVISECOLUMNS):   str = substr(tempfmt,1,4);
+MPRINT(EMADVISECOLUMNS):   if str in ("MMYY" "YYMM" "YYQR") then formattype ="DATE";
+MPRINT(EMADVISECOLUMNS):   else if str = "S370" then formattype = "CODING";
+MPRINT(EMADVISECOLUMNS):   else if str = "BEST" then formattype = "NUM";
+MPRINT(EMADVISECOLUMNS):   drop str;
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   else if flen >=3 and substr(tempfmt,1,3) = "YYQ" then formatType = 
+"DATE";
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   drop flen tempfmt pos;
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   else do;
+MPRINT(EMADVISECOLUMNS):   formatType = "CATEGORY";
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   if formatType = "NUM" then do;
+MPRINT(EMADVISECOLUMNS):   if index = "Y" then formatType = "DISCRETE";
+MPRINT(EMADVISECOLUMNS):   else formatType = "QUANTITY";
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   if level = ' ' then do;
+MPRINT(EMADVISECOLUMNS):   if formatType in ("CATEGORY", "CODING", "ID") or type = "C" then 
+level = "NOMINAL";
+MPRINT(EMADVISECOLUMNS):   else level = "INTERVAL";
+MPRINT(EMADVISECOLUMNS):   levelAssigned = 1;
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   else level = upcase(level);
+MPRINT(EMADVISECOLUMNS):   if role = ' ' then do;
+MPRINT(EMADVISECOLUMNS):   length name_prefix $8 _uname $64;
+MPRINT(EMADVISECOLUMNS):   drop name_prefix _uname _freqflag;
+MPRINT(EMADVISECOLUMNS):   retain _freqflag;
+MPRINT(EMADVISECOLUMNS):   if LENGTH> 80 then ROLE = 'TEXT';
+MPRINT(EMADVISECOLUMNS):   _uname = upcase(NAME);
+MPRINT(EMADVISECOLUMNS):   select(_uname);
+MPRINT(EMADVISECOLUMNS):   when('_PARTIND_') do;
+MPRINT(EMADVISECOLUMNS):   ROLE = 'ID';
+MPRINT(EMADVISECOLUMNS):   LEVEL = 'NOMINAL';
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   when('_WARN_') ROLE = 'ASSESS';
+MPRINT(EMADVISECOLUMNS):   when('EM_SEGMENT') do;
+MPRINT(EMADVISECOLUMNS):   ROLE = 'SEGMENT';
+MPRINT(EMADVISECOLUMNS):   LEVEL = 'NOMINAL';
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   when('_NODE_') do;
+MPRINT(EMADVISECOLUMNS):   ROLE = 'SEGMENT';
+MPRINT(EMADVISECOLUMNS):   LEVEL = 'NOMINAL';
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   when('EM_CLASSTARGET') ROLE = 'ASSESS';
+MPRINT(EMADVISECOLUMNS):   when('EM_VALUETARGET') ROLE = 'ASSESS';
+MPRINT(EMADVISECOLUMNS):   when('EM_PREDICTION') ROLE = 'PREDICT';
+MPRINT(EMADVISECOLUMNS):   when('EM_PROBABILITY') ROLE = 'PREDICT';
+MPRINT(EMADVISECOLUMNS):   when('EM_EVENTPROBABILITY') ROLE = 'PREDICT';
+MPRINT(EMADVISECOLUMNS):   when('EM_CLASSIFICATION') ROLE = 'CLASSIFICATION';
+MPRINT(EMADVISECOLUMNS):   when('EM_DECISION') ROLE = 'DECISION';
+MPRINT(EMADVISECOLUMNS):   when('EM_PROFIT') ROLE = 'ASSESS';
+MPRINT(EMADVISECOLUMNS):   when('EM_LOSS') ROLE = 'ASSESS';
+MPRINT(EMADVISECOLUMNS):   when('EM_ROI') ROLE = 'ASSESS';
+MPRINT(EMADVISECOLUMNS):   when('URI') ROLE = 'URL';
+MPRINT(EMADVISECOLUMNS):   when('FILTERED') ROLE = 'TEXTLOC';
+MPRINT(EMADVISECOLUMNS):   otherwise do;
+MPRINT(EMADVISECOLUMNS):   if upcase(NAME) =: 'ZIP' then do;
+MPRINT(EMADVISECOLUMNS):   ROLE = 'REJECTED';
+MPRINT(EMADVISECOLUMNS):   LEVEL = 'NOMINAL';
+MPRINT(EMADVISECOLUMNS):   COMMENT = 'Rejected by: Exceed the maximum class level of %s';
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   else if upcase(NAME) in('FREQ', 'FREQUENCY') then do;
+MPRINT(EMADVISECOLUMNS):   ROLE = 'FREQ';
+MPRINT(EMADVISECOLUMNS):   if TYPE = 'C' then ROLE = 'INPUT';
+MPRINT(EMADVISECOLUMNS):   else if _freqflag =1 then ROLE='REJECTED';
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   else do;
+MPRINT(EMADVISECOLUMNS):   name_prefix = scan(_uname, 1, '_');
+MPRINT(EMADVISECOLUMNS):   if scan(_uname, 2, '_') = '' then name_prefix='';
+MPRINT(EMADVISECOLUMNS):   if name_prefix in('F', 'I', 'U') then do;
+MPRINT(EMADVISECOLUMNS):   ROLE = 'CLASSIFICATION';
+MPRINT(EMADVISECOLUMNS):   LEVEL = 'NOMINAL';
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   else if name_prefix in('Q') then ROLE = 'ASSESS';
+MPRINT(EMADVISECOLUMNS):   else if name_prefix in('P', 'V') then ROLE = 'PREDICT';
+MPRINT(EMADVISECOLUMNS):   else if name_prefix in('R', 'RS', 'RT', 'RD', 'RDS', 'RDT', 'RA', 
+'RAS', 'RAT') then ROLE = 'RESIDUAL';
+MPRINT(EMADVISECOLUMNS):   else if name_prefix ='D' then do;
+MPRINT(EMADVISECOLUMNS):   ROLE = 'DECISION';
+MPRINT(EMADVISECOLUMNS):   LEVEL = 'NOMINAL';
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   else if name_prefix ='B' then do;
+MPRINT(EMADVISECOLUMNS):   ROLE = 'SEGMENT';
+MPRINT(EMADVISECOLUMNS):   LEVEL = 'NOMINAL';
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   else if name_prefix in('EP', 'BP', 'CP', 'EL', 'CL', 'BL', 'W', 
+'ROI', 'IC') then ROLE = 'ASSESS';
+MPRINT(EMADVISECOLUMNS):   else do;
+MPRINT(EMADVISECOLUMNS):   array _ROLE_ (19) $32 _TEMPORARY_ 
+('ASSESS','CLASSIFICATION','CENSOR', 'COST', 'CROSSID', 'DECISION', 'ID','INPUT', 'LABEL', 
+'MISSING','PREDICT','REFERRER','REJECTED', 'RESIDUAL','SEGMENT', 'SEQUENCE','TARGET', 'TEXT', 
+'TIMEID');
+MPRINT(EMADVISECOLUMNS):   drop _found_ i;
+MPRINT(EMADVISECOLUMNS):   _found_=0;
+MPRINT(EMADVISECOLUMNS):   do i=1 to 19 until(_found_=1);
+MPRINT(EMADVISECOLUMNS):   if index(_uname, trim(_ROLE_{i}))=1 then do;
+MPRINT(EMADVISECOLUMNS):   ROLE=_ROLE_{i};
+MPRINT(EMADVISECOLUMNS):   if ROLE = 'ID' then LEVEL = 'NOMINAL';
+MPRINT(EMADVISECOLUMNS):   else if ROLE = 'SEGMENT' then LEVEL = 'NOMINAL';
+MPRINT(EMADVISECOLUMNS):   else if ROLE = 'TIMEID' and TYPE='N' then LEVEL = 'INTERVAL';
+MPRINT(EMADVISECOLUMNS):   _found_=1;
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   if length(_uname)>2 then do;
+MPRINT(EMADVISECOLUMNS):   if substr(reverse(trim(_uname)), 1, 3) = 'DI_' then do;
+MPRINT(EMADVISECOLUMNS):   ROLE = 'ID';
+MPRINT(EMADVISECOLUMNS):   LEVEL = 'NOMINAL';
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   if ROLE='FREQ' then _freqflag=1;
+MPRINT(EMADVISECOLUMNS):   else if ROLE = 'CLASSIFICATION' then LEVEL = 'NOMINAL';
+MPRINT(EMADVISECOLUMNS):   if symexist('RATEMKG_ROLE') then do;
+MPRINT(EMADVISECOLUMNS):   if upcase(symget('RATEMKG_ROLE')) in('Y', 'YES') then do;
+MPRINT(EMADVISECOLUMNS):   if _uname =: 'POLICY' then ROLE = 'POLICYID';
+MPRINT(EMADVISECOLUMNS):   else if _uname in ('PARTITION', '_PARTIND_') then ROLE = 
+'PARTITION';
+MPRINT(EMADVISECOLUMNS):   else if type = 'N' then do;
+MPRINT(EMADVISECOLUMNS):   if _uname = 'EXPOSURE' then ROLE = 'EXPOSURE';
+MPRINT(EMADVISECOLUMNS):   else if _uname = 'YEAR' then ROLE = 'YEAR';
+MPRINT(EMADVISECOLUMNS):   else if _uname = 'WEIGHT' then ROLE = 'WEIGHT';
+MPRINT(EMADVISECOLUMNS):   else if _uname = 'OFFSET' then ROLE = 'OFFSET';
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   if role = ' ' then do;
+MPRINT(EMADVISECOLUMNS):   if formattype in('DATE', 'DATETIME', 'TIME') then role = 'TIMEID';
+MPRINT(EMADVISECOLUMNS):   else role = 'INPUT';
+MPRINT(EMADVISECOLUMNS):   roleAssigned = 1;
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   else role = upcase(role);
+MPRINT(EMADVISECOLUMNS):   if REPORT = '' then REPORT = 'N';
+MPRINT(EMADVISECOLUMNS):   if symexist('dmwb_product') then do;
+MPRINT(EMADVISECOLUMNS):   if upcase(symget('dmwb_product')) = 'FACTORYMINER_DATASOURCE' then 
+do;
+MPRINT(EMADVISECOLUMNS):   if ROLE ^in('INPUT', 'TARGET', 'REJECTED', 'SEGMENT', 'FREQ', 'ID', 
+'KEY') then ROLE='REJECTED';
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   end;
+MPRINT(EMADVISECOLUMNS):   run;
+MPRINT(EMADVISECOLUMNS):    data WORK.M2XCJD3G;
+MPRINT(EMADVISECOLUMNS):   set WORK.M2XCJD3G;
+MPRINT(EMADVISECOLUMNS):   label NAME = "Variable Name" TYPE = "Type" ROLE = "Role" LEVEL= 
+"Measurement Level" ORDER= "Order" CREATOR= "Creator" FORMATTYPE= "Format Type" FAMILY= 
+"Family" DISTRIBUTION= "Distribution" PRICE= "Price" LOWERLIMIT= "Lower limit" UPPERLIMIT= 
+"Upper Limit" REPORT= "Report" COMMENT= "Comment" INDEX= "Index" INDEXTYPE= "IndexType" LABEL= 
+"Label" LENGTH= "Length";
+MPRINT(EMADVISECOLUMNS):   drop levelAssigned roleAssigned;
+MPRINT(EMADVISECOLUMNS):   run;
+MPRINT(EMADVISECOLUMNS):   
+MPRINT(EM_DIAGRAM):  ;
+MPRINT(EM_DIAGRAM):   proc sort data=WORK.COLUMNMETA;
+MPRINT(EM_DIAGRAM):   by NAME;
+MPRINT(EM_DIAGRAM):   run;
+MPRINT(EM_DIAGRAM):   *------------------------------------------------------------*;
+MPRINT(EM_DIAGRAM):   * &nodeid: Merge incoming metadata;
+MPRINT(EM_DIAGRAM):   *------------------------------------------------------------*;
+MPRINT(EM_DIAGRAM):   proc contents data=EMWS1.Reg_TRAIN noprint out=_temp2(keep=NAME);
+MPRINT(EM_DIAGRAM):   run;
+MPRINT(EM_DIAGRAM):   proc sort data=_temp2;
+MPRINT(EM_DIAGRAM):   by NAME;
+MPRINT(EM_DIAGRAM):   run;
+MPRINT(EM_DIAGRAM):   proc sort data=EMWS1.Reg_CMeta_TRAIN out=_temp;
+MPRINT(EM_DIAGRAM):   by NAME;
+MPRINT(EM_DIAGRAM):   run;
+MPRINT(EM_DIAGRAM):   data EMWS1.MdlComp_CMeta_TRAIN;
+MPRINT(EM_DIAGRAM):   merge WORK.COLUMNMETA(in=_a) _temp2(in=_b) _temp(drop=FORMAT INFORMAT 
+LENGTH INDEX INDEXTYPE in=_c) end=_eof_;
+MPRINT(EM_DIAGRAM):   by NAME;
+MPRINT(EM_DIAGRAM):   if (^_a and _b) or (^_c and _a and _b) then delete;
+MPRINT(EM_DIAGRAM):   if ^_b then CREATOR = "MdlComp";
+MPRINT(EM_DIAGRAM):   run;
+NOTE: View EMWS1.MDLCOMP_TRAIN.VIEW used (Total process time):
+      real time           0.17 seconds
+      cpu time            0.18 seconds
+      
+NOTE: View EMWS1.MDLCOMP_VALIDATE.VIEW used (Total process time):
+      real time           0.17 seconds
+      cpu time            0.17 seconds
+      
+MPRINT(EM_DIAGRAM):    proc printto;
+MPRINT(EM_DIAGRAM):   run;

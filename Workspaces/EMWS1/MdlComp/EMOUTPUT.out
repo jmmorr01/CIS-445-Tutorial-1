@@ -1,0 +1,271 @@
+*------------------------------------------------------------*
+User:                jmmorr01
+Date:                October 20, 2018
+Time:                16:43:33
+*------------------------------------------------------------*
+* Training Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Variable Summary
+ 
+          Measurement    Frequency
+ Role        Level         Count
+ 
+TARGET      BINARY           1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Fit Statistics
+Model Selection based on Valid: Average Profit for TARGET_B (_VAPROF_)
+ 
+                                                     Valid:
+                                                     Average
+Selected    Model                                  Profit for
+ Model      Node      Model Description             TARGET_B
+ 
+   Y        Reg       Regression                     0.26422
+            Neural    Neural Network                 0.26089
+            Boost     Gradient Boosting              0.25781
+            Tree      Decision Tree                  0.25007
+            Tree2     Interactive Decision Tree      0.25007
+ 
+ Train:                          Valid:
+Average          Train:         Average          Valid:
+Squared    Misclassification    Squared    Misclassification
+ Error            Rate           Error            Rate
+ 
+0.18240         0.25005         0.18292         0.24994
+0.17972         0.25005         0.18256         0.24994
+0.17963         0.25005         0.18290         0.24994
+0.18261         0.25005         0.18506         0.24994
+0.18086         0.25005         0.18617         0.24994
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Fit Statistics Table
+Target: TARGET_B
+ 
+Data Role=Train
+ 
+Statistics
+ 
+Train: Bin-Based Two-Way Kolmogorov-Smirnov Probability Cutoff
+Train: Kolmogorov-Smirnov Statistic
+Train: Akaike's Information Criterion
+Train: Average Profit for TARGET_B
+Train: Average Squared Error
+Train: Roc Index
+Train: Average Error Function
+Train: Cumulative Percent Captured Response
+Train: Percent Captured Response
+Selection Criterion: Valid: Average Profit for TARGET_B
+Train: Degrees of Freedom for Error
+Train: Model Degrees of Freedom
+Train: Total Degrees of Freedom
+Train: Divisor for ASE
+Train: Error Function
+Train: Final Prediction Error
+Train: Gain
+Train: Gini Coefficient
+Train: Bin-Based Two-Way Kolmogorov-Smirnov Statistic
+Train: Kolmogorov-Smirnov Probability Cutoff
+Train: Cumulative Lift
+Train: Lift
+Train: Maximum Absolute Error
+Train: Misclassification Rate
+Train: Mean Squared Error
+Train: Sum of Frequencies
+Train: Number of Estimated Weights
+Train: Average Squared Error with Priors
+Train: Misclassification Rate with Priors
+Train: Total Profit for TARGET_B
+Train: Root Average Squared Error
+Train: Cumulative Percent Response
+Train: Percent Response
+Train: Root Final Prediction Error
+Train: Root Mean Squared Error
+Train: Schwarz's Bayesian Criterion
+Train: Sum of Squared Errors
+Train: Sum of Case Weights Times Freq
+Train: Number of Wrong Classifications
+ 
+     Reg      Neural       Boost        Tree       Tree2
+ 
+    0.06        0.05        0.06        0.05        0.05
+    0.15        0.18        0.20        0.14        0.16
+11704.68    11956.39         .           .           .
+    0.26        0.27        0.28        0.28        0.28
+    0.18        0.18        0.18        0.18        0.18
+    0.61        0.63        0.64        0.60        0.61
+    0.55        0.54         .           .           .
+   17.81       20.65       21.28       14.71       16.83
+    8.67        9.01        9.46        7.29        7.02
+    0.26        0.26        0.26        0.25        0.25
+10648.00    10451.00         .           .           .
+    6.00      203.00         .           .           .
+10654.00    10654.00    10654.00    10654.00    10654.00
+21308.00    21308.00    21308.00    21308.00    21308.00
+11692.68    11550.39         .           .           .
+    0.18        0.19         .           .           .
+   77.92      106.27      112.72       47.05       68.20
+    0.22        0.26        0.29        0.20        0.23
+    0.16        0.19        0.21        0.14        0.16
+    0.05        0.05        0.05        0.05        0.05
+    1.78        2.06        2.13        1.47        1.68
+    1.73        1.80        1.89        1.46        1.40
+    0.85        0.92        0.87        0.88        0.88
+    0.25        0.25        0.25        0.25        0.25
+    0.18        0.18         .           .           .
+10654.00    10654.00    10654.00    10654.00    10654.00
+    6.00      203.00         .           .           .
+     .           .          0.16        0.16        0.16
+     .           .          0.05        0.05        0.05
+ 2815.94     2891.33     2966.07     2966.02     2966.02
+    0.43        0.42        0.42        0.43        0.43
+    8.90       10.31       10.64        7.35        8.41
+    8.67        9.00        9.45        7.30        7.02
+    0.43        0.43         .           .           .
+    0.43        0.43         .           .           .
+11748.33    13432.95         .           .           .
+ 3886.50     3829.54     3827.60     3891.11     3853.85
+21308.00    21308.00    21308.00         .           .
+     .       2664.00         .           .           .
+ 
+ 
+Data Role=Valid
+ 
+Statistics
+ 
+Valid: Kolmogorov-Smirnov Statistic
+Valid: Average Profit for TARGET_B
+Valid: Average Squared Error
+Valid: Roc Index
+Valid: Average Error Function
+Valid: Bin-Based Two-Way Kolmogorov-Smirnov Probability Cutoff
+Valid: Cumulative Percent Captured Response
+Valid: Percent Captured Response
+Valid: Divisor for VASE
+Valid: Error Function
+Valid: Gain
+Valid: Gini Coefficient
+Valid: Bin-Based Two-Way Kolmogorov-Smirnov Statistic
+Valid: Kolmogorov-Smirnov Probability Cutoff
+Valid: Cumulative Lift
+Valid: Lift
+Valid: Maximum Absolute Error
+Valid: Misclassification Rate
+Valid: Mean Squared Error
+Valid: Sum of Frequencies
+Valid: Average Squared Error with Priors
+Valid: Misclassification Rate with Priors
+Valid: Total Profit for TARGET_B
+Valid: Root Average Squared Error
+Valid: Cumulative Percent Response
+Valid: Percent Response
+Valid: Root Mean Squared Error
+Valid: Sum of Squared Errors
+Valid: Sum of Case Weights Times Freq
+Valid: Number of Wrong Classifications
+ 
+     Reg      Neural       Boost        Tree       Tree2
+ 
+    0.15        0.15        0.15        0.12        0.12
+    0.26        0.26        0.26        0.25        0.25
+    0.18        0.18        0.18        0.19        0.19
+    0.60        0.60        0.60        0.58        0.58
+    0.55        0.55         .           .           .
+    0.06        0.06        0.05        0.06        0.07
+   16.81       18.08       18.04       14.06       14.05
+    6.73        7.30        7.89        7.03        6.87
+17436.00    17436.00    17436.00    17436.00    17436.00
+ 9593.73     9589.38         .           .           .
+   67.88       80.78       80.16       40.43       40.42
+    0.20        0.21        0.20        0.16        0.16
+    0.15        0.15        0.15        0.12        0.12
+    0.05        0.05        0.05        0.06        0.06
+    1.68        1.81        1.80        1.40        1.40
+    1.35        1.46        1.58        1.41        1.37
+    0.85        0.92        0.87        0.88        0.88
+    0.25        0.25        0.25        0.25        0.25
+    0.18        0.18         .           .           .
+ 8718.00     8718.00     8718.00     8718.00     8718.00
+     .           .          0.16        0.17        0.17
+     .           .          0.05        0.05        0.05
+ 2303.49     2274.42     2247.56     2180.13     2180.13
+    0.43        0.43        0.43        0.43        0.43
+    8.39        9.04        9.01        7.02        7.02
+    6.73        7.30        7.89        7.03        6.87
+    0.43        0.43         .           .           .
+ 3189.38     3183.18     3188.97     3226.74     3245.98
+17436.00    17436.00    17436.00         .           .
+     .       2179.00         .           .           .
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Event Classification Table
+Model Selection based on Valid: Average Profit for TARGET_B (_VAPROF_)
+ 
+Model                                  Data
+Node      Model Description            Role         Target
+ 
+Neural    Neural Network               TRAIN       TARGET_B
+Neural    Neural Network               VALIDATE    TARGET_B
+Reg       Regression                   TRAIN       TARGET_B
+Reg       Regression                   VALIDATE    TARGET_B
+Boost     Gradient Boosting            TRAIN       TARGET_B
+Boost     Gradient Boosting            VALIDATE    TARGET_B
+Tree      Decision Tree                TRAIN       TARGET_B
+Tree      Decision Tree                VALIDATE    TARGET_B
+Tree2     Interactive Decision Tree    TRAIN       TARGET_B
+Tree2     Interactive Decision Tree    VALIDATE    TARGET_B
+ 
+                                                          False     True      False     True
+                     Target Label                       Negative  Negative  Positive  Positive
+ 
+Target Variable Indicates for Response to 97NK Mailing    2664      7990        0         0
+Target Variable Indicates for Response to 97NK Mailing    2179      6539        0         0
+Target Variable Indicates for Response to 97NK Mailing    2664      7990        0         0
+Target Variable Indicates for Response to 97NK Mailing    2179      6539        0         0
+Target Variable Indicates for Response to 97NK Mailing    2664      7990        0         0
+Target Variable Indicates for Response to 97NK Mailing    2179      6539        0         0
+Target Variable Indicates for Response to 97NK Mailing    2664      7990        0         0
+Target Variable Indicates for Response to 97NK Mailing    2179      6539        0         0
+Target Variable Indicates for Response to 97NK Mailing    2664      7990        0         0
+Target Variable Indicates for Response to 97NK Mailing    2179      6539        0         0
+
+
+*------------------------------------------------------------*
+* Score Output
+*------------------------------------------------------------*
+
+
+*------------------------------------------------------------*
+* Report Output
+*------------------------------------------------------------*

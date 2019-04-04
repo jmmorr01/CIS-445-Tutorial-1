@@ -1,0 +1,661 @@
+ 
+                                                                                                                                                                                                                                                                
+ 
+ 
+Variable Summary
+
+            Measurement    Frequency
+Role           Level         Count
+
+ID           NOMINAL            1   
+INPUT        BINARY             4   
+INPUT        INTERVAL          31   
+INPUT        NOMINAL           12   
+REJECTED     INTERVAL           1   
+TARGET       BINARY             1   
+ 
+                                                                                                                                                                                                                                                                
+ 
+Variable Levels Summary
+(maximum 500 observations printed)
+
+                            Frequency
+Variable          Role        Count
+
+CONTROL_NUMBER    ID          19372  
+TARGET_B          TARGET          2  
+ 
+                                                                                                                                                                                                                                                                
+ 
+Class Variable Summary Statistics
+(maximum 500 observations printed)
+
+Data Role=TRAIN
+
+                                                 Number
+Data                                               of                            Mode                  Mode2
+Role     Variable Name                  Role     Levels    Missing    Mode    Percentage    Mode2    Percentage
+
+TRAIN    CARD_PROM_12                  INPUT       17           0      6        53.29        5         18.78   
+TRAIN    CLUSTER_CODE                  INPUT       54           0      40        4.28        24         4.10   
+TRAIN    DONOR_GENDER                  INPUT        4           0      F        53.69        M         41.05   
+TRAIN    FREQUENCY_STATUS_97NK         INPUT        4           0      1        47.07        2         21.63   
+TRAIN    HOME_OWNER                    INPUT        2           0      H        54.75        U         45.25   
+TRAIN    INCOME_GROUP                  INPUT        8        4392      .        22.67        5         16.26   
+TRAIN    IN_HOUSE                      INPUT        2           0      0        92.68        1          7.32   
+TRAIN    OVERLAY_SOURCE                INPUT        4           0      B        45.08        P         24.61   
+TRAIN    PEP_STAR                      INPUT        2           0      1        50.44        0         49.56   
+TRAIN    PUBLISHED_PHONE               INPUT        2           0      0        50.23        1         49.77   
+TRAIN    RECENCY_STATUS_96NK           INPUT        6           0      A        61.52        S         21.79   
+TRAIN    RECENT_CARD_RESPONSE_COUNT    INPUT       10           0      1        33.49        2         21.94   
+TRAIN    RECENT_RESPONSE_COUNT         INPUT       17           0      2        25.73        1         22.67   
+TRAIN    SES                           INPUT        5           0      2        47.92        1         30.58   
+TRAIN    URBANICITY                    INPUT        6           0      S        23.18        C         20.76   
+TRAIN    WEALTH_RATING                 INPUT       11        8810      .        45.48        9          7.18   
+TRAIN    TARGET_B                      TARGET       2           0      0        75.00        1         25.00   
+ 
+                                                                                                                                                                                                                                                                
+ 
+Distribution of Class Target and Segment Variables
+(maximum 500 observations printed)
+
+Data Role=TRAIN
+
+Data     Variable                        Frequency
+Role       Name       Role     Level         Count    Percent
+
+TRAIN    TARGET_B    TARGET      0           14529       75  
+TRAIN    TARGET_B    TARGET      1            4843       25  
+ 
+                                                                                                                                                                                                                                                                
+ 
+Interval Variable Summary Statistics
+(maximum 500 observations printed)
+
+Data Role=TRAIN
+
+                                                    Standard          Non
+Variable                       Role         Mean    Deviation     Missing     Missing     Minimum      Median     Maximum    Skewness    Kurtosis
+
+DONOR_AGE                      INPUT    58.91905    16.66938        14577        4795           0          60          87     -0.3779    -0.45652
+FILE_AVG_GIFT                  INPUT    12.85834    8.787758        19372           0        1.36        11.2         450    10.68339    369.0114
+FILE_CARD_GIFT                 INPUT    5.273591    4.607063        19372           0           0           4          41    1.387721    2.176242
+LAST_GIFT_AMT                  INPUT     16.5842    11.97756        19372           0           0          15         450    8.266138    170.0773
+LIFETIME_AVG_GIFT_AMT          INPUT    12.85834    8.787758        19372           0        1.36        11.2         450    10.68339    369.0114
+LIFETIME_CARD_PROM             INPUT    18.66808    8.558778        19372           0           2          18          56    0.144775    -0.86549
+LIFETIME_GIFT_AMOUNT           INPUT    104.4257    105.7225        19372           0          15          79        3775      6.5938    124.1484
+LIFETIME_GIFT_COUNT            INPUT    9.979765    8.688163        19372           0           1           8          95    1.854983    5.840677
+LIFETIME_GIFT_RANGE            INPUT    11.58788    15.11689        19372           0           0          10         997    22.63979    1140.224
+LIFETIME_MAX_GIFT_AMT          INPUT    19.20881    16.10113        19372           0           5          16        1000    20.05272    901.3904
+LIFETIME_MIN_GIFT_AMT          INPUT    7.620932    7.959786        19372           0           0           5         450    12.68521    542.6818
+LIFETIME_PROM                  INPUT    47.57051    22.95016        19372           0           5          47         194    0.441849    0.102215
+MEDIAN_HOME_VALUE              INPUT    1079.872    960.7534        19372           0           0         747        6000    2.456613    6.994246
+MEDIAN_HOUSEHOLD_INCOME        INPUT    341.9702    164.2078        19372           0           0         311        1500    1.723597    6.477591
+MONTHS_SINCE_FIRST_GIFT        INPUT    69.48209    37.56817        19372           0          15          65         260    0.236043    -1.25823
+MONTHS_SINCE_LAST_GIFT         INPUT    18.19115    4.033065        19372           0           4          18          27    -0.69171    2.389819
+MONTHS_SINCE_LAST_PROM_RESP    INPUT     19.0389    3.415559        19126         246         -12          18          36    0.523389    2.754967
+MONTHS_SINCE_ORIGIN            INPUT    73.40997    41.25557        19372           0           5          65         137    0.231517    -1.32894
+MOR_HIT_RATE                   INPUT    3.361656    9.503481        19372           0           0           0         241     13.8789    319.3543
+NUMBER_PROM_12                 INPUT    12.90187    4.642072        19372           0           2          12          64     2.92346    12.37215
+PCT_ATTRIBUTE1                 INPUT    1.029011    4.918297        19372           0           0           0          97    11.74183    177.9092
+PCT_ATTRIBUTE2                 INPUT    30.57392    11.42147        19372           0           0          31          99    -0.19742    1.223159
+PCT_ATTRIBUTE3                 INPUT    29.60329    15.12036        19372           0           0          29          99    0.282935    0.598203
+PCT_ATTRIBUTE4                 INPUT    32.85247    17.83976        19372           0           0          32          99    0.435155    0.461594
+PCT_OWNER_OCCUPIED             INPUT      69.699    21.71102        19372           0           0          76          99    -1.23559    1.172867
+PER_CAPITA_INCOME              INPUT    15857.33     8710.63        19372           0           0       13816      174523    3.352875    23.18757
+RECENT_AVG_CARD_GIFT_AMT       INPUT    11.68547    10.83412        19372           0           0       10.14         300     4.66191    70.42876
+RECENT_AVG_GIFT_AMT            INPUT     15.3654    10.16748        19372           0           0          14         260    5.576142    75.49389
+RECENT_CARD_RESPONSE_PROP      INPUT    0.230808     0.18623        19372           0           0         0.2           1    0.771148    0.563201
+RECENT_RESPONSE_PROP           INPUT    0.190127    0.113947        19372           0           0       0.167           1    1.364802    3.023022
+RECENT_STAR_STATUS             INPUT    0.931138    2.545585        19372           0           0           0          22    4.156039    18.87924
+ 
+                                                                                                                                                                                                                                                                
+ 
+Class Variable Summary Statistics by Class Target
+(maximum 500 observations printed)
+
+Data Role=TRAIN Variable Name=CARD_PROM_12
+
+                       Number
+             Target      of                            Mode                  Mode2
+ Target      Level     Levels    Missing    Mode    Percentage    Mode2    Percentage
+
+TARGET_B       0         15         0        6        53.20         5        19.31   
+TARGET_B       1         17         0        6        53.56         5        17.22   
+_OVERALL_                17         0        6        53.29         5        18.78   
+
+
+Data Role=TRAIN Variable Name=CLUSTER_CODE
+
+                       Number
+             Target      of                            Mode                  Mode2
+ Target      Level     Levels    Missing    Mode    Percentage    Mode2    Percentage
+
+TARGET_B       0         54         0        40        4.10        24         3.99   
+TARGET_B       1         54         0        40        4.85        24         4.46   
+_OVERALL_                54         0        40        4.28        24         4.10   
+
+
+Data Role=TRAIN Variable Name=DONOR_GENDER
+
+                       Number
+             Target      of                            Mode                  Mode2
+ Target      Level     Levels    Missing    Mode    Percentage    Mode2    Percentage
+
+TARGET_B       0          3         0        F        53.63         M        41.23   
+TARGET_B       1          4         0        F        53.87         M        40.51   
+_OVERALL_                 4         0        F        53.69         M        41.05   
+
+
+Data Role=TRAIN Variable Name=FREQUENCY_STATUS_97NK
+
+                       Number
+             Target      of                            Mode                  Mode2
+ Target      Level     Levels    Missing    Mode    Percentage    Mode2    Percentage
+
+TARGET_B       0          4         0        1        50.41         2        21.58   
+TARGET_B       1          4         0        1        37.04         2        21.80   
+_OVERALL_                 4         0        1        47.07         2        21.63   
+
+
+Data Role=TRAIN Variable Name=HOME_OWNER
+
+                       Number
+             Target      of                            Mode                  Mode2
+ Target      Level     Levels    Missing    Mode    Percentage    Mode2    Percentage
+
+TARGET_B       0          2         0        H        54.36         U        45.64   
+TARGET_B       1          2         0        H        55.92         U        44.08   
+_OVERALL_                 2         0        H        54.75         U        45.25   
+
+
+Data Role=TRAIN Variable Name=INCOME_GROUP
+
+                       Number
+             Target      of                            Mode                  Mode2
+ Target      Level     Levels    Missing    Mode    Percentage    Mode2    Percentage
+
+TARGET_B       0          8        3289      .        22.64         5        16.09   
+TARGET_B       1          8        1103      .        22.78         5        16.77   
+_OVERALL_                 8        4392      .        22.67         5        16.26   
+
+
+Data Role=TRAIN Variable Name=IN_HOUSE
+
+                       Number
+             Target      of                            Mode                  Mode2
+ Target      Level     Levels    Missing    Mode    Percentage    Mode2    Percentage
+
+TARGET_B       0          2         0        0        93.30         1         6.70   
+TARGET_B       1          2         0        0        90.83         1         9.17   
+_OVERALL_                 2         0        0        92.68         1         7.32   
+
+
+Data Role=TRAIN Variable Name=OVERLAY_SOURCE
+
+                       Number
+             Target      of                            Mode                  Mode2
+ Target      Level     Levels    Missing    Mode    Percentage    Mode2    Percentage
+
+TARGET_B       0          4         0        B        44.70         P        25.03   
+TARGET_B       1          4         0        B        46.21         P        23.37   
+_OVERALL_                 4         0        B        45.08         P        24.61   
+
+
+Data Role=TRAIN Variable Name=PEP_STAR
+
+                       Number
+             Target      of                            Mode                  Mode2
+ Target      Level     Levels    Missing    Mode    Percentage    Mode2    Percentage
+
+TARGET_B       0          2         0        0        52.60         1        47.40   
+TARGET_B       1          2         0        1        59.57         0        40.43   
+_OVERALL_                 2         0        1        50.44         0        49.56   
+
+
+Data Role=TRAIN Variable Name=PUBLISHED_PHONE
+
+                       Number
+             Target      of                            Mode                  Mode2
+ Target      Level     Levels    Missing    Mode    Percentage    Mode2    Percentage
+
+TARGET_B       0          2         0        0        50.13         1        49.87   
+TARGET_B       1          2         0        0        50.51         1        49.49   
+_OVERALL_                 2         0        0        50.23         1        49.77   
+
+
+Data Role=TRAIN Variable Name=RECENCY_STATUS_96NK
+
+                       Number
+             Target      of                            Mode                  Mode2
+ Target      Level     Levels    Missing    Mode    Percentage    Mode2    Percentage
+
+TARGET_B       0          6         0        A        62.80         S        19.56   
+TARGET_B       1          6         0        A        57.69         S        28.47   
+_OVERALL_                 6         0        A        61.52         S        21.79   
+
+
+Data Role=TRAIN Variable Name=RECENT_CARD_RESPONSE_COUNT
+
+                       Number
+             Target      of                            Mode                  Mode2
+ Target      Level     Levels    Missing    Mode    Percentage    Mode2    Percentage
+
+TARGET_B       0         10         0        1        34.79         0        22.05   
+TARGET_B       1         10         0        1        29.59         2        22.67   
+_OVERALL_                10         0        1        33.49         2        21.94   
+
+
+Data Role=TRAIN Variable Name=RECENT_RESPONSE_COUNT
+
+                       Number
+             Target      of                            Mode                  Mode2
+ Target      Level     Levels    Missing    Mode    Percentage    Mode2    Percentage
+
+TARGET_B       0         16         0        2        26.98         1        24.53   
+TARGET_B       1         15         0        2        21.99         3        18.29   
+_OVERALL_                17         0        2        25.73         1        22.67   
+
+
+Data Role=TRAIN Variable Name=SES
+
+                       Number
+             Target      of                            Mode                  Mode2
+ Target      Level     Levels    Missing    Mode    Percentage    Mode2    Percentage
+
+TARGET_B       0          5         0        2        47.95         1        29.88   
+TARGET_B       1          5         0        2        47.86         1        32.69   
+_OVERALL_                 5         0        2        47.92         1        30.58   
+
+
+Data Role=TRAIN Variable Name=URBANICITY
+
+                       Number
+             Target      of                            Mode                  Mode2
+ Target      Level     Levels    Missing    Mode    Percentage    Mode2    Percentage
+
+TARGET_B       0          6         0        S        22.74         R        21.19   
+TARGET_B       1          6         0        S        24.51         C        20.77   
+_OVERALL_                 6         0        S        23.18         C        20.76   
+
+
+Data Role=TRAIN Variable Name=WEALTH_RATING
+
+                       Number
+             Target      of                            Mode                  Mode2
+ Target      Level     Levels    Missing    Mode    Percentage    Mode2    Percentage
+
+TARGET_B       0         11        6731      .        46.33         9         6.94   
+TARGET_B       1         11        2079      .        42.93         9         7.87   
+_OVERALL_                11        8810      .        45.48         9         7.18   
+ 
+                                                                                                                                                                                                                                                                
+ 
+Interval Variable Summary Statistics by Class Target
+(maximum 500 observations printed)
+
+Data Role=TRAIN Variable=DONOR_AGE
+
+             Target                                 Non                                        Standard
+ Target      Level       Median     Missing     Missing     Minimum     Maximum        Mean    Deviation    Skewness    Kurtosis    Role       Label
+
+TARGET_B       0             59        3631       10898           0          87     58.5612    16.89305     -0.36306    -0.46392    INPUT    DONOR_AGE
+TARGET_B       1             61        1164        3679           4          87    59.97907    15.94363     -0.40811    -0.46667    INPUT    DONOR_AGE
+_OVERALL_                    60        4795       14577           0          87    58.91905    16.66938      -0.3779    -0.45652    INPUT    DONOR_AGE
+
+
+Data Role=TRAIN Variable=FILE_AVG_GIFT
+
+             Target                                 Non                                        Standard
+ Target      Level       Median     Missing     Missing     Minimum     Maximum        Mean    Deviation    Skewness    Kurtosis    Role         Label
+
+TARGET_B       0           11.6           0       14529        1.36      201.67     13.1988    8.257256     5.136193    65.37676    INPUT    FILE_AVG_GIFT
+TARGET_B       1             10           0        4843        2.26         450    11.83694    10.14792     19.56184    751.3873    INPUT    FILE_AVG_GIFT
+_OVERALL_                  11.2           0       19372        1.36         450    12.85834    8.787758     10.68339    369.0114    INPUT    FILE_AVG_GIFT
+
+
+Data Role=TRAIN Variable=FILE_CARD_GIFT
+
+             Target                                 Non                                        Standard
+ Target      Level       Median     Missing     Missing     Minimum     Maximum        Mean    Deviation    Skewness    Kurtosis    Role         Label
+
+TARGET_B       0              4           0       14529           0          32    4.992842    4.472992     1.438274    2.280878    INPUT    FILE_CARD_GIFT
+TARGET_B       1              5           0        4843           0          41    6.115837    4.892441     1.249135    1.884976    INPUT    FILE_CARD_GIFT
+_OVERALL_                     4           0       19372           0          41    5.273591    4.607063     1.387721    2.176242    INPUT    FILE_CARD_GIFT
+
+
+Data Role=TRAIN Variable=LAST_GIFT_AMT
+
+             Target                                 Non                                        Standard
+ Target      Level       Median     Missing     Missing     Minimum     Maximum        Mean    Deviation    Skewness    Kurtosis    Role         Label
+
+TARGET_B       0             15           0       14529           0         300    17.05595    11.37594     5.891125    79.05999    INPUT    LAST_GIFT_AMT
+TARGET_B       1             15           0        4843           0         450    15.16896    13.52687     12.54206    303.4842    INPUT    LAST_GIFT_AMT
+_OVERALL_                    15           0       19372           0         450     16.5842    11.97756     8.266138    170.0773    INPUT    LAST_GIFT_AMT
+
+
+Data Role=TRAIN Variable=LIFETIME_AVG_GIFT_AMT
+
+             Target                                 Non                                        Standard
+ Target      Level       Median     Missing     Missing     Minimum     Maximum        Mean    Deviation    Skewness    Kurtosis    Role             Label
+
+TARGET_B       0           11.6           0       14529        1.36      201.67     13.1988    8.257256     5.136193    65.37676    INPUT    LIFETIME_AVG_GIFT_AMT
+TARGET_B       1             10           0        4843        2.26         450    11.83694    10.14792     19.56184    751.3873    INPUT    LIFETIME_AVG_GIFT_AMT
+_OVERALL_                  11.2           0       19372        1.36         450    12.85834    8.787758     10.68339    369.0114    INPUT    LIFETIME_AVG_GIFT_AMT
+
+
+Data Role=TRAIN Variable=LIFETIME_CARD_PROM
+
+             Target                                 Non                                        Standard
+ Target      Level       Median     Missing     Missing     Minimum     Maximum        Mean    Deviation    Skewness    Kurtosis    Role           Label
+
+TARGET_B       0             18           0       14529           2          56      18.344    8.545054     0.161506    -0.89846    INPUT    LIFETIME_CARD_PROM
+TARGET_B       1             20           0        4843           2          51    19.64031    8.527108     0.098237    -0.76588    INPUT    LIFETIME_CARD_PROM
+_OVERALL_                    18           0       19372           2          56    18.66808    8.558778     0.144775    -0.86549    INPUT    LIFETIME_CARD_PROM
+
+
+Data Role=TRAIN Variable=LIFETIME_GIFT_AMOUNT
+
+             Target                                 Non                                        Standard
+ Target      Level       Median     Missing     Missing     Minimum     Maximum        Mean    Deviation    Skewness    Kurtosis    Role            Label
+
+TARGET_B       0             77           0       14529          15        3775    101.9001    103.2871     7.058725    153.0679    INPUT    LIFETIME_GIFT_AMOUNT
+TARGET_B       1             85           0        4843          15        2200    112.0025    112.3843      5.49036    61.33863    INPUT    LIFETIME_GIFT_AMOUNT
+_OVERALL_                    79           0       19372          15        3775    104.4257    105.7225       6.5938    124.1484    INPUT    LIFETIME_GIFT_AMOUNT
+
+
+Data Role=TRAIN Variable=LIFETIME_GIFT_COUNT
+
+             Target                                 Non                                        Standard
+ Target      Level       Median     Missing     Missing     Minimum     Maximum        Mean    Deviation    Skewness    Kurtosis    Role            Label
+
+TARGET_B       0              7           0       14529           1          95    9.478078    8.378017     1.852896     5.61082    INPUT    LIFETIME_GIFT_COUNT
+TARGET_B       1              9           0        4843           1          91    11.48482    9.400006     1.821759    5.994938    INPUT    LIFETIME_GIFT_COUNT
+_OVERALL_                     8           0       19372           1          95    9.979765    8.688163     1.854983    5.840677    INPUT    LIFETIME_GIFT_COUNT
+
+
+Data Role=TRAIN Variable=LIFETIME_GIFT_RANGE
+
+             Target                                 Non                                        Standard
+ Target      Level       Median     Missing     Missing     Minimum     Maximum        Mean    Deviation    Skewness    Kurtosis    Role            Label
+
+TARGET_B       0             10           0       14529           0       595.5    11.64333      13.537     13.13018    400.2105    INPUT    LIFETIME_GIFT_RANGE
+TARGET_B       1             10           0        4843           0         997    11.42151     19.0882     30.95905    1492.391    INPUT    LIFETIME_GIFT_RANGE
+_OVERALL_                    10           0       19372           0         997    11.58788    15.11689     22.63979    1140.224    INPUT    LIFETIME_GIFT_RANGE
+
+
+Data Role=TRAIN Variable=LIFETIME_MAX_GIFT_AMT
+
+             Target                                 Non                                        Standard
+ Target      Level       Median     Missing     Missing     Minimum     Maximum        Mean    Deviation    Skewness    Kurtosis    Role             Label
+
+TARGET_B       0             17           0       14529           5         600    19.55266    14.21332     11.95088    330.9725    INPUT    LIFETIME_MAX_GIFT_AMT
+TARGET_B       1             15           0        4843           5        1000    18.17727    20.72651     26.13313    1098.523    INPUT    LIFETIME_MAX_GIFT_AMT
+_OVERALL_                    16           0       19372           5        1000    19.20881    16.10113     20.05272    901.3904    INPUT    LIFETIME_MAX_GIFT_AMT
+
+
+Data Role=TRAIN Variable=LIFETIME_MIN_GIFT_AMT
+
+             Target                                 Non                                        Standard
+ Target      Level       Median     Missing     Missing     Minimum     Maximum        Mean    Deviation    Skewness    Kurtosis    Role             Label
+
+TARGET_B       0              5           0       14529           0      201.67    7.909324    7.479316     4.369648    53.43029    INPUT    LIFETIME_MIN_GIFT_AMT
+TARGET_B       1              5           0        4843           0         450    6.755757    9.199466     25.93206    1156.463    INPUT    LIFETIME_MIN_GIFT_AMT
+_OVERALL_                     5           0       19372           0         450    7.620932    7.959786     12.68521    542.6818    INPUT    LIFETIME_MIN_GIFT_AMT
+
+
+Data Role=TRAIN Variable=LIFETIME_PROM
+
+             Target                                 Non                                        Standard
+ Target      Level       Median     Missing     Missing     Minimum     Maximum        Mean    Deviation    Skewness    Kurtosis    Role         Label
+
+TARGET_B       0             46           0       14529           5         194    46.67155    22.79702     0.429249     -0.0163    INPUT    LIFETIME_PROM
+TARGET_B       1             51           0        4843           5         174     50.2674     23.1978     0.476233    0.402571    INPUT    LIFETIME_PROM
+_OVERALL_                    47           0       19372           5         194    47.57051    22.95016     0.441849    0.102215    INPUT    LIFETIME_PROM
+
+
+Data Role=TRAIN Variable=MEDIAN_HOME_VALUE
+
+             Target                                 Non                                        Standard
+ Target      Level       Median     Missing     Missing     Minimum     Maximum        Mean    Deviation    Skewness    Kurtosis    Role           Label
+
+TARGET_B       0            732           0       14529           0        6000    1051.929    934.1285     2.511007    7.406864    INPUT    MEDIAN_HOME_VALUE
+TARGET_B       1            809           0        4843           0        5982    1163.701    1032.105     2.298045    5.885745    INPUT    MEDIAN_HOME_VALUE
+_OVERALL_                   747           0       19372           0        6000    1079.872    960.7534     2.456613    6.994246    INPUT    MEDIAN_HOME_VALUE
+
+
+Data Role=TRAIN Variable=MEDIAN_HOUSEHOLD_INCOME
+
+             Target                                 Non                                        Standard
+ Target      Level       Median     Missing     Missing     Minimum     Maximum        Mean    Deviation    Skewness    Kurtosis    Role              Label
+
+TARGET_B       0            309           0       14529           0        1500    338.3496    161.5983     1.666054    6.188415    INPUT    MEDIAN_HOUSEHOLD_INCOME
+TARGET_B       1            318           0        4843           0        1500    352.8319    171.3575     1.854843    7.031013    INPUT    MEDIAN_HOUSEHOLD_INCOME
+_OVERALL_                   311           0       19372           0        1500    341.9702    164.2078     1.723597    6.477591    INPUT    MEDIAN_HOUSEHOLD_INCOME
+
+
+Data Role=TRAIN Variable=MONTHS_SINCE_FIRST_GIFT
+
+             Target                                 Non                                        Standard
+ Target      Level       Median     Missing     Missing     Minimum     Maximum        Mean    Deviation    Skewness    Kurtosis    Role              Label
+
+TARGET_B       0             64           0       14529          15         198    68.03944    37.48322     0.274137    -1.27523    INPUT    MONTHS_SINCE_FIRST_GIFT
+TARGET_B       1             75           0        4843          15         260    73.81004     37.4941      0.12666    -1.18404    INPUT    MONTHS_SINCE_FIRST_GIFT
+_OVERALL_                    65           0       19372          15         260    69.48209    37.56817     0.236043    -1.25823    INPUT    MONTHS_SINCE_FIRST_GIFT
+
+
+Data Role=TRAIN Variable=MONTHS_SINCE_LAST_GIFT
+
+             Target                                 Non                                        Standard
+ Target      Level       Median     Missing     Missing     Minimum     Maximum        Mean    Deviation    Skewness    Kurtosis    Role             Label
+
+TARGET_B       0             18           0       14529           4          27    18.40037    3.932894     -0.58046     2.33654    INPUT    MONTHS_SINCE_LAST_GIFT
+TARGET_B       1             18           0        4843           4          27    17.56349     4.25885     -0.91094    2.265542    INPUT    MONTHS_SINCE_LAST_GIFT
+_OVERALL_                    18           0       19372           4          27    18.19115    4.033065     -0.69171    2.389819    INPUT    MONTHS_SINCE_LAST_GIFT
+
+
+Data Role=TRAIN Variable=MONTHS_SINCE_LAST_PROM_RESP
+
+             Target                                 Non                                        Standard
+ Target      Level       Median     Missing     Missing     Minimum     Maximum        Mean    Deviation    Skewness    Kurtosis    Role                Label
+
+TARGET_B       0             18         207       14322         -12          36    19.17093    3.450343      0.52852    2.622817    INPUT    MONTHS_SINCE_LAST_PROM_RESP
+TARGET_B       1             18          39        4804         -11          35     18.6453    3.278635     0.482554    3.249996    INPUT    MONTHS_SINCE_LAST_PROM_RESP
+_OVERALL_                    18         246       19126         -12          36     19.0389    3.415559     0.523389    2.754967    INPUT    MONTHS_SINCE_LAST_PROM_RESP
+
+
+Data Role=TRAIN Variable=MONTHS_SINCE_ORIGIN
+
+             Target                                 Non                                        Standard
+ Target      Level       Median     Missing     Missing     Minimum     Maximum        Mean    Deviation    Skewness    Kurtosis    Role            Label
+
+TARGET_B       0             65           0       14529           5         137    71.91431    41.20996     0.277175    -1.30084    INPUT    MONTHS_SINCE_ORIGIN
+TARGET_B       1             77           0        4843           5         137    77.89696     41.0708     0.099818    -1.37806    INPUT    MONTHS_SINCE_ORIGIN
+_OVERALL_                    65           0       19372           5         137    73.40997    41.25557     0.231517    -1.32894    INPUT    MONTHS_SINCE_ORIGIN
+
+
+Data Role=TRAIN Variable=MOR_HIT_RATE
+
+             Target                                 Non                                        Standard
+ Target      Level       Median     Missing     Missing     Minimum     Maximum        Mean    Deviation    Skewness    Kurtosis    Role        Label
+
+TARGET_B       0              0           0       14529           0         241    3.292037    9.483915     14.00986     322.884    INPUT    MOR_HIT_RATE
+TARGET_B       1              0           0        4843           0         240    3.570514     9.55988     13.51058     309.774    INPUT    MOR_HIT_RATE
+_OVERALL_                     0           0       19372           0         241    3.361656    9.503481      13.8789    319.3543    INPUT    MOR_HIT_RATE
+
+
+Data Role=TRAIN Variable=NUMBER_PROM_12
+
+             Target                                 Non                                        Standard
+ Target      Level       Median     Missing     Missing     Minimum     Maximum        Mean    Deviation    Skewness    Kurtosis    Role         Label
+
+TARGET_B       0             12           0       14529           3          64    12.79476    4.400437     2.933878    12.35566    INPUT    NUMBER_PROM_12
+TARGET_B       1             13           0        4843           2          59    13.22321    5.288803     2.782787    11.13975    INPUT    NUMBER_PROM_12
+_OVERALL_                    12           0       19372           2          64    12.90187    4.642072      2.92346    12.37215    INPUT    NUMBER_PROM_12
+
+
+Data Role=TRAIN Variable=PCT_ATTRIBUTE1
+
+             Target                                 Non                                        Standard
+ Target      Level       Median     Missing     Missing     Minimum     Maximum        Mean    Deviation    Skewness    Kurtosis    Role         Label
+
+TARGET_B       0              0           0       14529           0          97     1.03937     5.02655      11.7417    176.0734    INPUT    PCT_ATTRIBUTE1
+TARGET_B       1              0           0        4843           0          96    0.997935    4.578562     11.61145    180.3116    INPUT    PCT_ATTRIBUTE1
+_OVERALL_                     0           0       19372           0          97    1.029011    4.918297     11.74183    177.9092    INPUT    PCT_ATTRIBUTE1
+
+
+Data Role=TRAIN Variable=PCT_ATTRIBUTE2
+
+             Target                                 Non                                        Standard
+ Target      Level       Median     Missing     Missing     Minimum     Maximum        Mean    Deviation    Skewness    Kurtosis    Role         Label
+
+TARGET_B       0             31           0       14529           0          99     30.5158    11.37611     -0.17646    1.237748    INPUT    PCT_ATTRIBUTE2
+TARGET_B       1             31           0        4843           0          79     30.7483    11.55591      -0.2589    1.187646    INPUT    PCT_ATTRIBUTE2
+_OVERALL_                    31           0       19372           0          99    30.57392    11.42147     -0.19742    1.223159    INPUT    PCT_ATTRIBUTE2
+
+
+Data Role=TRAIN Variable=PCT_ATTRIBUTE3
+
+             Target                                 Non                                        Standard
+ Target      Level       Median     Missing     Missing     Minimum     Maximum        Mean    Deviation    Skewness    Kurtosis    Role         Label
+
+TARGET_B       0             29           0       14529           0          99    29.69151     15.1019     0.280347    0.582707    INPUT    PCT_ATTRIBUTE3
+TARGET_B       1             29           0        4843           0          99    29.33863    15.17409      0.29134    0.646978    INPUT    PCT_ATTRIBUTE3
+_OVERALL_                    29           0       19372           0          99    29.60329    15.12036     0.282935    0.598203    INPUT    PCT_ATTRIBUTE3
+
+
+Data Role=TRAIN Variable=PCT_ATTRIBUTE4
+
+             Target                                 Non                                        Standard
+ Target      Level       Median     Missing     Missing     Minimum     Maximum        Mean    Deviation    Skewness    Kurtosis    Role         Label
+
+TARGET_B       0             32           0       14529           0          99    32.74878    17.70992     0.422089    0.446832    INPUT    PCT_ATTRIBUTE4
+TARGET_B       1             32           0        4843           0          99    33.16353    18.22207     0.468318    0.489637    INPUT    PCT_ATTRIBUTE4
+_OVERALL_                    32           0       19372           0          99    32.85247    17.83976     0.435155    0.461594    INPUT    PCT_ATTRIBUTE4
+
+
+Data Role=TRAIN Variable=PCT_OWNER_OCCUPIED
+
+             Target                                 Non                                        Standard
+ Target      Level       Median     Missing     Missing     Minimum     Maximum        Mean    Deviation    Skewness    Kurtosis    Role           Label
+
+TARGET_B       0             75           0       14529           0          99    69.50196    21.87508     -1.23378    1.147316    INPUT    PCT_OWNER_OCCUPIED
+TARGET_B       1             76           0        4843           0          99    70.29011    21.20245      -1.2371    1.238801    INPUT    PCT_OWNER_OCCUPIED
+_OVERALL_                    76           0       19372           0          99      69.699    21.71102     -1.23559    1.172867    INPUT    PCT_OWNER_OCCUPIED
+
+
+Data Role=TRAIN Variable=PER_CAPITA_INCOME
+
+             Target                                 Non                                        Standard
+ Target      Level       Median     Missing     Missing     Minimum     Maximum        Mean    Deviation    Skewness    Kurtosis    Role           Label
+
+TARGET_B       0          13667           0       14529           0      106273    15648.49    8421.438     2.983262    16.63046    INPUT    PER_CAPITA_INCOME
+TARGET_B       1          14377           0        4843           0      174523    16483.86    9499.091     4.064769    34.17302    INPUT    PER_CAPITA_INCOME
+_OVERALL_                 13816           0       19372           0      174523    15857.33     8710.63     3.352875    23.18757    INPUT    PER_CAPITA_INCOME
+
+
+Data Role=TRAIN Variable=RECENT_AVG_CARD_GIFT_AMT
+
+             Target                                 Non                                        Standard
+ Target      Level       Median     Missing     Missing     Minimum     Maximum        Mean    Deviation    Skewness    Kurtosis    Role              Label
+
+TARGET_B       0           10.6           0       14529           0         300     11.7914    11.14779     4.844391    75.39643    INPUT    RECENT_AVG_CARD_GIFT_AMT
+TARGET_B       1             10           0        4843           0         200     11.3677      9.8275     3.747046    41.08844    INPUT    RECENT_AVG_CARD_GIFT_AMT
+_OVERALL_                 10.14           0       19372           0         300    11.68547    10.83412      4.66191    70.42876    INPUT    RECENT_AVG_CARD_GIFT_AMT
+
+
+Data Role=TRAIN Variable=RECENT_AVG_GIFT_AMT
+
+             Target                                 Non                                        Standard
+ Target      Level       Median     Missing     Missing     Minimum     Maximum        Mean    Deviation    Skewness    Kurtosis    Role            Label
+
+TARGET_B       0             15           0       14529           0         260     15.8037    10.29551     5.714238    80.01361    INPUT    RECENT_AVG_GIFT_AMT
+TARGET_B       1           12.5           0        4843           0         200    14.05048    9.655723     5.210988    60.13503    INPUT    RECENT_AVG_GIFT_AMT
+_OVERALL_                    14           0       19372           0         260     15.3654    10.16748     5.576142    75.49389    INPUT    RECENT_AVG_GIFT_AMT
+
+
+Data Role=TRAIN Variable=RECENT_CARD_RESPONSE_PROP
+
+             Target                                 Non                                        Standard
+ Target      Level       Median     Missing     Missing     Minimum     Maximum        Mean    Deviation    Skewness    Kurtosis    Role               Label
+
+TARGET_B       0            0.2           0       14529           0           1    0.219959    0.182458      0.79047    0.581708    INPUT    RECENT_CARD_RESPONSE_PROP
+TARGET_B       1           0.25           0        4843           0           1    0.263354    0.193518     0.701686    0.488753    INPUT    RECENT_CARD_RESPONSE_PROP
+_OVERALL_                   0.2           0       19372           0           1    0.230808     0.18623     0.771148    0.563201    INPUT    RECENT_CARD_RESPONSE_PROP
+
+
+Data Role=TRAIN Variable=RECENT_RESPONSE_PROP
+
+             Target                                 Non                                        Standard
+ Target      Level       Median     Missing     Missing     Minimum     Maximum        Mean    Deviation    Skewness    Kurtosis    Role            Label
+
+TARGET_B       0          0.158           0       14529           0           1    0.182342    0.109211      1.41438    3.396828    INPUT    RECENT_RESPONSE_PROP
+TARGET_B       1           0.19           0        4843           0           1    0.213483    0.124217     1.197118    2.152819    INPUT    RECENT_RESPONSE_PROP
+_OVERALL_                 0.167           0       19372           0           1    0.190127    0.113947     1.364802    3.023022    INPUT    RECENT_RESPONSE_PROP
+
+
+Data Role=TRAIN Variable=RECENT_STAR_STATUS
+
+             Target                                 Non                                        Standard
+ Target      Level       Median     Missing     Missing     Minimum     Maximum        Mean    Deviation    Skewness    Kurtosis    Role           Label
+
+TARGET_B       0              0           0       14529           0          22    0.933306    2.599379     4.059867    17.68444    INPUT    RECENT_STAR_STATUS
+TARGET_B       1              0           0        4843           0          22    0.924633    2.377155     4.490758     23.3932    INPUT    RECENT_STAR_STATUS
+_OVERALL_                     0           0       19372           0          22    0.931138    2.545585     4.156039    18.87924    INPUT    RECENT_STAR_STATUS
+ 
+                                                                                                                                                                                                                                                                
+ 
+Chi-Square Statistics
+(maximum 500 observations printed)
+
+Data Role=TRAIN Target=TARGET_B
+
+Input                          Chi-Square    Df      Prob
+
+FREQUENCY_STATUS_97NK            365.6076     3    <.0001
+RECENT_RESPONSE_COUNT            362.9477    16    <.0001
+RECENT_CARD_RESPONSE_COUNT       329.4654     9    <.0001
+RECENT_RESPONSE_PROP             247.0737     4    <.0001
+RECENCY_STATUS_96NK              216.4746     5    <.0001
+PEP_STAR                         215.1607     1    <.0001
+RECENT_CARD_RESPONSE_PROP        163.3107     4    <.0001
+MONTHS_SINCE_LAST_GIFT           157.5707     4    <.0001
+FILE_CARD_GIFT                   135.3071     4    <.0001
+CARD_PROM_12                     112.8316    16    <.0001
+CLUSTER_CODE                     112.0086    53    <.0001
+LIFETIME_GIFT_COUNT               91.5111     4    <.0001
+LIFETIME_CARD_PROM                83.5742     4    <.0001
+MONTHS_SINCE_ORIGIN               76.2430     4    <.0001
+LIFETIME_PROM                     73.4097     4    <.0001
+MONTHS_SINCE_FIRST_GIFT           67.3429     4    <.0001
+NUMBER_PROM_12                    63.2453     4    <.0001
+MONTHS_SINCE_LAST_PROM_RESP       60.4926     5    <.0001
+SES                               43.5695     4    <.0001
+MEDIAN_HOME_VALUE                 43.1239     4    <.0001
+WEALTH_RATING                     34.8070    10    0.0001
+IN_HOUSE                          32.5074     1    <.0001
+INCOME_GROUP                      28.6482     7    0.0002
+MEDIAN_HOUSEHOLD_INCOME           27.1738     4    <.0001
+DONOR_AGE                         27.1417     5    <.0001
+URBANICITY                        24.0076     5    0.0002
+RECENT_STAR_STATUS                11.2450     4    0.0239
+PER_CAPITA_INCOME                 10.0477     4    0.0396
+PCT_ATTRIBUTE4                     9.8138     4    0.0437
+LIFETIME_GIFT_AMOUNT               9.1361     4    0.0578
+PCT_OWNER_OCCUPIED                 7.6179     4    0.1066
+OVERLAY_SOURCE                     5.9048     3    0.1163
+LIFETIME_MIN_GIFT_AMT              5.4446     3    0.1420
+PCT_ATTRIBUTE3                     5.2614     4    0.2615
+DONOR_GENDER                       4.9727     3    0.1738
+RECENT_AVG_CARD_GIFT_AMT           4.3030     4    0.3666
+LAST_GIFT_AMT                      4.2068     4    0.3787
+LIFETIME_GIFT_RANGE                4.0003     3    0.2614
+HOME_OWNER                         3.5475     1    0.0596
+LIFETIME_MAX_GIFT_AMT              3.4453     3    0.3279
+FILE_AVG_GIFT                      3.3778     3    0.3370
+LIFETIME_AVG_GIFT_AMT              3.3778     3    0.3370
+PCT_ATTRIBUTE2                     3.3723     4    0.4976
+MOR_HIT_RATE                       1.5025     2    0.4718
+PCT_ATTRIBUTE1                     1.3464     4    0.8535
+RECENT_AVG_GIFT_AMT                1.0585     4    0.9008
+PUBLISHED_PHONE                    0.2007     1    0.6542

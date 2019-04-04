@@ -1,0 +1,317 @@
+*------------------------------------------------------------*
+User:                jmmorr01
+Date:                October 20, 2018
+Time:                16:11:45
+*------------------------------------------------------------*
+* Training Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Variable Summary
+ 
+            Measurement    Frequency
+Role           Level         Count
+ 
+ID           INTERVAL           1
+ID           NOMINAL            1
+INPUT        BINARY             4
+INPUT        INTERVAL          31
+INPUT        NOMINAL           12
+REJECTED     NOMINAL            3
+TARGET       BINARY             1
+ 
+ 
+ 
+ 
+Model Events
+ 
+                                    Number
+                     Measurement      of
+ Target     Event       Level       Levels      Order                               Label
+ 
+TARGET_B      1        BINARY          2      Descending    Target Variable Indicates for Response to 97NK Mailing
+ 
+ 
+ 
+ 
+Decision Matrix and Prior Vector
+ 
+              Training                   Decision
+TARGET_B    Proportions        1    0     Priors
+ 
+   1            0.25        14.5    0      0.05
+   0            0.75        -0.5    0      0.95
+ 
+ 
+ 
+ 
+Predicted and decision variables
+ 
+Type               Variable      Label
+ 
+TARGET            TARGET_B       Target Variable Indicates for Response to 97NK Mailing
+PREDICTED         P_TARGET_B1    Predicted: TARGET_B=1
+RESIDUAL          R_TARGET_B1    Residual: TARGET_B=1
+PREDICTED         P_TARGET_B0    Predicted: TARGET_B=0
+RESIDUAL          R_TARGET_B0    Residual: TARGET_B=0
+FROM              F_TARGET_B     From: TARGET_B
+INTO              I_TARGET_B     Into: TARGET_B
+MODELDECISION     D_TARGET_B     Decision: TARGET_B
+EXPECTEDPROFIT    EP_TARGET_B    Expected Profit: TARGET_B
+COMPUTEDPROFIT    CP_TARGET_B    Computed Profit: TARGET_B
+BESTPROFIT        BP_TARGET_B    Best Profit: TARGET_B
+
+
+*------------------------------------------------------------*
+* Score Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+Variable Importance
+ 
+Obs    NAME                                    LABEL             NRULES    NSURROGATES    IMPORTANCE    VIMPORTANCE     RATIO
+ 
+  1    CLUSTER_CODE                                                34            7          1.00000       0.20177      0.20177
+  2    RECENT_RESPONSE_COUNT                                        6            9          0.83679       1.00000      1.19504
+  3    RECENT_RESPONSE_PROP                                         2           13          0.79967       0.96455      1.20620
+  4    FREQUENCY_STATUS_97NK                                        6            3          0.66273       0.84788      1.27937
+  5    PER_CAPITA_INCOME                                            0           18          0.58557       0.14465      0.24702
+  6    REP_URBANICITY                 Replacement: URBANICITY       0           15          0.50953       0.10430      0.20469
+  7    REP_SES                        Replacement: SES              0           15          0.50689       0.00000      0.00000
+  8    FILE_CARD_GIFT                                               4            4          0.50471       0.62015      1.22873
+  9    RECENT_AVG_GIFT_AMT                                          2            6          0.50025       0.53845      1.07637
+ 10    RECENT_CARD_RESPONSE_COUNT                                   1            4          0.49405       0.55102      1.11532
+ 11    LIFETIME_GIFT_COUNT                                          0            8          0.47154       0.55333      1.17343
+ 12    FILE_AVG_GIFT                                                3            2          0.46535       0.48834      1.04941
+ 13    MEDIAN_HOME_VALUE                                            2            7          0.44430       0.15856      0.35687
+ 14    MEDIAN_HOUSEHOLD_INCOME                                      0           14          0.44124       0.21355      0.48397
+ 15    LIFETIME_AVG_GIFT_AMT                                        0            3          0.41452       0.34456      0.83123
+ 16    PEP_STAR                                                     3            1          0.37022       0.44769      1.20926
+ 17    LIFETIME_MAX_GIFT_AMT                                        1            4          0.32268       0.42666      1.32224
+ 18    LIFETIME_CARD_PROM                                           0            3          0.28036       0.32931      1.17460
+ 19    LAST_GIFT_AMT                                                2            1          0.24567       0.24924      1.01454
+ 20    PCT_ATTRIBUTE2                                               0            3          0.23603       0.00000      0.00000
+ 21    MONTHS_SINCE_LAST_GIFT                                       2            0          0.21891       0.25012      1.14256
+ 22    PCT_ATTRIBUTE4                                               0            3          0.21475       0.00000      0.00000
+ 23    MONTHS_SINCE_LAST_PROM_RESP                                  0            2          0.21284       0.24327      1.14297
+ 24    PCT_ATTRIBUTE3                                               0            2          0.18847       0.00000      0.00000
+ 25    RECENCY_STATUS_96NK                                          1            0          0.18677       0.27194      1.45607
+ 26    INCOME_GROUP                                                 5            0          0.17656       0.17502      0.99130
+ 27    RECENT_STAR_STATUS                                           0            1          0.17578       0.25594      1.45607
+ 28    RECENT_CARD_RESPONSE_PROP                                    0            1          0.15460       0.19990      1.29301
+ 29    CARD_PROM_12                                                 0            1          0.15437       0.15067      0.97604
+ 30    PCT_OWNER_OCCUPIED                                           1            1          0.12698       0.00000      0.00000
+ 31    LIFETIME_PROM                                                0            2          0.09545       0.00000      0.00000
+ 32    WEALTH_RATING                                                2            0          0.09341       0.05673      0.60731
+ 33    HOME_OWNER                                                   0            1          0.08053       0.09190      1.14120
+ 34    PUBLISHED_PHONE                                              1            0          0.07240       0.00000      0.00000
+ 35    MONTHS_SINCE_FIRST_GIFT                                      1            0          0.06896       0.00000      0.00000
+ 36    MONTHS_SINCE_ORIGIN                                          0            1          0.06772       0.00000      0.00000
+ 37    OVERLAY_SOURCE                                               0            1          0.06457       0.00000      0.00000
+ 38    MOR_HIT_RATE                                                 0            1          0.06249       0.00000      0.00000
+ 39    NUMBER_PROM_12                                               0            1          0.04496       0.00000      0.00000
+
+
+*------------------------------------------------------------*
+* Report Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+The FREQ Procedure
+ 
+                         Target
+ 
+                                 Cumulative    Cumulative
+FROM    Frequency     Percent     Frequency      Percent
+---------------------------------------------------------
+0       74.99531       75.00      74.99531        75.00
+1       25.00469       25.00           100       100.00
+ 
+ 
+ 
+ 
+Fit Statistics
+ 
+Target=TARGET_B Target Label=Target Variable Indicates for Response to 97NK Mailing
+ 
+   Fit
+Statistics    Statistics Label                         Train    Validation
+ 
+ _NOBS_       Sum of Frequencies                    10654.00      8718.00
+ _SUMW_       Sum of Case Weights Times Freq        21308.00     17436.00
+ _MISC_       Misclassification Rate                    0.25         0.25
+ _MAX_        Maximum Absolute Error                    0.87         0.87
+ _SSE_        Sum of Squared Errors                  3827.60      3188.97
+ _ASE_        Average Squared Error                     0.18         0.18
+ _RASE_       Root Average Squared Error                0.42         0.43
+ _DIV_        Divisor for ASE                       21308.00     17436.00
+ _DFT_        Total Degrees of Freedom              10654.00          .
+ _APROF_      Average Profit for TARGET_B               0.28         0.26
+ _PROF_       Total Profit for TARGET_B              2966.07      2247.56
+ _PASE_       Average Squared Error with Priors         0.16         0.16
+ _PMISC_      Misclassification Rate with Priors        0.05         0.05
+ 
+ 
+ 
+ 
+Classification Table
+ 
+Data Role=TRAIN Target Variable=TARGET_B Target Label=Target Variable Indicates for Response to
+ 
+                                                                            Adjusted Percent
+                                                                                   of
+                       Target        Outcome     Frequency       Total      Predict/Decision
+Target    Outcome    Percentage    Percentage      Count      Percentage        Variable
+ 
+  0          0         74.9953         100          7990        74.9953            95
+  1          0         25.0047         100          2664        25.0047             5
+ 
+ 
+Data Role=VALIDATE Target Variable=TARGET_B
+ 
+                                                                            Adjusted Percent
+                                                                                   of
+                       Target        Outcome     Frequency       Total      Predict/Decision
+Target    Outcome    Percentage    Percentage      Count      Percentage        Variable
+ 
+  0          0         75.0057         100          6539        75.0057          95.0132
+  1          0         24.9943         100          2179        24.9943           4.9979
+ 
+ 
+ 
+ 
+Decision Table
+ 
+Data Role=TRAIN Target Variable=TARGET_B Target Label=Target Variable Indicates for Response to
+ 
+                                                                            Adjusted Percent
+                                                                                   of
+                       Target        Outcome     Frequency       Total      Predict/Decision
+Target    Outcome    Percentage    Percentage      Count      Percentage        Variable
+ 
+  0          0         88.3738       15.0313        1201        11.2728          14.2797
+  0          1         73.0393       84.9687        6789        63.7225          80.7203
+  1          0         11.6262        5.9309         158         1.4830           0.2965
+  1          1         26.9607       94.0691        2506        23.5217           4.7035
+ 
+ 
+Data Role=VALIDATE Target Variable=TARGET_B
+ 
+                                                                            Adjusted Percent
+                                                                                   of
+                       Target        Outcome     Frequency       Total      Predict/Decision
+Target    Outcome    Percentage    Percentage      Count      Percentage        Variable
+ 
+  0          0         83.7533       14.7423         964        11.0576          14.0071
+  0          1         73.6752       85.2577        5575        63.9482          81.0061
+  1          0         16.2467        8.5819         187         2.1450           0.4289
+  1          1         26.3248       91.4181        1992        22.8493           4.5690
+ 
+ 
+ 
+ 
+Event Classification Table
+ 
+Data Role=TRAIN Target=TARGET_B Target Label=Target Variable Indicates for Response to 97NK Mai
+ 
+  False       True        False       True
+Negative    Negative    Positive    Positive
+ 
+  2664        7990          0           0
+ 
+ 
+Data Role=VALIDATE Target=TARGET_B
+ 
+  False       True        False       True
+Negative    Negative    Positive    Positive
+ 
+  2179        6539          0           0
+ 
+ 
+ 
+ 
+Assessment Score Rankings
+ 
+Data Role=TRAIN Target Variable=TARGET_B Target Label=Target Variable Indicates for Response to
+ 
+                                                                                    Mean
+                            Cumulative       %      Cumulative     Number of     Posterior
+Depth      Gain     Lift       Lift      Response   % Response   Observations   Probability
+ 
+   5    136.375   2.36375     2.36375     11.8188     11.8188       532.951       0.086344
+  10    112.724   1.89075     2.12724      9.4538     10.6362       533.021       0.076144
+  15     88.849   1.41091     1.88849      7.0545      9.4424       532.891       0.070348
+  20     81.862   1.60865     1.81862      8.0433      9.0931       532.023       0.065241
+  25     70.240   1.23783     1.70240      6.1891      8.5120       533.092       0.061142
+  30     61.905   1.20197     1.61905      6.0099      8.0953       532.359       0.057697
+  35     55.601   1.17796     1.55601      5.8898      7.7800       533.025       0.054738
+  40     48.647   0.99926     1.48647      4.9963      7.4323       532.293       0.052095
+  45     42.133   0.90046     1.42133      4.5023      7.1066       532.961       0.049878
+  50     36.915   0.90001     1.36915      4.5000      6.8458       533.227       0.047525
+  55     32.131   0.84211     1.32131      4.2106      6.6066       531.894       0.045394
+  60     28.681   0.90762     1.28681      4.5381      6.4341       533.161       0.043366
+  65     25.835   0.91650     1.25835      4.5825      6.2917       532.361       0.041475
+  70     21.675   0.67585     1.21675      3.3793      6.0837       532.562       0.039707
+  75     17.664   0.61531     1.17664      3.0766      5.8832       532.963       0.038169
+  80     14.017   0.59317     1.14017      2.9659      5.7009       532.629       0.036371
+  85     10.394   0.52487     1.10394      2.6244      5.5197       533.363       0.034423
+  90      6.976   0.48830     1.06976      2.4415      5.3488       532.363       0.032417
+  95      3.642   0.43582     1.03642      2.1791      5.1821       532.230       0.029967
+ 100      0.000   0.30785     1.00000      1.5392      5.0000       532.631       0.026139
+ 
+ 
+Data Role=VALIDATE Target Variable=TARGET_B
+ 
+                                                                                    Mean
+                            Cumulative       %      Cumulative     Number of     Posterior
+Depth      Gain     Lift       Lift      Response   % Response   Observations   Probability
+ 
+   5    102.406   2.02406     2.02406     10.1203     10.1203       436.847       0.087730
+  10     80.160   1.57867     1.80160      7.8933      9.0080       435.911       0.077670
+  15     66.365   1.38720     1.66365      6.9360      8.3183       435.509       0.071391
+  20     58.289   1.34045     1.58289      6.7022      7.9145       435.776       0.066120
+  25     51.400   1.23851     1.51400      6.1925      7.5700       436.108       0.062052
+  30     44.682   1.11075     1.44682      5.5538      7.2341       435.841       0.058468
+  35     40.126   1.12808     1.40126      5.6404      7.0063       436.241       0.055449
+  40     35.699   1.04682     1.35699      5.2341      6.7849       435.707       0.052621
+  45     31.736   1.00029     1.31736      5.0015      6.5868       435.973       0.050263
+  50     26.478   0.79067     1.26478      3.9534      6.3239       435.172       0.048109
+  55     24.073   1.00029     1.24073      5.0015      6.2036       435.973       0.046030
+  60     19.545   0.69745     1.19545      3.4873      5.9773       435.971       0.043989
+  65     16.708   0.82644     1.16708      4.1322      5.8354       435.706       0.042102
+  70     13.836   0.76582     1.13836      3.8291      5.6918       436.838       0.040166
+  75     10.996   0.71157     1.10996      3.5579      5.5498       435.105       0.038643
+  80      8.476   0.70674     1.08476      3.5337      5.4238       435.905       0.036817
+  85      6.902   0.81713     1.06902      4.0856      5.3451       435.772       0.034694
+  90      4.938   0.71559     1.04938      3.5779      5.2469       436.105       0.032514
+  95      2.645   0.61420     1.02645      3.0710      5.1322       436.437       0.030123
+ 100      0.000   0.49655     1.00000      2.4827      5.0000       435.103       0.026290
+ 
+ 
+ 
+ 
+Assessment Score Distribution
+ 
+Data Role=TRAIN Target Variable=TARGET_B Target Label=Target Variable Indicates for Response to
+ 
+ Posterior      Number                     Mean
+Probability         of    Number of     Posterior
+   Range        Events    Nonevents    Probability    Percentage
+ 
+ 0.10-0.15       0.400        1.27       0.10057         0.0156
+ 0.05-0.10     326.139     4159.99       0.06470        42.1075
+ 0.00-0.05     206.161     5960.04       0.03831        57.8769
+ 
+ 
+Data Role=VALIDATE Target Variable=TARGET_B
+ 
+ Posterior      Number                     Mean
+Probability       of      Number of     Posterior
+   Range        Events    Nonevents    Probability    Percentage
+ 
+ 0.05-0.10     249.257     3502.07       0.065337       43.0296
+ 0.00-0.05     186.643     4780.03       0.038533       56.9704

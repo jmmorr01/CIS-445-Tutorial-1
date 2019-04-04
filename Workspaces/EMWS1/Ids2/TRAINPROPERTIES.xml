@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?><_ROOT_  DataSource="donorscoredata" Scope="LOCAL" Role="SCORE" Library="DONOR" Table="DONOR_SCORE_DATA"
+ NCols="48" NObs="2148" NBytes="787456" Segment="" DataSourceRole="SCORE" OutputType="VIEW"
+ ForceRun="N" ComputeStatistics="N" DataSelection="DATASOURCE" NewTable="" MetaAdvisor="BASIC"
+ ApplyIntervalLevelLowerLimit="Y" IntervalLowerLimit="20" ApplyMaxPercentMissing="Y"
+ MaxPercentMissing="50" ApplyMaxClassLevels="Y" MaxClassLevels="20" IdentifyEmptyColumns="Y"
+ VariableValidation="STRICT" NewVariableRole="REJECT" DropMapVariables="Y" DsId="donorscoredata"
+ DsSampleName="" DsSampleSizeType="" DsSampleSize="" DsCreatedBy="jmmorr01" DsCreateDate="1855673116.6"
+ DsModifiedBy="jmmorr01" DsModifyDate="1855673116.8" DsScope="LOCAL" Sample="D" SampleSizeType="PERCENT"
+ SampleSizePercent="20" SampleSizeObs="10000" DBPassThrough="Y" RunAction="Train"
+ Component="DataSource" RawCreateTime="1855673130.4" CreateTime="20OCT2018:16:45:30"
+ Description="" Data="DONOR.DONOR_SCORE_DATA" CMeta="WORK.M1LDO604" RunId="2594ebe9-687f-4c92-917b-6688917523f9"
+ RawLastTimeRun="1855673253.3" RawRunTime="7.9529998302" LastTimeRun="20OCT2018:16:47:33"
+ RunTime="0 Hr. 0 Min. 7.95 Sec.">
+<VARIABLEPROPERTIES/>
+<FILEPROPERTIES/>
+</_ROOT_>

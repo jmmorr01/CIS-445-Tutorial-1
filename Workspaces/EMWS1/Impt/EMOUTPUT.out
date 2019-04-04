@@ -1,0 +1,62 @@
+*------------------------------------------------------------*
+User:                jmmorr01
+Date:                October 20, 2018
+Time:                16:16:22
+*------------------------------------------------------------*
+* Training Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Variable Summary
+ 
+            Measurement    Frequency
+Role           Level         Count
+ 
+INPUT        BINARY             4
+INPUT        INTERVAL          31
+INPUT        NOMINAL           12
+REJECTED     NOMINAL            3
+TARGET       BINARY             1
+
+
+*------------------------------------------------------------*
+* Score Output
+*------------------------------------------------------------*
+
+
+*------------------------------------------------------------*
+* Report Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+Imputation Summary
+Number Of Observations
+ 
+                                                                                                                                            Number of
+                                Impute                                        Impute             Measurement                                  Missing
+Variable Name                   Method     Imputed Variable                    Value    Role        Level                Label              for TRAIN
+ 
+DONOR_AGE                      MEDIAN      IMP_DONOR_AGE                        60      INPUT     INTERVAL                                       2659
+INCOME_GROUP                   TREESURR    IMP_INCOME_GROUP                      .      INPUT     NOMINAL                                        2464
+MONTHS_SINCE_LAST_PROM_RESP    MEDIAN      IMP_MONTHS_SINCE_LAST_PROM_RESP      18      INPUT     INTERVAL                                        130
+REP_SES                        TREESURR    IMP_REP_SES                           .      INPUT     NOMINAL       Replacement: SES                  248
+REP_URBANICITY                 TREESURR    IMP_REP_URBANICITY                    .      INPUT     NOMINAL       Replacement: URBANICITY           248
+WEALTH_RATING                  TREESURR    IMP_WEALTH_RATING                     .      INPUT     NOMINAL                                        4868
+ 
+ 
+ 
+ 
+Variable Distribution Training Data
+ 
+        Number of
+          Missing    Number of    Percent of
+Obs     for TRAIN    Variables     Variables
+ 
+ 1           4868        1          16.6667
+ 2           2659        1          16.6667
+ 3           2464        1          16.6667
+ 4            248        2          33.3333
+ 5            130        1          16.6667
